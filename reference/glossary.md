@@ -59,5 +59,7 @@ Structural reflection
 
 +++
 
-{.page-status}
+:::{div}
+:class: page-status
 Applies to: RC · Last reviewed: RC
+:::

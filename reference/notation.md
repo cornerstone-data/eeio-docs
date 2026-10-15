@@ -28,5 +28,7 @@ Team to confirm the final list and whether any others (e.g., value added, `U`/`V
 
 +++
 
-{.page-status}
+:::{div}
+:class: page-status
 Applies to: RC · Last reviewed: RC
+:::

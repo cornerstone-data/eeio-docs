@@ -36,7 +36,7 @@ Plan §3.9 · target: **RC (Oct 27)**, roughly the top 10 questions. Each answer
 *To be written.*
 
 ### Why do factors differ from USEEIO, CEDA, EXIOBASE, or other datasets?
-*To be written. See [](factors/comparing.md).*
+*To be written.*
 
 ### Why does the same sector have very different factors in different countries?
 *To be written.*
@@ -77,5 +77,7 @@ Open an issue on [GitHub](https://github.com/cornerstone-data/eeio-docs/issues).
 
 +++
 
-{.page-status}
+:::{div}
+:class: page-status
 Applies to: RC · Last reviewed: RC
+:::

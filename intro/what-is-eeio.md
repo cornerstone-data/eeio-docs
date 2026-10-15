@@ -22,11 +22,13 @@ Plan §3.1.1 · target: **RC (Oct 27)**
 
 ## Learn more
 
-- **From the field:** *to be added*
+- **From the field:** USEEIO supply chain factors [@ingwersen_supply_2022]
 - **Cornerstone papers:** *to be added*
 - **Code:** *to be added*
 
 +++
 
-{.page-status}
+:::{div}
+:class: page-status
 Applies to: RC · Last reviewed: RC
+:::

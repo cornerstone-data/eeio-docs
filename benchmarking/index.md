@@ -23,5 +23,7 @@ Plan §3.6.1 · target: **RC (Oct 27)**
 
 +++
 
-{.page-status}
+:::{div}
+:class: page-status
 Applies to: RC · Last reviewed: RC
+:::

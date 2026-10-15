@@ -38,5 +38,7 @@ How it affects results · Alternatives or sensitivity tested.*
 
 +++
 
-{.page-status}
+:::{div}
+:class: page-status
 Applies to: RC · Last reviewed: RC
+:::
