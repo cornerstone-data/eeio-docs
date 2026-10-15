@@ -1,0 +1,19 @@
+# Version record for the release candidate (plan §7.1).
+# Placeholder structure; values to fill in. Ideally generated from the
+# release configs rather than maintained by hand.
+release: rc
+model_version: v0.6  # to confirm (plan Q9)
+release_date: 2026-10-27
+zenodo_doi: null
+base_year: 2024
+dollar_years: [2024, 2025, 2026]  # to confirm (plan Q10)
+gwp: AR6-100
+tiers:
+  tier_0: {io: "Cornerstone estimates from BEA data, nowcast", ghg: "U.S. GHG Inventory + GHGRP/NEI/eGRID"}
+  tier_1: {io: "National statistical agency tables", ghg: "National environmental accounts"}
+  tier_2: {io: "FIGARO 2026 edition; OECD ICIO 2025 edition", ghg: "FIGARO GHG; EDGAR process CO2"}
+  tier_3: {io: "Template from other countries, scaled", ghg: "to confirm"}
+countries: {}  # per-country entries drive Methods by country
+methodology_choices: []
+validation: {}
+benchmark: {pairs: 86, emissions_share: null, share_validated: null}

@@ -1,0 +1,62 @@
+# On merge to main, build the site for docs.cornerstonedata.org/eeio/ and push it
+# into the eeio/ folder of the docs hub repo, which GitHub Pages serves (plan §6.5).
+#
+# One-time setup:
+#   1. Create a deploy key pair. Add the public key to
+#      cornerstone-data/cornerstone-data.github.io (Settings → Deploy keys, write access)
+#      and the private key to this repo as the secret HUB_DEPLOY_KEY.
+#   2. In this repo, set Pages to deploy from the gh-pages branch (for PR previews).
+name: Deploy to docs hub
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      BASE_URL: /eeio
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+      - name: Install MyST
+        run: npm install -g mystmd
+      - name: Build HTML
+        run: myst build --html --strict
+      - name: Publish to the hub's eeio/ folder
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          deploy_key: ${{ secrets.HUB_DEPLOY_KEY }}
+          external_repository: cornerstone-data/cornerstone-data.github.io
+          publish_branch: main
+          publish_dir: ./_build/html
+          destination_dir: eeio
+          commit_message: "Deploy eeio-docs"
+      - name: Prepare redirect from /eeio-docs/ to /eeio/
+        run: |
+          mkdir -p redirect
+          cat > redirect/index.html <<'HTML'
+          <!doctype html>
+          <meta charset="utf-8">
+          <title>Cornerstone EEIO docs</title>
+          <meta http-equiv="refresh" content="0; url=https://docs.cornerstonedata.org/eeio/">
+          <link rel="canonical" href="https://docs.cornerstonedata.org/eeio/">
+          <p>The docs have moved to <a href="https://docs.cornerstonedata.org/eeio/">docs.cornerstonedata.org/eeio</a>.</p>
+          HTML
+      - name: Publish redirect to this repo's gh-pages root (keeps PR previews)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./redirect
+          keep_files: true

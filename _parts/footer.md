@@ -1,0 +1,1 @@
+Documentation for the Cornerstone EEIO model, from the [Cornerstone Sustainability Data Initiative](https://cornerstonedata.org). [Report an issue or ask a question](https://github.com/cornerstone-data/eeio-docs/issues).

@@ -1,0 +1,117 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  title: Cornerstone EEIO Model
+  description: Theory, assumptions, data, and practical guidance for the Cornerstone multi-regional EEIO model and its emission factors.
+  keywords: [EEIO, MRIO, input-output, emission factors, Scope 3, greenhouse gas]
+  authors:
+    - name: Cornerstone Sustainability Data Initiative
+  github: https://github.com/cornerstone-data/eeio-docs
+  bibliography:
+    - references.bib
+  exclude:
+    - README.md
+    - CONTRIBUTING.md
+    - _parts/**
+  toc:
+    - file: index.md
+    - title: Introduction to EEIO models
+      children:
+        - file: intro/what-is-eeio.md
+        - file: intro/io-part.md
+        - file: intro/multi-regional.md
+        - file: intro/ee-part.md
+        - file: intro/emission-factors.md
+        - file: intro/assumptions.md
+        - file: intro/uses-and-limits.md
+    - title: The IO model
+      children:
+        - file: io/index.md
+        - file: io/io-tables.md
+        - file: io/make-use.md
+        - file: io/multi-regional-structure.md
+        - file: io/country-tiers.md
+        - file: io/us-tables/index.md
+          children:
+            - file: io/us-tables/bea-source-data.md
+            - file: io/us-tables/nowcasting.md
+            - file: io/us-tables/redefinitions.md
+            - file: io/us-tables/waste-disaggregation.md
+        - file: io/tier-1.md
+        - file: io/tier-2.md
+        - file: io/tier-3.md
+        - file: io/absr.md
+        - file: io/trade.md
+        - file: io/price-types.md
+        - file: io/year-currency.md
+        - file: io/balancing.md
+        - file: io/aggregation.md
+        - file: io/key-assumptions.md
+        - file: io/checks.md
+    - title: The GHG extension
+      children:
+        - file: ee/index.md
+        - file: ee/data-sources.md
+        - file: ee/us/index.md
+          children:
+            - file: ee/us/national-totals.md
+            - file: ee/us/attribution.md
+            - file: ee/us/facility-basis.md
+            - file: ee/us/electricity.md
+        - file: ee/tier-1.md
+        - file: ee/tier-2-3.md
+        - file: ee/sector-assignment.md
+        - file: ee/year-alignment.md
+        - file: ee/intensities.md
+        - file: ee/key-assumptions.md
+        - file: ee/checks.md
+    - title: Emission factors
+      children:
+        - file: factors/whats-in-a-release.md
+        - file: factors/choose-a-factor.md
+        - file: factors/prices-and-margins.md
+        - file: factors/year-and-currency.md
+        - file: factors/comparing.md
+        - file: factors/key-assumptions.md
+        - file: factors/downloads.md
+    - file: validation/index.md
+    - title: Benchmarking
+      children:
+        - file: benchmarking/index.md
+        - file: benchmarking/what-we-compare.md
+        - file: benchmarking/how-we-compare.md
+        - file: benchmarking/differences-to-changes.md
+        - file: benchmarking/release-summaries.md
+    - file: flag/index.md
+    - title: Reference
+      children:
+        - file: reference/glossary.md
+        - file: reference/notation.md
+        - file: reference/methods-by-country.md
+        - file: reference/assumptions.md
+        - file: reference/data-sources.md
+        - file: reference/further-reading.md
+        - file: reference/methods-by-version.md
+    - file: releases/index.md
+      children:
+        - file: releases/rc.md
+    - file: faq.md
+site:
+  template: book-theme
+  nav:
+    - title: Get the factors
+      url: /factors/downloads
+    - title: FAQs
+      url: /faq
+    - title: cornerstonedata.org
+      url: https://cornerstonedata.org
+  options:
+    logo: images/cornerstone-wordmark.svg
+    logo_dark: images/cornerstone-wordmark-dark.svg
+    logo_text: EEIO Model
+    logo_alt: Cornerstone
+    folders: true
+    style: _parts/custom.css
+  parts:
+    navbar_end: _parts/navbar.md
+    footer: _parts/footer.md
