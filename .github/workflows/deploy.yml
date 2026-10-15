@@ -49,9 +49,9 @@ jobs:
           <!doctype html>
           <meta charset="utf-8">
           <title>Cornerstone EEIO docs</title>
-          <meta http-equiv="refresh" content="0; url=https://docs.cornerstonedata.org/eeio/">
-          <link rel="canonical" href="https://docs.cornerstonedata.org/eeio/">
-          <p>The docs have moved to <a href="https://docs.cornerstonedata.org/eeio/">docs.cornerstonedata.org/eeio</a>.</p>
+          <meta http-equiv="refresh" content="0; url=/eeio/">
+          <link rel="canonical" href="/eeio/">
+          <p>The docs have moved to <a href="/eeio/">/eeio/</a>.</p>
           HTML
       - name: Publish redirect to this repo's gh-pages root (keeps PR previews)
         uses: peaceiris/actions-gh-pages@v4
