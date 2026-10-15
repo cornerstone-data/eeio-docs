@@ -31,7 +31,7 @@ myst build --html --strict   # the same build CI runs
 | `versions/` | Version records (one data file per release) |
 | `figures/` | Hand-made diagrams, figure generator scripts, `figures.csv` inventory |
 | `data/` | Small cached data extracts for figures |
-| `references.bib` | Shared bibliography (keys match the `papers` repo) |
+| `references.bib` | Bibliography; add entries as pages cite them, reusing keys from the `papers` repo where they exist |
 | `_parts/` | Navbar, footer, and custom CSS |
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for page conventions.

@@ -20,6 +20,12 @@ Plan §3.4.5 · target: **v1.0 (Dec 3)**
 - 🖼 Scatter of Cornerstone vs. USEEIO supply chain factors (log-log)
 :::
 
+## Learn more
+
+- **From the field:** USEEIO supply chain factors [@ingwersen_supply_2022]
+- **Cornerstone papers:** *to be added*
+- **Code:** *to be added*
+
 +++
 
 {.page-status}
