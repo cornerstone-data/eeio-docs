@@ -57,8 +57,6 @@ site:
       url: /factors/downloads
     - title: FAQs
       url: /faq
-    - title: cornerstonedata.org
-      url: https://cornerstonedata.org
   options:
     logo: images/cornerstone-wordmark.svg
     logo_dark: images/cornerstone-wordmark-dark.svg
