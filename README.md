@@ -1,6 +1,6 @@
 # Cornerstone EEIO model documentation
 
-Source for the Cornerstone EEIO model docs, published at **https://docs.cornerstonedata.org/eeio/**.
+Source for the Cornerstone EEIO model docs, published at **TBD**.
 
 The site explains the theory, assumptions, data, and validation behind the Cornerstone multi-regional EEIO model, and how to apply its emission factors. It is built with [MyST](https://mystmd.org) and served by GitHub Pages through the docs hub repo, [`cornerstone-data/cornerstone-data.github.io`](https://github.com/cornerstone-data/cornerstone-data.github.io).
 
