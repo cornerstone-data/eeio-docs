@@ -13,6 +13,11 @@ project:
     - README.md
     - CONTRIBUTING.md
     - _parts/**
+  exports:
+    - id: guide-pdf
+      format: typst
+      template: plain_typst_book
+      output: exports/cornerstone-eeio-guide.pdf
   toc:
     - file: index.md
     - title: Introduction to EEIO models

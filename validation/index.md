@@ -1,8 +1,8 @@
 ---
 title: "Validation and quality assurance"
+label: validation-hub
 ---
 
-(validation-hub)=
 :::{tip} In one sentence
 *To be written.*
 :::
