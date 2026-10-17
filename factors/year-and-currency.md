@@ -1,9 +1,9 @@
 ---
-title: "How-to 3: Match the year and currency"
+title: "How-to 3: Find the right EF for the purchase"
 ---
 
 :::{tip} In one sentence
-*To be written.*
+*Temp: Find the matching commodity, country/region, year, etc.*
 :::
 
 :::{note} Draft placeholder
