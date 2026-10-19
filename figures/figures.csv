@@ -2,3 +2,4 @@ id,page,type,data_source,generator_script,owner,status
 io-supply-use,io/index.md,diagram (SVG),hand-made,,,draft
 io-domestic-imported,io/index.md,diagram (SVG),hand-made,,,draft
 io-tables-to-a,io/index.md,diagram (SVG),hand-made,,,draft
+io-mrio-blocks,io/index.md,diagram (SVG),hand-made (after CEDA team slide 19),,,draft

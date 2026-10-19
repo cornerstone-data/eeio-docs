@@ -62,29 +62,37 @@ The direct requirements tables turn the Supply and Use tables into recipes: the 
 
 1. **Inputs per dollar of industry output.** Divide each industry's column of domestic use by its output `x`.
 2. **Market shares.** Divide each commodity's column of the Supply table by its output `q`. This gives the share of each commodity made by each industry.
-3. **Combine.** Multiply the two to get inputs per dollar of each *commodity*:
+3. **Combine.** Multiply the two to get inputs per dollar of each *commodity*. Doing this with domestic use gives `Adom`; doing it with imported use gives `Aimp`.
 
-$$
-A_{dom} = \left(U_{dom}\,\hat{x}^{-1}\right)\left(V\,\hat{q}^{-1}\right)
-\qquad
-A_{imp} = \left(U_{imp}\,\hat{x}^{-1}\right)\left(V\,\hat{q}^{-1}\right)
-$$
-
-Here $\hat{x}^{-1}$ and $\hat{q}^{-1}$ divide each column by that sector's output. `Adom` and `Aimp` add up to the total direct requirements `A`. A column of `A` is the input recipe for $1 of that commodity, split by where the inputs come from.
+`Adom` and `Aimp` add up to the total direct requirements `A`. A column of `A` is the input recipe for $1 of that commodity, split by where the inputs come from.
 
 Tables that are already symmetric, with the same sectors on rows and columns, skip step 2: their domestic and imported use are divided by output directly. This applies to the Tier 1 and Tier 2 tables.
 
 ## Final demand and output (`y_nab`)
 
-Final demand in the Use table includes purchases of imports. To match domestic production, we need final demand for *domestic* products only. We call this `y_nab`, the final demand for the national accounting balance:
-
-$$
-y_{nab} = y_{dom} + \text{exports} = y - y_{imp}
-$$
+Final demand in the Use table includes purchases of imports. To match domestic production, we need final demand for *domestic* products only. We call this `y_nab`, the final demand for the national accounting balance: domestic final demand for domestic products (`ydom`) plus exports.
 
 Here `ydom` is what households, government, and investment buy from domestic producers, and `yimp` is what they buy from abroad. Imports not bought by industries go to final users, so `yimp` is total imports less the row sums of `Uimp`. Exports are the country's own production, so they count toward `y_nab` in full.
 
-With `y_nab`, the model reproduces the country's commodity output: $q = L_{dom}\, y_{nab}$, where $L_{dom} = (I - A_{dom})^{-1}$ is the domestic Leontief inverse. This is a check that the tables, `Adom`, and `y_nab` are consistent.
+With `y_nab`, the model reproduces the country's commodity output: running `y_nab` through the domestic supply chain (the Leontief inverse of `Adom`) gives back `q`. This is a check that the tables, `Adom`, and `y_nab` are consistent.
+
+## From single-country tables to the multi-region model
+
+:::{figure} ../figures/diagrams/io-mrio-blocks.svg
+:label: fig-mrio-blocks
+:alt: A block matrix with countries as both rows and columns. Diagonal blocks are each country's domestic direct requirements Adom. Off-diagonal blocks are imports from the row country to the column country. A side panel shows Country 2's imported direct requirements Aimp being multiplied by trade shares by origin and product, giving separate blocks of imports from Country 1, Country 3, and the rest of the world.
+The {term}`MRIO` direct requirements table. Each country's domestic inputs sit on the diagonal; its imported inputs are spread down its column by country of origin.
+:::
+
+Each country's tables say how much of its inputs are imported, but not where they come from. The multi-region model links the countries so that a supply chain can be followed across borders.
+
+1. **Put every country in one table.** The model has 65 countries and a rest-of-world region, each with the same 405 sectors. Each country's `Adom` sits on the diagonal. A country's column holds everything its industries buy; the rows say which country sold it.
+2. **Split imports by origin.** Each country's `Aimp` is spread down its column using bilateral trade data ({term}`BACI`): for each product, the share the country imports from each origin. Products the trade data don't cover, mostly services, use origin shares from {term}`FIGARO` or the {term}`OECD ICIO`. Imported final demand (`yimp`) is split the same way.
+3. **Add the rest of the world.** Imports from countries outside the table come from a rest-of-world region. Its domestic input structure is pooled from the tables of Colombia, Mexico, Türkiye, and Chile.
+4. **Balance.** The whole table is balanced with {term}`RAS`, so that each country's sales to all users, at home and abroad, add up to its output. This makes small adjustments to the import coefficients.
+5. **Solve.** The total requirements (`L`) are calculated for the whole table at once, so supply chains that cross several borders are captured in full.
+
+The 83 Tier 3 countries are linked more simply, outside this table; see [](country-tiers.md).
 
 :::{note} Draft placeholder
 :class: dropdown
@@ -107,6 +115,20 @@ Plan §3.2.1 · target: **RC (Oct 27)**
 - **Assumption:** An industry uses the same input recipe for everything it makes, its primary product and any secondary products alike. This is what lets the market shares (`V` ÷ `q`) turn industry recipes into commodity recipes.
 - **Why we make it:** It is the standard assumption for building commodity-by-commodity tables from Supply and Use tables, and unlike the alternative (commodity technology) it never produces negative requirements.
 - **How it affects results:** A secondary product takes on its producer's recipe. Using U.S. tables after {term}`redefinitions <Redefinitions>` keeps secondary products, and so this effect, small.
+- **Alternatives or sensitivity tested:** *To be written.*
+
+**Import proportionality**
+
+- **Assumption:** Within a country, every buyer of a product gets the same mix of origins. If a country imports 30% of its steel from Korea, every industry that buys imported steel gets 30% of it from Korea.
+- **Why we make it:** Trade data record which countries trade each product, but not which industry buys the imports.
+- **How it affects results:** An industry that in reality buys mostly from one origin gets the national average mix instead. Where origins differ a lot in emission intensity, this can move that industry's factors.
+- **Alternatives or sensitivity tested:** *To be written.*
+
+**Shares still apply when data years differ**
+
+- **Assumption:** The IO tables, trade shares, and gap-fill shares come from different years (for example, 2024 trade data with IO tables from 2018 to 2023). We assume the input recipes and origin shares from each source's data year still describe the 2024 economy.
+- **Why we make it:** National tables, multi-regional databases, and trade data are published on different schedules, and we use the most recent of each.
+- **How it affects results:** Where an economy's structure or trading partners changed between the data year and 2024, the model reflects the earlier pattern. The years used for each country are listed in [](../reference/methods-by-country.md).
 - **Alternatives or sensitivity tested:** *To be written.*
 :::
 
