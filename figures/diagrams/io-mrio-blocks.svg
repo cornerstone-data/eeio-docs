@@ -60,7 +60,7 @@
   <!-- Highlight column 2 -->
   <rect x="212" y="66" width="98" height="280" rx="6" fill="none" stroke="#29a7d5" stroke-width="1.5" stroke-dasharray="5 4"/>
 
-  <text x="120" y="370" font-size="12" fill="#6a727c">Each block is 405 × 405 sectors · 65 countries plus rest of world</text>
+  <text x="120" y="370" font-size="12" fill="#6a727c">Each block is 405 × 405 sectors · Tier 0–2 countries (65) plus rest of world</text>
 
   <!-- Right panel -->
   <text x="530" y="50" font-size="14" font-weight="700">Filling Country 2's column</text>

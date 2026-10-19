@@ -8,7 +8,7 @@ Countries are grouped into tiers by the IO data available for them, from the det
 
 ## What each tier starts from
 
-A country's tier sets which table it starts from, how much sector detail that table has, and how it is valued.
+The model covers 148 countries plus a rest-of-world region. A country's tier sets which table it starts from, how much sector detail that table has, and how it is valued.
 
 | {term}`Country tier` | Countries | Starting tables |
 |---|---|---|

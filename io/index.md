@@ -86,13 +86,13 @@ The {term}`MRIO` direct requirements table. Each country's domestic inputs sit o
 
 Each country's tables say how much of its inputs are imported, but not where they come from. The multi-region model links the countries so that a supply chain can be followed across borders.
 
-1. **Put every country in one table.** The model has 65 countries and a rest-of-world region, each with the same 405 sectors. Each country's `Adom` sits on the diagonal. A country's column holds everything its industries buy; the rows say which country sold it.
+1. **Put every country in one table.** The model covers 148 countries and a rest-of-world region. The 65 countries with their own IO tables (Tiers 0 to 2) and the rest-of-world region share one table, each with the same 405 sectors. Each country's `Adom` sits on the diagonal. A country's column holds everything its industries buy; the rows say which country sold it.
 2. **Split imports by origin.** Each country's `Aimp` is spread down its column using bilateral trade data ({term}`BACI`): for each product, the share the country imports from each origin. Products the trade data don't cover, mostly services, use origin shares from {term}`FIGARO` or the {term}`OECD ICIO`. Imported final demand (`yimp`) is split the same way.
 3. **Add the rest of the world.** Imports from countries outside the table come from a rest-of-world region. Its domestic input structure is pooled from the tables of Colombia, Mexico, Türkiye, and Chile.
 4. **Balance.** The whole table is balanced with {term}`RAS`, so that each country's sales to all users, at home and abroad, add up to its output. This makes small adjustments to the import coefficients.
 5. **Solve.** The total requirements (`L`) are calculated for the whole table at once, so supply chains that cross several borders are captured in full.
 
-The 83 Tier 3 countries are linked more simply, outside this table; see [](country-tiers.md).
+The other 83 countries (Tier 3) are linked to this table more simply; see [](country-tiers.md).
 
 :::{important} Key assumptions
 :class: dropdown
