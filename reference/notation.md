@@ -12,8 +12,12 @@ In the multi-regional model, every row and column is a country–sector pair. `D
 |---|---|---|---|
 | `A` (`Adom`, `Aimp`) | Direct requirements | Inputs bought per dollar of a sector's output, split into domestic and imported | $ / $ |
 | `L` | Total requirements (Leontief inverse) | All the output needed across the whole supply chain per dollar of final demand | $ / $ |
-| `q` | Output | Total output of each sector | $ |
-| `y` | Final demand | Purchases by households, government, investment, and exports | $ |
+| `V` | Supply (Make) table | Production of each commodity by each domestic industry | $ |
+| `U` (`Udom`, `Uimp`) | Use table | Commodities bought by each industry as inputs, split into domestic and imported | $ |
+| `x` | Industry output | Total output of each industry: the row sums of `V` | $ |
+| `q` | Commodity output | Total domestic output of each commodity: the column sums of `V` | $ |
+| `y` (`ydom`, `yimp`) | Final demand | Purchases by households, government, investment, and exports, split into domestic and imported | $ |
+| `y_nab` | Final demand for the national accounting balance | Final demand for domestic production: `ydom` plus exports | $ |
 | `E` | Emissions | Emissions of each gas by each sector | kg gas |
 | `B` | Direct emission intensities | Emissions of each gas per dollar of a sector's own output | kg gas / $ |
 | `C` | Characterization factors | Global warming potentials that convert each gas to CO₂e | kg CO₂e / kg gas |
