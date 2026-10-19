@@ -58,13 +58,13 @@ A purchase can come from a domestic producer or from abroad, and the two lead to
 Domestic and imported direct requirements are built from the same two steps.
 :::
 
-The direct requirements tables turn the Supply and Use tables into recipes: the inputs needed to make $1 of each commodity. They take three steps.
+The direct requirements tables turn the Supply and Use tables into recipes: the inputs needed to make \$1 of each commodity. They take three steps.
 
 1. **Inputs per dollar of industry output.** Divide each industry's column of domestic use by its output `x`.
 2. **Market shares.** Divide each commodity's column of the Supply table by its output `q`. This gives the share of each commodity made by each industry.
 3. **Combine.** Multiply the two to get inputs per dollar of each *commodity*. Doing this with domestic use gives `Adom`; doing it with imported use gives `Aimp`.
 
-`Adom` and `Aimp` add up to the total direct requirements `A`. A column of `A` is the input recipe for $1 of that commodity, split by where the inputs come from.
+`Adom` and `Aimp` add up to the total direct requirements `A`. A column of `A` is the input recipe for \$1 of that commodity, split by where the inputs come from.
 
 Tables that are already symmetric, with the same sectors on rows and columns, skip step 2: their domestic and imported use are divided by output directly. This applies to the Tier 1 and Tier 2 tables.
 
@@ -97,13 +97,13 @@ The other 83 countries (Tier 3) are linked to this table more simply; see [](cou
 (total-requirements)=
 ## Total requirements (`L`)
 
-`A` shows only a sector's direct suppliers. Take $1 of furniture. Its column of `A` lists what the furniture maker buys to make it: lumber, hardware, electricity, transport. These are the **first tier** of the supply chain.
+`A` shows only a sector's direct suppliers. Take \$1 of furniture. Its column of `A` lists what the furniture maker buys to make it: lumber, hardware, electricity, transport. These are the **first tier** of the supply chain.
 
-Each of those suppliers has its own column in `A`. The sawmill buys logs, fuel, and machinery; the power plant buys fuel and equipment. These purchases are the **second tier**. Each supplier's column is scaled by how much of it the first tier needs: if the furniture maker buys 20 cents of lumber for each $1 of furniture, the sawmill's whole recipe is multiplied by 0.20. The second-tier suppliers have their own suppliers, the third tier, scaled again by what the second tier needs, and so on, without end. In the multi-region model the trace crosses borders: a second-tier supplier may be a steel mill in another country.
+Each of those suppliers has its own column in `A`. The sawmill buys logs, fuel, and machinery; the power plant buys fuel and equipment. These purchases are the **second tier**. Each supplier's column is scaled by how much of it the first tier needs: if the furniture maker buys 20 cents of lumber for each \$1 of furniture, the sawmill's whole recipe is multiplied by 0.20. The second-tier suppliers have their own suppliers, the third tier, scaled again by what the second tier needs, and so on, without end. In the multi-region model the trace crosses borders: a second-tier supplier may be a steel mill in another country.
 
-Each tier is smaller than the one before, because every dollar of output pays for value added (wages, taxes, profits) as well as purchases. So the tiers add up to a finite total: everything produced, anywhere in the supply chain, to deliver $1 of each commodity to a final user. Written out, that total is `I + A + A² + A³ + …`, where `I` is the $1 of the commodity itself, `A` the first tier, `A²` the second, and so on.
+Each tier is smaller than the one before, because every dollar of output pays for value added (wages, taxes, profits) as well as purchases. So the tiers add up to a finite total: everything produced, anywhere in the supply chain, to deliver \$1 of each commodity to a final user. Written out, that total is `I + A + A² + A³ + …`, where `I` is the \$1 of the commodity itself, `A` the first tier, `A²` the second, and so on.
 
-There is a simple way to calculate this infinite sum all at once: a special inverse of `A`, `(I − A)⁻¹`, called the Leontief inverse after the economist Wassily Leontief. That is why the result is called `L`. A column of `L` shows the total output needed from every sector, in every country, for $1 of final demand for that commodity.
+There is a simple way to calculate this infinite sum all at once: a special inverse of `A`, `(I − A)⁻¹`, called the Leontief inverse after the economist Wassily Leontief. That is why the result is called `L`. A column of `L` shows the total output needed from every sector, in every country, for \$1 of final demand for that commodity.
 
 :::{note}
 The tiers here are rounds of suppliers in a supply chain. They are not the same as the {term}`country tiers <Country tier>`, which describe the data available for each country.

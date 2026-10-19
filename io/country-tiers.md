@@ -54,7 +54,7 @@ Most of the remaining large economies come from one of two multi-regional databa
 | Data year | 2023 | 2020 |
 | Table type | Symmetric IO table, product by product | Symmetric IO table, industry by industry |
 | Sectors | 64 products (CPA 2.1) | 50 industries (ISIC Rev. 4) |
-| Units | € million, current prices | US$ million, current prices |
+| Units | € million, current prices | US\$ million, current prices |
 
 **FIGARO countries:** the 27 EU member states, plus Argentina, Australia, Brazil, Canada, India, Indonesia, Mexico, Norway, Russia, Saudi Arabia, South Africa, Switzerland, and Türkiye.
 
