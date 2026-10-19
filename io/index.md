@@ -164,7 +164,7 @@ The tiers here are rounds of suppliers in a supply chain. They are not the same 
 
 ## Learn more
 
-- **From the field:** *to be added*
+- **From the field:** Supply, Use, and IO tables in national accounts [@unitednationsHandbookSupplyUse2018]; the standard textbook on IO analysis [@millerInputoutputAnalysisFoundations2022]; how the U.S. IO accounts are built [@beaConceptsMethodsUS2009]
 - **Cornerstone papers:** [Methodology for Cornerstone U.S. Model](https://github.com/cornerstone-data/papers/blob/published/us-methods/us-methods.md) (working paper; describes v0.2, update pending)
 - **Code:** *to be added*
 
