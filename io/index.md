@@ -64,6 +64,13 @@ The direct requirements tables turn the Supply and Use tables into recipes: the 
 2. **Market shares.** Divide each commodity's column of the Supply table by its output `q`. This gives the share of each commodity made by each industry.
 3. **Combine.** Multiply the two to get inputs per dollar of each *commodity*. Doing this with domestic use gives `Adom`; doing it with imported use gives `Aimp`.
 
+For the math, see the [Cornerstone U.S. methods working paper](https://github.com/cornerstone-data/papers/blob/published/us-methods/us-methods.md#treatment-of-economic-data-and-iot-construction).
+
+:::{note} Draft
+:class: dropdown
+The linked working paper describes U.S. model v0.2. Update it to the current release (nowcast tables, 405-sector schema, the multi-region model) and update this link.
+:::
+
 `Adom` and `Aimp` add up to the total direct requirements `A`. A column of `A` is the input recipe for \$1 of that commodity, split by where the inputs come from.
 
 Tables that are already symmetric, with the same sectors on rows and columns, skip step 2: their domestic and imported use are divided by output directly. This applies to the Tier 1 and Tier 2 tables.
@@ -140,7 +147,7 @@ The tiers here are rounds of suppliers in a supply chain. They are not the same 
 ## Learn more
 
 - **From the field:** *to be added*
-- **Cornerstone papers:** *to be added*
+- **Cornerstone papers:** [Methodology for Cornerstone U.S. Model](https://github.com/cornerstone-data/papers/blob/published/us-methods/us-methods.md) (working paper; describes v0.2, update pending)
 - **Code:** *to be added*
 
 +++
