@@ -90,9 +90,24 @@ Each country's tables say how much of its inputs are imported, but not where the
 2. **Split imports by origin.** Each country's `Aimp` is spread down its column using bilateral trade data ({term}`BACI`): for each product, the share the country imports from each origin. Products the trade data don't cover, mostly services, use origin shares from {term}`FIGARO` or the {term}`OECD ICIO`. Imported final demand (`yimp`) is split the same way.
 3. **Add the rest of the world.** Imports from countries outside the table come from a rest-of-world region. Its domestic input structure is pooled from the tables of Colombia, Mexico, Türkiye, and Chile.
 4. **Balance.** The whole table is balanced with {term}`RAS`, so that each country's sales to all users, at home and abroad, add up to its output. This makes small adjustments to the import coefficients.
-5. **Solve.** The total requirements (`L`) are calculated for the whole table at once, so supply chains that cross several borders are captured in full.
+5. **Solve.** The total requirements (`L`) are calculated for the whole table at once, so supply chains that cross several borders are captured in full (see [below](#total-requirements)).
 
 The other 83 countries (Tier 3) are linked to this table more simply; see [](country-tiers.md).
+
+(total-requirements)=
+## Total requirements (`L`)
+
+`A` shows only a sector's direct suppliers. Take $1 of furniture. Its column of `A` lists what the furniture maker buys to make it: lumber, hardware, electricity, transport. These are the **first tier** of the supply chain.
+
+Each of those suppliers has its own column in `A`. The sawmill buys logs, fuel, and machinery; the power plant buys fuel and equipment. These purchases are the **second tier**. Each supplier's column is scaled by how much of it the first tier needs: if the furniture maker buys 20 cents of lumber for each $1 of furniture, the sawmill's whole recipe is multiplied by 0.20. The second-tier suppliers have their own suppliers, the third tier, scaled again by what the second tier needs, and so on, without end. In the multi-region model the trace crosses borders: a second-tier supplier may be a steel mill in another country.
+
+Each tier is smaller than the one before, because every dollar of output pays for value added (wages, taxes, profits) as well as purchases. So the tiers add up to a finite total: everything produced, anywhere in the supply chain, to deliver $1 of each commodity to a final user. Written out, that total is `I + A + A² + A³ + …`, where `I` is the $1 of the commodity itself, `A` the first tier, `A²` the second, and so on.
+
+There is a simple way to calculate this infinite sum all at once: a special inverse of `A`, `(I − A)⁻¹`, called the Leontief inverse after the economist Wassily Leontief. That is why the result is called `L`. A column of `L` shows the total output needed from every sector, in every country, for $1 of final demand for that commodity.
+
+:::{note}
+The tiers here are rounds of suppliers in a supply chain. They are not the same as the {term}`country tiers <Country tier>`, which describe the data available for each country.
+:::
 
 :::{important} Key assumptions
 :class: dropdown
