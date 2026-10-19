@@ -116,6 +116,17 @@ There is a simple way to calculate this infinite sum all at once: a special inve
 The tiers here are rounds of suppliers in a supply chain. They are not the same as the {term}`country tiers <Country tier>`, which describe the data available for each country.
 :::
 
+### What the model can and can't trace
+
+`L` follows supply chains through the 65 countries in the multi-region table and the rest-of-world region. The 83 Tier 3 countries are not separate parts of that table, so supply chains can't be traced to them one by one.
+
+| Question | Can the model answer it? |
+|---|---|
+| How much of a U.S. product's supply chain is in China, Germany, or Korea? | Yes. Each of the 65 countries has its own part of the table. |
+| How much is in Kenya or Egypt specifically? | No. Imports from all Tier 3 countries are grouped into the rest-of-world region. |
+| Do the emissions traced to the rest of the world reflect those countries? | Not directly. The region's input recipe and emission intensities come from Colombia, Mexico, Türkiye, and Chile. |
+| Where do a Tier 3 country's own supply chains lead? | Only to its own economy and to its imports as a whole, which are approximated with China's supply chains. |
+
 :::{important} Key assumptions
 :class: dropdown
 **Industry technology**
@@ -130,6 +141,13 @@ The tiers here are rounds of suppliers in a supply chain. They are not the same 
 - **Assumption:** Within a country, every buyer of a product gets the same mix of origins. If a country imports 30% of its steel from Korea, every industry that buys imported steel gets 30% of it from Korea.
 - **Why we make it:** Trade data record which countries trade each product, but not which industry buys the imports.
 - **How it affects results:** An industry that in reality buys mostly from one origin gets the national average mix instead. Where origins differ a lot in emission intensity, this can move that industry's factors.
+- **Alternatives or sensitivity tested:** *To be written.*
+
+**The rest of the world looks like four proxy economies**
+
+- **Assumption:** The rest-of-world region stands in for every country outside the multi-region table, including all Tier 3 countries, as a source of imports. Its input recipe and emission intensities are pooled from Colombia, Mexico, Türkiye, and Chile. It buys nothing from other regions, so a supply chain that reaches it stays there.
+- **Why we make it:** Countries outside the table have no linked IO tables of their own, and these four are the lower-income OECD economies in the table.
+- **How it affects results:** Imports from Tier 3 countries carry the proxy economies' emission intensities rather than their own. Supply chains can't be traced to individual Tier 3 countries, or onward from the rest of the world to other regions.
 - **Alternatives or sensitivity tested:** *To be written.*
 
 **Shares still apply when data years differ**

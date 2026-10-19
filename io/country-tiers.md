@@ -86,7 +86,7 @@ All tables are converted to 2024 U.S. dollars. Sector lists are reconciled in th
 - Purchaser-price factors use U.S. margin ratios for all countries; document on the prices and margins page.
 - Year mismatch: emissions are not adjusted to 2024, so direct intensities pair data-year emissions (e.g., Korea 2018, OECD ICIO 2020) with 2024 dollars.
 - Tier 3: confirm the template weights and how imported supply chains are approximated before publishing.
-- Tier 3 vs. rest of world: imports from non-table countries get the rest-of-world supply chain (Colombia, Mexico, Türkiye, Chile), while those countries' own factors use the Tier 3 template (Mexico, Malaysia, Tunisia). Confirm this is intended.
+- Decision for the team, Tier 3 vs. rest of world: imports from Tier 3 countries get the rest-of-world proxy (Colombia, Mexico, Türkiye, Chile), while those countries' own factors use the Tier 3 template (Mexico, Malaysia, Tunisia) with country-specific emission intensities. Either give the rest-of-world region intensities based on the Tier 3 countries, or keep the proxy as documented in the IO overview's assumptions.
 :::
 
 :::{note} Draft placeholder
