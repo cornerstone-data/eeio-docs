@@ -94,20 +94,6 @@ Each country's tables say how much of its inputs are imported, but not where the
 
 The 83 Tier 3 countries are linked more simply, outside this table; see [](country-tiers.md).
 
-:::{note} Draft placeholder
-:class: dropdown
-Plan §3.2.1 · target: **RC (Oct 27)**
-
-
-**Planned content**
-
-- What data go in, what comes out, and how the pieces fit
-
-**Key visuals**
-
-- 🖼 Pipeline: national tables + trade data → common schema → balanced MRIO → `A`/`L`
-:::
-
 :::{important} Key assumptions
 :class: dropdown
 **Industry technology**
