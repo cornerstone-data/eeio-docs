@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 310" width="800" height="310" font-family="DM Sans, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#2c3746">
-  <rect width="800" height="310" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" width="800" height="340" font-family="DM Sans, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#2c3746">
+  <rect width="800" height="340" fill="#ffffff"/>
 
   <!-- Supply table -->
-  <text x="20" y="28" font-size="16" font-weight="700">Supply table (V)</text>
+  <text x="20" y="28" font-size="16" font-weight="700">Supply table (V)<tspan fill="#29a7d5">*</tspan></text>
   <text x="205" y="60" text-anchor="middle" font-size="12" fill="#6a727c">Commodities</text>
 
   <text x="98" y="124" text-anchor="end" font-size="12" fill="#6a727c">Industries</text>
@@ -23,6 +23,9 @@
   <text x="205" y="243" text-anchor="middle">Imports of each commodity</text>
 
   <text x="20" y="290" font-size="12" fill="#6a727c">x = industry output · q = commodity output</text>
+
+  <line x1="20" y1="306" x2="780" y2="306" stroke="#d1d1cf"/>
+  <text x="20" y="326" font-size="12" fill="#6a727c"><tspan fill="#29a7d5" font-weight="700">*</tspan> Make table variant: the same table without the imports row. Imports appear instead in the Use table's final demand, as a negative column.</text>
 
   <!-- Use table -->
   <text x="420" y="28" font-size="16" font-weight="700">Use table (U, y)</text>

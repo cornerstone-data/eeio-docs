@@ -17,12 +17,12 @@ The detailed U.S. structure sets the model's common sector list, and it is used 
 :::{figure} ../figures/diagrams/io-supply-use.svg
 :label: fig-supply-use
 :alt: Two block diagrams. The Supply table has industries as rows and commodities as columns, with row sums giving industry output x, column sums giving commodity output q, and a row of imports below. The Use table has commodities as rows, with industry columns and final demand columns, value added below the industry columns, and industry column sums giving industry output x.
-The Supply and Use tables. Supply shows who makes each commodity; Use shows who buys it and what each industry adds in value.
+The Supply and Use tables. Supply shows who makes each commodity; Use shows who buys it and what each industry adds in value. The Make table (\*) is a variant of Supply that leaves imports to the Use table.
 :::
 
 An economy's IO accounts come as a pair of tables.
 
-**Supply** (also called Make, `V`) records the production of each commodity by each domestic industry, plus imports of each commodity. It gives two output totals:
+**Supply** (`V`) records the production of each commodity by each domestic industry, plus imports of each commodity. The **Make** table, used for the U.S., is a variant: it has the same production block but no imports row. Imports appear instead in the Use table's final demand, as a negative column. Either way, the production block gives two output totals:
 
 - **Industry output** `x`: the sum across an industry's row, which is everything the industry makes, including secondary products.
 - **Commodity output** `q`: the sum down a commodity's column, which is everything domestic industries make of that commodity. Adding imports gives the total supply of the commodity.
