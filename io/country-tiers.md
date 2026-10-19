@@ -66,7 +66,13 @@ Before mapping, five of FIGARO's broad sectors are split into finer ones while k
 
 ## Tier 3: template countries
 
-The 83 countries that are in neither Tier 1 nor Tier 2 have no usable published table. They share a template input structure, a weighted blend of three Tier 2 economies: Mexico (30%), Malaysia (30%), and Tunisia (40%). Each country's imported inputs are split from domestic ones using its own import share. The supply chains behind those imports are approximated with China's.
+The 83 countries that are in neither Tier 1 nor Tier 2 have no usable published table. They are not part of the multi-region table; their factors are calculated one country at a time.
+
+- **Input recipe.** All 83 share one template recipe, a weighted blend of three Tier 2 economies: Mexico (30%), Malaysia (30%), and Tunisia (40%).
+- **Imports.** Each country's own import share splits the template into domestic and imported inputs, with the same share for every sector. The supply chains behind those imports are approximated with China's.
+- **Emissions.** Direct emission intensities are scaled to the country's own emissions per unit of GDP, and electricity uses the country's own emission intensity.
+
+This template is separate from the rest-of-world region in the multi-region table, which is built from different countries (see [](index.md)).
 
 ## Currency
 
@@ -80,7 +86,7 @@ All tables are converted to 2024 U.S. dollars. Sector lists are reconciled in th
 - Purchaser-price factors use U.S. margin ratios for all countries; document on the prices and margins page.
 - Year mismatch: emissions are not adjusted to 2024, so direct intensities pair data-year emissions (e.g., Korea 2018, OECD ICIO 2020) with 2024 dollars.
 - Tier 3: confirm the template weights and how imported supply chains are approximated before publishing.
-- Rest of world: built from Colombia, Mexico, Türkiye, and Chile; decide whether to document here.
+- Tier 3 vs. rest of world: imports from non-table countries get the rest-of-world supply chain (Colombia, Mexico, Türkiye, Chile), while those countries' own factors use the Tier 3 template (Mexico, Malaysia, Tunisia). Confirm this is intended.
 :::
 
 :::{note} Draft placeholder
@@ -101,8 +107,12 @@ Plan §3.2.5 · target: **RC (Oct 27)**
 
 :::{important} Key assumptions
 :class: dropdown
-*Assumptions specific to this step, using the assumption card: Assumption · Why we make it ·
-How it affects results · Alternatives or sensitivity tested.*
+**Tier 3 countries share one recipe**
+
+- **Assumption:** Tier 3 countries share one template input recipe. Each country differs only in its overall import share, applied equally to every sector, and in its direct emission intensities, which are scaled to the country's emissions per unit of GDP, with its own electricity intensity. Their imported supply chains are approximated with China's.
+- **Why we make it:** These countries have no usable published IO table.
+- **How it affects results:** Differences in industry structure between Tier 3 countries are not captured, and imports from countries other than China are given China's supply chains. Factors for these countries carry more uncertainty than those for Tiers 0 to 2.
+- **Alternatives or sensitivity tested:** *To be written.*
 :::
 
 :::{seealso} Checks we run
