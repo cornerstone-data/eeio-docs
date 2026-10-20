@@ -6,6 +6,12 @@ title: "Country tiers"
 Countries are grouped into tiers by the IO data available for them, from the most detailed and annually updated (Tier 0) to countries with no usable published table (Tier 3).
 :::
 
+:::{figure} ../figures/diagrams/country-tiers-map.svg
+:label: fig-tiers-map
+:alt: World map with countries shaded by tier. The United States is darkest (Tier 0). China, Japan, South Korea, and the United Kingdom are Tier 1. Most of Europe, the Americas, Russia, India, Southeast Asia, and Australia are Tier 2. Much of Africa, the Middle East, Central and South Asia, and the Caribbean and Pacific islands are Tier 3. Some countries, including Greenland, Libya, Serbia, the Democratic Republic of the Congo, Venezuela, and several Central Asian countries, are not modeled separately and are part of the rest of the world.
+Countries by tier. Darker means more detailed IO data. Small countries are shown as dots. Countries in gray are not modeled separately; they are part of the rest-of-world region.
+:::
+
 ## What each tier starts from
 
 The model covers 148 countries plus a rest-of-world region. A country's tier sets which type of table it starts from, how much sector detail that table has, and how it is valued.
@@ -90,21 +96,6 @@ All tables are converted to 2024 U.S. dollars. Sector lists are reconciled in th
 - Decision for the team, Tier 3 vs. rest of world: imports from Tier 3 countries get the rest-of-world proxy (Colombia, Mexico, Türkiye, Chile), while those countries' own factors use the Tier 3 template (Mexico, Malaysia, Tunisia) with country-specific emission intensities. Either give the rest-of-world region intensities based on the Tier 3 countries, or keep the proxy as documented in the IO overview's assumptions.
 :::
 
-:::{note} Draft placeholder
-:class: dropdown
-Plan §3.2.5 · target: **RC (Oct 27)**
-
-
-**Planned content**
-
-- What each tier uses and why; link to Methods by country for any single country
-- How tier affects detail and confidence
-
-**Key visuals**
-
-- 🖼 World map colored by tier
-- 🖼 Share of global output and emissions by tier
-:::
 
 :::{important} Key assumptions
 :class: dropdown
@@ -113,18 +104,8 @@ Plan §3.2.5 · target: **RC (Oct 27)**
 - **Assumption:** Tier 3 countries share one template input recipe. Each country differs only in its overall import share, applied equally to every sector, and in its direct emission intensities, which are scaled to the country's emissions per unit of GDP, with its own electricity intensity. Their imported supply chains are approximated with China's.
 - **Why we make it:** These countries have no usable published IO table.
 - **How it affects results:** Differences in industry structure between Tier 3 countries are not captured, and imports from countries other than China are given China's supply chains. Factors for these countries carry more uncertainty than those for Tiers 0 to 2.
-- **Alternatives or sensitivity tested:** *To be written.*
 :::
 
-:::{seealso} Checks we run
-*The validation behind this part of the model. See [Validation](#validation-hub).*
-:::
-
-## Learn more
-
-- **From the field:** *to be added*
-- **Cornerstone papers:** *to be added*
-- **Code:** *to be added*
 
 +++
 
