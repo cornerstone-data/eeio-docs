@@ -6,6 +6,12 @@ title: "Country tiers"
 Countries are grouped into tiers by the IO data available for them, from the most detailed and annually updated (Tier 0) to countries with no usable published table (Tier 3).
 :::
 
+:::{figure} ../figures/diagrams/country-tiers-map.svg
+:label: fig-tiers-map
+:alt: World map with countries shaded by tier. The United States is darkest (Tier 0). China, Japan, South Korea, and the United Kingdom are Tier 1. Most of Europe, the Americas, Russia, India, Southeast Asia, and Australia are Tier 2. Much of Africa, the Middle East, Central and South Asia, and the Caribbean and Pacific islands are Tier 3. Some countries, including Greenland, Libya, Serbia, the Democratic Republic of the Congo, Venezuela, and several Central Asian countries, are not modeled separately and are part of the rest of the world.
+Countries by tier. Darker means more detailed IO data. Small countries are shown as dots. Countries in gray are not modeled separately; they are part of the rest-of-world region.
+:::
+
 ## What each tier starts from
 
 The model covers 148 countries plus a rest-of-world region. A country's tier sets which type of table it starts from, how much sector detail that table has, and how it is valued.
@@ -19,7 +25,7 @@ The model covers 148 countries plus a rest-of-world region. A country's tier set
 
 ## Tier 0: Detailed, annual IO tables
 
-The U.S. starts from Make and Use tables for 2024 that Cornerstone produces each year (nowcast tables). They follow the schema of the Bureau of Economic Analysis (BEA) 2017 detailed tables, after redefinitions. BEA's own detailed tables come out only every five years, and the latest are for 2017; our tables estimate the 2024 economy in the same form. The Make table shows which commodities each industry produces. The Use table shows which commodities each industry and each final user buys. Both are in millions of dollars.
+The U.S. starts from Make and Use tables for 2024 that Cornerstone produces each year (nowcasted tables). They follow the schema of the Bureau of Economic Analysis (BEA) 2017 detailed tables, after redefinitions. BEA's own detailed tables come out only every five years, and the latest are for 2017; our tables estimate the 2024 economy in the same form. In additional to Make and Use tables, we also estimate the Import Matrix, which defines the import proportion of each cell in the Use table. 
 
 **Why after redefinitions?** Many establishments make secondary products. A hotel runs a restaurant, for example, or a manufacturer does its own repair work. Redefinitions move these secondary products, and the inputs used to make them, to the industry where they are the primary product. Each industry's input recipe then describes the product it is named for more closely, which makes for cleaner emission factors.
 
@@ -83,48 +89,33 @@ All tables are converted to 2024 U.S. dollars. Sector lists are reconciled in th
 :class: dropdown
 - U.S.: link to the nowcast method (how the 2024 tables are estimated) and how imported and domestic inputs are separated to give `Adom` and `Aimp`.
 - Tier numbering: these docs call the U.S. Tier 0 and the other four national-table countries Tier 1; the model's configuration groups all five as Tier 1. Pick one convention.
-- Valuation: tables differ in price basis (supply rows at basic prices; use rows at purchaser prices; industry output at basic or producer prices). The model assumes these differences do not affect `A`. Document this on the prices and margins page rather than per table here.
-- Purchaser-price factors use U.S. margin ratios for all countries; document on the prices and margins page.
-- Year mismatch: emissions are not adjusted to 2024, so direct intensities pair data-year emissions (e.g., Korea 2018, ICIO 2020) with 2024 dollars.
+- Prices and margins: the two assumption cards below are short placeholders; describe price bases and margins in depth on the prices and margins page.
 - Tier 3: confirm the template weights and how imported supply chains are approximated before publishing.
 - Decision for the team, Tier 3 vs. rest of world: imports from Tier 3 countries get the rest-of-world proxy (Colombia, Mexico, Türkiye, Chile), while those countries' own factors use the Tier 3 template (Mexico, Malaysia, Tunisia) with country-specific emission intensities. Either give the rest-of-world region intensities based on the Tier 3 countries, or keep the proxy as documented in the IO overview's assumptions.
 :::
 
-:::{note} Draft placeholder
-:class: dropdown
-Plan §3.2.5 · target: **RC (Oct 27)**
-
-
-**Planned content**
-
-- What each tier uses and why; link to Methods by country for any single country
-- How tier affects detail and confidence
-
-**Key visuals**
-
-- 🖼 World map colored by tier
-- 🖼 Share of global output and emissions by tier
-:::
 
 :::{important} Key assumptions
 :class: dropdown
+**Price basis does not change input recipes**
+
+- **Assumption:** Countries publish their tables on different price bases (basic, producer, or purchaser prices, and sometimes a mix within one table). We use each table as published and assume these differences do not materially change the direct requirements (`A`).
+- **Why we make it:** Converting every table to one price basis needs product-level tax, subsidy, and margin data for each country, which is not consistently available.
+- **How it affects results:** Where product taxes or trade and transport margins are large, as for fuels, input coefficients could differ from those on a common price basis. See [](../factors/prices-and-margins.md).
+
+**U.S. margins for purchaser prices**
+
+- **Assumption:** Factors are converted from producer to purchaser prices using U.S. trade and transport margins for every country.
+- **Why we make it:** Margin data comparable to the U.S. tables are not available for every country.
+- **How it affects results:** Where a country's wholesale, retail, or transport margins differ from U.S. margins, its purchaser-price factors could be too high or too low. Producer-price factors are not affected. See [](../factors/prices-and-margins.md).
+
 **Tier 3 countries share one recipe**
 
 - **Assumption:** Tier 3 countries share one template input recipe. Each country differs only in its overall import share, applied equally to every sector, and in its direct emission intensities, which are scaled to the country's emissions per unit of GDP, with its own electricity intensity. Their imported supply chains are approximated with China's.
 - **Why we make it:** These countries have no usable published IO table.
 - **How it affects results:** Differences in industry structure between Tier 3 countries are not captured, and imports from countries other than China are given China's supply chains. Factors for these countries carry more uncertainty than those for Tiers 0 to 2.
-- **Alternatives or sensitivity tested:** *To be written.*
 :::
 
-:::{seealso} Checks we run
-*The validation behind this part of the model. See [Validation](#validation-hub).*
-:::
-
-## Learn more
-
-- **From the field:** *to be added*
-- **Cornerstone papers:** *to be added*
-- **Code:** *to be added*
 
 +++
 
