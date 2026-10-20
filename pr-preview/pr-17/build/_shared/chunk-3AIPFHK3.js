@@ -1,0 +1,1 @@
+import{_ as s}from"/eeio-docs/pr-preview/pr-17/build/_shared/chunk-ZHZ3OZD7.js";import{b as n,j as e}from"/eeio-docs/pr-preview/pr-17/build/_shared/chunk-DYFJVR7X.js";var a=n(t=>{let{securityLevel:c}=s(),o=e("body");if(c==="sandbox"){let m=e(`#i${t}`).node()?.contentDocument??document;o=e(m.body)}return o.select(`#${t}`)},"selectSvgElement");export{a};
