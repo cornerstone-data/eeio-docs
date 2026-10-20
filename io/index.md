@@ -158,9 +158,6 @@ The tiers here are rounds of suppliers in a supply chain. They are not the same 
 - **Alternatives or sensitivity tested:** *To be written.*
 :::
 
-:::{seealso} Checks we run
-*The validation behind this part of the model. See [Validation](#validation-hub).*
-:::
 
 ## Learn more
 
