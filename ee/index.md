@@ -2,7 +2,7 @@
 title: "The GHG extension: overview"
 ---
 
-:::{tip} In one sentence
+:::{tip} Summary
 *To be written.*
 :::
 

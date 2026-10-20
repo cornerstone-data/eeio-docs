@@ -2,7 +2,7 @@
 title: "What is an EEIO model?"
 ---
 
-:::{tip} In one sentence
+:::{tip} Summary
 *To be written.*
 :::
 

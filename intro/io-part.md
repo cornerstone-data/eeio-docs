@@ -2,7 +2,7 @@
 title: "The IO part: how an economy connects"
 ---
 
-:::{tip} In one sentence
+:::{tip} Summary
 *To be written.*
 :::
 

@@ -2,7 +2,7 @@
 title: "How-to 3: Find the right EF for the purchase"
 ---
 
-:::{tip} In one sentence
+:::{tip} Summary
 *Temp: Find the matching commodity, country/region, year, etc.*
 :::
 

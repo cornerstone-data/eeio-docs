@@ -2,7 +2,7 @@
 title: "How-to 1: Choose the right emission factor"
 ---
 
-:::{tip} In one sentence
+:::{tip} Summary
 *To be written.*
 :::
 

@@ -11,7 +11,7 @@ gwp: AR6-100
 tiers:
   tier_0: {io: "Cornerstone estimates from BEA data, nowcast", ghg: "U.S. GHG Inventory + GHGRP/NEI/eGRID"}
   tier_1: {io: "National statistical agency tables", ghg: "National environmental accounts"}
-  tier_2: {io: "FIGARO 2026 edition; OECD ICIO 2025 edition", ghg: "FIGARO GHG; EDGAR process CO2"}
+  tier_2: {io: "FIGARO 2026 edition; ICIO (OECD) 2025 edition", ghg: "FIGARO GHG; EDGAR process CO2"}
   tier_3: {io: "Template from other countries, scaled", ghg: "to confirm"}
 countries: {}  # per-country entries drive Methods by country
 methodology_choices: []

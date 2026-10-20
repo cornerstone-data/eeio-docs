@@ -2,7 +2,7 @@
 title: "Connecting economies: multi-regional models"
 ---
 
-:::{tip} In one sentence
+:::{tip} Summary
 *To be written.*
 :::
 

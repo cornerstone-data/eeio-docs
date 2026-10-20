@@ -2,7 +2,7 @@
 title: "How-to 2: Purchaser vs. producer price, and margins"
 ---
 
-:::{tip} In one sentence
+:::{tip} Summary
 *To be written.*
 :::
 
