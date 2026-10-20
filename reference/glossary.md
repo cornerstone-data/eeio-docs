@@ -18,7 +18,7 @@ BACI
 : The CEPII database of bilateral international trade by product, used to split each country's imports by country of origin.
 
 Country tier
-: A group of countries modeled with the same level of detail and the same kinds of data sources, from Tier 0 (United States) to Tier 3 (template-based).
+: A group of countries modeled with the same level of detail and the same kinds of data sources: Tier 0, detailed annual IO tables (the United States); Tier 1, detailed periodic national IO tables; Tier 2, coarse multi-regional tables from FIGARO or ICIO; and Tier 3, no IO tables (a template built from other countries).
 
 EEIO
 : Environmentally-extended input-output model. An input-output model of an economy with environmental data (here, greenhouse gas emissions) attached to each sector.
@@ -38,7 +38,7 @@ Margins
 MRIO
 : Multi-regional input-output model. Country IO tables linked into one global system through international trade.
 
-OECD ICIO
+ICIO
 : The OECD Inter-Country Input-Output tables, used for Tier 2 countries not covered by FIGARO.
 
 Producer price

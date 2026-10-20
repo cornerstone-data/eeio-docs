@@ -2,7 +2,7 @@
 title: "Putting them together: emission factors"
 ---
 
-:::{tip} In one sentence
+:::{tip} Summary
 *To be written.*
 :::
 

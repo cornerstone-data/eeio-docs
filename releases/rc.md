@@ -11,7 +11,7 @@ Plan §8.1 · target: **RC (Oct 27)**. Written by hand for the RC; generated fro
 *Release date, model version, Zenodo DOI, download links.*
 
 ## What changed
-*Changes since the previous release and how much they moved `D` and `N`. Includes: FIGARO replaced OECD ICIO for FIGARO-covered Tier 2 countries (v0.6).*
+*Changes since the previous release and how much they moved `D` and `N`. Includes: FIGARO replaced ICIO for FIGARO-covered Tier 2 countries (v0.6).*
 
 ## Methods and data vintages
 *Rendered from `versions/rc.yaml`.*

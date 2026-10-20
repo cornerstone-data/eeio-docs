@@ -3,7 +3,7 @@ title: "Validation and quality assurance"
 label: validation-hub
 ---
 
-:::{tip} In one sentence
+:::{tip} Summary
 *To be written.*
 :::
 

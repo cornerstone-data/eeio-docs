@@ -2,13 +2,13 @@
 title: "The IO model: overview"
 ---
 
-:::{tip} 
+:::{tip} Summary
 Cornerstone uses standardized national input-output tables to represent production recipes and it links them with trade data, thus representing domestic and international supply chains.
 :::
 
 ## Preparing the IO tables
 
-Every country enters the model as a national IO table, but countries don't all start from the same kind of table. The first step is to collect the best available table for each country and record where it came from: the source, version, year, valuation, and sector detail. Which table we start from depends on the country's {term}`tier <Country tier>`: the U.S. starts from Cornerstone's nowcast {term}`Make and Use tables <Make/Use framework>` for 2024, after {term}`redefinitions <Redefinitions>` and following BEA's 2017 detailed schema, while other countries start from national statistical agency tables, {term}`FIGARO` or the {term}`OECD ICIO`, or a template. See [](country-tiers.md) for what each tier starts from.
+Every country enters the model as a national IO table, but countries don't all start from the same kind of table. The first step is to collect the best available table for each country and record where it came from: the source, version, year, valuation, and sector detail. Which table we start from depends on the country's {term}`tier <Country tier>`: the U.S. starts from {term}`Make and Use tables <Make/Use framework>` for 2024 that Cornerstone produces, after {term}`redefinitions <Redefinitions>` and following BEA's 2017 detailed schema, while other countries start from national statistical agency tables, {term}`FIGARO` or {term}`ICIO`, or a template. See [](country-tiers.md) for what each tier starts from.
 
 The detailed U.S. structure sets the model's common sector list, and it is used to split other countries' coarser sectors (see {term}`ABSR`). Sector lists and currencies are reconciled in the later steps: mapping to the common sector list, linking with trade data, and balancing.
 
@@ -93,13 +93,13 @@ The {term}`MRIO` direct requirements table. Each country's domestic inputs sit o
 
 Each country's tables say how much of its inputs are imported, but not where they come from. The multi-region model links the countries so that a supply chain can be followed across borders.
 
-1. **Put every country in one table.** The Tiers 0 to 2 countries with their own IO tables each get their own block, resulting in a 65 x 65 country A matrix with each region having 405 sectors. Each country's `Adom` sits on the diagonal. A country's column holds everything its industries buy; the rows say which country sold it.
-2. **Split imports by origin.** Each country's `Aimp` is spread down its column using bilateral trade data ({term}`BACI`): for each product, the share the country imports from each origin. Products the trade data don't cover, mostly services, use origin shares from {term}`FIGARO` or the {term}`OECD ICIO`. Imported final demand (`yimp`) is split the same way.
-3. **Add the rest of the world.** Imports from countries outside the table come from a rest-of-world region. Its domestic input structure is pooled from the tables of Colombia, Mexico, Türkiye, and Chile. This gets added as one more "country" making the A a 66 x 66 country matrix. This region is separate from the template used for Tier 3 countries' own factors (see [](country-tiers.md)).
+1. **Put every country in one table.** The 65 countries in Tiers 0 to 2 each get their own block, so `A` is a 65 × 65 grid of country blocks, each 405 × 405 sectors. Each country's `Adom` sits on the diagonal. A country's column holds everything its industries buy; the rows say which country sold it.
+2. **Split imports by origin.** Each country's `Aimp` is spread down its column using bilateral trade data ({term}`BACI`): for each product, the share the country imports from each origin. Products the trade data don't cover, mostly services, use origin shares from {term}`FIGARO` or {term}`ICIO`. Imported final demand (`yimp`) is split the same way.
+3. **Add the rest of the world.** Imports from countries outside the table come from a rest-of-world region. Its domestic input structure is pooled from the tables of Colombia, Mexico, Türkiye, and Chile. It is added as one more block, making `A` a 66 × 66 grid of country blocks. This region is separate from the template used for Tier 3 countries' own factors (see [](country-tiers.md)).
 4. **Balance.** The whole table is balanced with {term}`RAS`, so that each country's sales to all users, at home and abroad, add up to its output. This makes small adjustments to the import coefficients.
 5. **Solve.** The total requirements (`L`) are calculated for the whole table at once, so supply chains that cross several borders are captured in full (see [below](#total-requirements)).
 
-The other 83 countries (Tier 3) are linked to this table more simply; see [](country-tiers.md).
+The other 83 of the model's 148 countries (Tier 3) are linked to this table more simply; see [](country-tiers.md).
 
 (total-requirements)=
 ## Total requirements (`L`)

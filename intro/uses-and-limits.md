@@ -2,7 +2,7 @@
 title: "What EEIO factors are good for, and their limits"
 ---
 
-:::{tip} In one sentence
+:::{tip} Summary
 *To be written.*
 :::
 

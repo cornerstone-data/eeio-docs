@@ -2,7 +2,7 @@
 title: "Data sources by tier"
 ---
 
-:::{tip} In one sentence
+:::{tip} Summary
 *To be written.*
 :::
 

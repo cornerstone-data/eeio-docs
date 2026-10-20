@@ -2,7 +2,7 @@
 title: "What's in a release"
 ---
 
-:::{tip} In one sentence
+:::{tip} Summary
 *To be written.*
 :::
 

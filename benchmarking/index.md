@@ -2,7 +2,7 @@
 title: "Why we benchmark"
 ---
 
-:::{tip} In one sentence
+:::{tip} Summary
 *To be written.*
 :::
 

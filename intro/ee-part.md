@@ -2,7 +2,7 @@
 title: "The EE part: attaching greenhouse gas emissions"
 ---
 
-:::{tip} In one sentence
+:::{tip} Summary
 *To be written.*
 :::
 

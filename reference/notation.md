@@ -2,7 +2,7 @@
 title: Notation cheat sheet
 ---
 
-:::{tip} In one sentence
+:::{tip} Summary
 The same few named variables are used on every page, in our data releases, and in our tools.
 :::
 
