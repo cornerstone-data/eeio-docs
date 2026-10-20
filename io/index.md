@@ -143,17 +143,19 @@ The tiers here are rounds of suppliers in a supply chain. They are not the same 
 - **How it affects results:** Imports from Tier 3 countries carry the proxy economies' emission intensities rather than their own. Supply chains can't be traced to individual Tier 3 countries, or onward from the rest of the world to other regions.
 
 
-**Shares still apply when data years differ**
+**Data-year recipes, shares, and intensities still apply in 2024**
 
-- **Assumption:** The IO tables, trade shares, and gap-fill shares come from different years (for example, 2024 trade data with IO tables from 2018 to 2023). We assume the input recipes and origin shares from each source's data year still describe the 2024 economy.
+- **Assumption:** The IO tables, emissions, trade shares, and gap-fill shares come from different years (for example, 2024 trade data with IO tables and emissions from 2018 to 2023). We assume the input recipes, origin shares, and emission intensities from each source's data year still describe the 2024 economy. Each country's emissions are divided by its output from the same year; that output is re-priced to 2024 dollars with a U.S. price index, so its direct emission intensities are data-year intensities per 2024 dollar.
 - **Why we make it:** National tables, multi-regional databases, and trade data are published on different schedules, and we use the most recent of each.
-- **How it affects results:** Where an economy's structure or trading partners changed between the data year and 2024, the model reflects the earlier pattern. The years used for each country are listed in [](../reference/methods-by-country.md).
+- **How it affects results:** Where an economy's structure, trading partners, or emission intensity changed between the data year and 2024 (for example, a cleaner electricity grid), the model reflects the earlier pattern. Using one U.S. price index for every country means price changes elsewhere are not captured. The years used for each country are listed in [](../reference/methods-by-country.md).
 :::
 
 
 ## Learn more
 
-- **From the field:** Supply, Use, and IO tables in national accounts [@unitednationsHandbookSupplyUse2018]; the standard textbook on IO analysis [@millerInputoutputAnalysisFoundations2022]; how BEA builds the U.S. IO accounts [@beaConceptsMethodsUS2009]
+-  Supply, Use, and IO tables in national accounts - the United Nations Handbook [@unitednationsHandbookSupplyUse2018]
+- The standard textbook on IO analysis [@millerInputoutputAnalysisFoundations2022];
+-  How BEA builds the U.S. IO accounts [@beaConceptsMethodsUS2009]
 
 +++
 

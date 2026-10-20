@@ -90,7 +90,6 @@ All tables are converted to 2024 U.S. dollars. Sector lists are reconciled in th
 - U.S.: link to the nowcast method (how the 2024 tables are estimated) and how imported and domestic inputs are separated to give `Adom` and `Aimp`.
 - Tier numbering: these docs call the U.S. Tier 0 and the other four national-table countries Tier 1; the model's configuration groups all five as Tier 1. Pick one convention.
 - Prices and margins: the two assumption cards below are short placeholders; describe price bases and margins in depth on the prices and margins page.
-- Data years: each country's emissions and output come from the same data year (for example, Korea 2018, ICIO countries 2020, FIGARO countries 2023). Output is re-priced to 2024 dollars with a U.S. price index, so direct intensities are data-year intensities per 2024 dollar. Consider adding this to the "data years differ" assumption in the IO overview.
 - Tier 3: confirm the template weights and how imported supply chains are approximated before publishing.
 - Decision for the team, Tier 3 vs. rest of world: imports from Tier 3 countries get the rest-of-world proxy (Colombia, Mexico, Türkiye, Chile), while those countries' own factors use the Tier 3 template (Mexico, Malaysia, Tunisia) with country-specific emission intensities. Either give the rest-of-world region intensities based on the Tier 3 countries, or keep the proxy as documented in the IO overview's assumptions.
 :::
