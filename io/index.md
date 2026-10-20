@@ -64,12 +64,7 @@ The direct requirements tables turn the Supply and Use tables into recipes: the 
 2. **Market shares.** Divide each commodity's column of the Supply table by its output `q`. This gives the share of each commodity made by each industry.
 3. **Combine.** Multiply the two to get inputs per dollar of each *commodity*. Doing this with domestic use gives `Adom`; doing it with imported use gives `Aimp`.
 
-For the math, see the [Cornerstone U.S. methods working paper](https://github.com/cornerstone-data/papers/blob/published/us-methods/us-methods.md#treatment-of-economic-data-and-iot-construction).
-
-:::{note} Draft
-:class: dropdown
-The linked working paper describes U.S. model v0.2. Update it to the current release (nowcast tables, 405-sector schema, the multi-region model) and update this link.
-:::
+For more details on the math behind it, [email team @ cornerstonedata.org](mailto:team@cornerstonedata.org). 
 
 `Adom` and `Aimp` add up to the total direct requirements `A`. A column of `A` is the input recipe for \$1 of that commodity, split by where the inputs come from.
 
@@ -118,7 +113,7 @@ The tiers here are rounds of suppliers in a supply chain. They are not the same 
 
 ### What the model can and can't trace
 
-`L` follows supply chains through the 65 countries in the multi-region table and the rest-of-world region. The 83 Tier 3 countries are not separate parts of that table, so supply chains can't be traced to them one by one.
+`L` follows supply chains through the 66 countries in the multi-region table. The 83 Tier 3 countries are not separate parts of that table, so supply chains can't be traced to them one by one.
 
 | Question | Can the model answer it? |
 |---|---|
@@ -134,36 +129,31 @@ The tiers here are rounds of suppliers in a supply chain. They are not the same 
 - **Assumption:** An industry uses the same input recipe for everything it makes, its primary product and any secondary products alike. This is what lets the market shares (`V` ÷ `q`) turn industry recipes into commodity recipes.
 - **Why we make it:** It is the standard assumption for building commodity-by-commodity tables from Supply and Use tables, and unlike the alternative (commodity technology) it never produces negative requirements.
 - **How it affects results:** A secondary product takes on its producer's recipe. Using U.S. tables after {term}`redefinitions <Redefinitions>` keeps secondary products, and so this effect, small.
-- **Alternatives or sensitivity tested:** *To be written.*
 
 **Import proportionality**
 
 - **Assumption:** Within a country, every buyer of a product gets the same mix of origins. If a country imports 30% of its steel from Korea, every industry that buys imported steel gets 30% of it from Korea.
 - **Why we make it:** Trade data record which countries trade each product, but not which industry buys the imports.
 - **How it affects results:** An industry that in reality buys mostly from one origin gets the national average mix instead. Where origins differ a lot in emission intensity, this can move that industry's factors.
-- **Alternatives or sensitivity tested:** *To be written.*
 
 **The rest of the world looks like four proxy economies**
 
 - **Assumption:** The rest-of-world region stands in for every country outside the multi-region table, including all Tier 3 countries, as a source of imports. Its input recipe and emission intensities are pooled from Colombia, Mexico, Türkiye, and Chile. It buys nothing from other regions, so a supply chain that reaches it stays there.
 - **Why we make it:** Countries outside the table have no linked IO tables of their own, and these four are the lower-income OECD economies in the table.
 - **How it affects results:** Imports from Tier 3 countries carry the proxy economies' emission intensities rather than their own. Supply chains can't be traced to individual Tier 3 countries, or onward from the rest of the world to other regions.
-- **Alternatives or sensitivity tested:** *To be written.*
+
 
 **Shares still apply when data years differ**
 
 - **Assumption:** The IO tables, trade shares, and gap-fill shares come from different years (for example, 2024 trade data with IO tables from 2018 to 2023). We assume the input recipes and origin shares from each source's data year still describe the 2024 economy.
 - **Why we make it:** National tables, multi-regional databases, and trade data are published on different schedules, and we use the most recent of each.
 - **How it affects results:** Where an economy's structure or trading partners changed between the data year and 2024, the model reflects the earlier pattern. The years used for each country are listed in [](../reference/methods-by-country.md).
-- **Alternatives or sensitivity tested:** *To be written.*
 :::
 
 
 ## Learn more
 
-- **From the field:** Supply, Use, and IO tables in national accounts [@unitednationsHandbookSupplyUse2018]; the standard textbook on IO analysis [@millerInputoutputAnalysisFoundations2022]; how the U.S. IO accounts are built [@beaConceptsMethodsUS2009]
-- **Cornerstone papers:** [Methodology for Cornerstone U.S. Model](https://github.com/cornerstone-data/papers/blob/published/us-methods/us-methods.md) (working paper; describes v0.2, update pending)
-- **Code:** *to be added*
+- **From the field:** Supply, Use, and IO tables in national accounts [@unitednationsHandbookSupplyUse2018]; the standard textbook on IO analysis [@millerInputoutputAnalysisFoundations2022]; how BEA builds the U.S. IO accounts [@beaConceptsMethodsUS2009]
 
 +++
 
