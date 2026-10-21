@@ -95,7 +95,7 @@ The charts compare the new factors with each model they replace.
 A company’s change depends on which sectors and countries its spend falls in. A small median can hide large moves in individual sectors, in both directions.
 :::
 
-For a more detailed change log against the USEEIO or CEDA, please refer to Change Log vs. USEEIO and Change Log vs. CEDA.
+For a more detailed change log against the USEEIO or CEDA, please refer to [](changelog-useeio.md) and [](changelog-ceda.md).
 
 ## Give feedback
 

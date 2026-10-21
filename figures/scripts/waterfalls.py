@@ -72,15 +72,12 @@ def draw(name, c):
         ax.text(x, y + span * 0.012, t, ha="center", va="bottom", color=INK, fontsize=11, fontweight="medium")
     ax.set_xticks(list(xs)); ax.set_xticklabels(labels, fontsize=9, color=INK)
     ax.set_ylim(*c["ylim"]); ax.set_ylabel(c["ylabel"], color=MUTED)
-    ax.set_title(c["title"], loc="left", fontsize=12.5, color=INK, pad=14)
     ax.tick_params(axis="y", colors=MUTED, length=0); ax.tick_params(axis="x", length=0)
     ax.grid(axis="y", color="#E8E6DF", lw=0.8, zorder=0)
     for s in ("top", "right", "left"):
         ax.spines[s].set_visible(False)
     ax.spines["bottom"].set_color("#B4B2A9")
-    fig.text(0.012, 0.01, f"Axis starts at {c['ylim'][0]:.2f}. Increases in coral, decreases in teal.",
-             color=MUTED, fontsize=9)
-    fig.tight_layout(rect=(0, 0.03, 1, 1))
+    fig.tight_layout()
     for ext in ("png", "svg"):
         fig.savefig(OUT / f"{name}.{ext}", facecolor="white")
     plt.close(fig)
