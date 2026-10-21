@@ -9,13 +9,14 @@ background, no title and no source line on the image (those live in the figure c
   battery type is read off the slide graphic, so it is approximate.
 - rc-germany-power.png: Germany's power factor, share of the change from a cleaner grid vs prices.
 - rc-us-parts-imports.png: estimated origin of the components of a US-assembled light truck, as one
-  stacked bar. Domestic share (US and Canada) = 47%, the unweighted mean of the NHTSA AALA parts
-  content for 87 US-assembled light trucks, model year 2025 (as compiled on Wikipedia,
-  "List of automobiles manufactured in the United States"; ranges taken at their midpoint). The
-  remaining 53% is split by origin using the 2024 mix of US auto parts imports (International Trade
-  Administration data as reported by MNI, March 2025) with Canada removed and the rest rescaled. The
-  mix covers parts for all vehicle types, Europe and ASEAN are combined regions in the source, and
-  "Other" is the remainder; so the split is indicative, not a measurement for this sector.
+  stacked bar. US + Canada together = 47%, the unweighted mean of the NHTSA AALA parts content for 87
+  US-assembled light trucks, model year 2025 (as compiled on Wikipedia, "List of automobiles
+  manufactured in the United States"; ranges at their midpoint). The AALA data does not separate the
+  US from Canada, so Canada is estimated: it supplies 10% of US auto parts imports (International Trade
+  Administration data as reported by MNI, March 2025), so with total imports I (incl. Canada),
+  Canada = 0.10 * I and the rest of the world = 0.90 * I = 53%, giving I = 58.9%, Canada = 5.9% and
+  the US = 47% - 5.9% = 41.1%. The other origins use the same 2024 import mix (parts for all vehicle
+  types; Europe and ASEAN are combined regions in the source; Other is the remainder). Indicative only.
 
 Run from the repo root (needs matplotlib):
     uv run --with matplotlib python figures/scripts/rc_figures.py
@@ -116,44 +117,57 @@ def germany():
 
 
 def parts_origin():
-    domestic = 47.0                       # US and Canadian content, mean of 87 light trucks (AALA, MY2025)
-    imports = 100 - domestic
-    mix = [("Mexico", 41.0), ("Europe (combined)", 11.9), ("China", 9.3), ("Japan", 8.0),
+    us_canada = 47.0                       # US and Canadian content, mean of 87 light trucks (AALA, MY2025)
+    mix = [("Mexico", 41.0), ("Europe (combined)", 11.9), ("Canada", 10.0), ("China", 9.3), ("Japan", 8.0),
            ("ASEAN (combined)", 7.0), ("South Korea", 6.4)]
-    mix.append(("Other", 100 - 10.0 - sum(v for _, v in mix)))   # 10.0 = Canada, removed below
-    total = sum(v for _, v in mix)         # 90.0: shares of parts imports excluding Canada
-    raw = [(n, imports * v / total) for n, v in mix]
-    # round to whole percentages that sum to 100 (largest remainder)
-    parts = [("Domestic components\n(US and Canada)", domestic)] + raw
+    mix.append(("Other", 100 - sum(v for _, v in mix)))            # remainder of parts imports (6.4%)
+    canada_share = dict(mix)["Canada"] / 100
+    rest_of_world = 100 * (1 - canada_share) * 0 + sum(v for n, v in mix if n != "Canada")  # 90.0
+    imports_total = (100 - us_canada) / (rest_of_world / 100)     # imports incl. Canada, as % of components
+    raw = [(n, imports_total * v / 100) for n, v in mix]          # each origin's share of components
+    us = us_canada - dict(raw)["Canada"]
+    parts = [("Made in the US", us)] + raw
     floors = [int(v) for _, v in parts]
     order = sorted(range(len(parts)), key=lambda i: parts[i][1] - floors[i], reverse=True)
     for i in order[: 100 - sum(floors)]:
         floors[i] += 1
-    colours = ["#5F5E5A", "#0F6E56", "#378ADD", "#D85A30", "#BA7517", "#7F77DD", "#D4537E", "#B4B2A9"]
-    dark_text = {7}
+    # draw order: US first, then imports by size
+    idx = [0] + sorted(range(1, len(parts)), key=lambda i: (-floors[i], i))
+    parts = [parts[i] for i in idx]; floors = [floors[i] for i in idx]
+    palette = {"Made in the US": "#5F5E5A", "Mexico": "#0F6E56", "Canada": "#5DCAA5", "Europe (combined)": "#378ADD",
+               "China": "#D85A30", "Japan": "#BA7517", "ASEAN (combined)": "#7F77DD", "South Korea": "#D4537E",
+               "Other": "#B4B2A9"}
+    dark_text = {"Canada", "Other"}
     fig, ax = plt.subplots(figsize=(9.5, 3.1), dpi=200)
     left = 0
     handles = []
-    for i, ((name, _), pct) in enumerate(zip(parts, floors)):
-        ax.barh(0, pct, left=left, color=colours[i], height=0.55, edgecolor="white", linewidth=1.2)
+    for (name, _), pct in zip(parts, floors):
+        ax.barh(0, pct, left=left, color=palette[name], height=0.55, edgecolor="white", linewidth=1.2)
         ax.text(left + pct / 2, 0, f"{pct}%", ha="center", va="center", fontsize=10.5, fontweight="medium",
-                color=INK if i in dark_text else "white")
-        handles.append(plt.Rectangle((0, 0), 1, 1, color=colours[i]))
+                color=INK if name in dark_text else "white")
+        handles.append(plt.Rectangle((0, 0), 1, 1, color=palette[name]))
         left += pct
     d = floors[0]
-    for x0, x1, label in ((0, d, "Made in the US and Canada"), (d, 100, "Imported from the rest of the world")):
+    for x0, x1, label in ((0, d, "Made in the US"), (d, 100, "Imported")):
         ax.plot([x0 + 0.4, x1 - 0.4], [0.5, 0.5], color="#888780", lw=1)
         ax.text((x0 + x1) / 2, 0.58, label, ha="center", va="bottom", color=INK, fontsize=10.5)
     ax.set_xlim(0, 100); ax.set_ylim(-0.45, 0.95); ax.axis("off")
-    labels = [n.replace("\n", " ") for n, _ in parts]
-    row_major = [0, 4, 1, 5, 2, 6, 3, 7]      # matplotlib fills legend columns first; this reads in bar order
-    handles, labels = [handles[i] for i in row_major], [labels[i] for i in row_major]
-    ax.legend(handles, labels, loc="upper center", bbox_to_anchor=(0.5, -0.02), ncol=4, frameon=False,
-              fontsize=9.5, labelcolor=INK, columnspacing=1.6, handlelength=1.1, handleheight=1.0)
+    labels = [n for n, _ in parts]
+    n = len(labels); rows = (n + 4) // 5
+    cols = (n + rows - 1) // rows
+    order_rm = [r + c * rows for r in range(rows) for c in range(cols) if r + c * rows < n]
+    pad = [i for i in range(n) if i not in order_rm]
+    # matplotlib fills legend columns first; reorder so it reads in bar order across rows
+    grid = [[None] * cols for _ in range(rows)]
+    for k in range(n):
+        grid[k // cols][k % cols] = k
+    seq = [grid[r][c] for c in range(cols) for r in range(rows) if grid[r][c] is not None]
+    ax.legend([handles[i] for i in seq], [labels[i] for i in seq], loc="upper center", bbox_to_anchor=(0.5, -0.02),
+              ncol=cols, frameon=False, fontsize=9.5, labelcolor=INK, columnspacing=1.6, handlelength=1.1, handleheight=1.0)
     fig.tight_layout()
     fig.savefig(OUT / "rc-us-parts-imports.png", facecolor="white")
     plt.close(fig)
-    print("light-truck component origin (%):", dict(zip([n.replace("\n", " ") for n, _ in parts], floors)), "sum", sum(floors))
+    print("light-truck component origin (%):", dict(zip(labels, floors)), "sum", sum(floors), "| imports incl. Canada:", round(imports_total, 1))
 
 
 comparison(); china(); germany(); parts_origin()
