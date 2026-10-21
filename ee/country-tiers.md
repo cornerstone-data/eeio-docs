@@ -161,12 +161,6 @@ Emissions stay at their data year. For the data year of each country's IO table,
 See [Validation](#validation-hub).
 :::
 
-## Learn more
-
-- **From the field:** *to be added*
-- **Cornerstone papers:** *to be added*
-- **Code:** *to be added*
-
 +++
 
 :::{div}

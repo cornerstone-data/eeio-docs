@@ -88,12 +88,6 @@ Every country's emissions go through the same steps:
 See [Validation](#validation-hub).
 :::
 
-## Learn more
-
-- **From the field:** *to be added*
-- **Cornerstone papers:** *to be added*
-- **Code:** *to be added*
-
 +++
 
 :::{div}
