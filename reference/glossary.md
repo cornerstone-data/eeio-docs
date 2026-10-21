@@ -17,14 +17,23 @@ Basic price
 BACI
 : The CEPII database of bilateral international trade by product, used to split each country's imports by country of origin.
 
+CEDS
+: Community Emissions Data System. A global inventory of emissions by country and detailed activity, used to refine the split of emissions between energy industries and for China's CH₄ and N₂O.
+
 Country tier
 : A group of countries modeled with the same level of detail and the same kinds of data sources: Tier 0, detailed annual IO tables (the United States); Tier 1, detailed periodic national IO tables; Tier 2, coarse multi-regional tables from FIGARO or ICIO; and Tier 3, no IO tables (a template built from other countries).
+
+EDGAR
+: Emissions Database for Global Atmospheric Research, from the European Commission's Joint Research Centre. Global emissions by country and activity; the basis of FIGARO emissions for its non-European countries.
 
 EEIO
 : Environmentally-extended input-output model. An input-output model of an economy with environmental data (here, greenhouse gas emissions) attached to each sector.
 
 FIGARO
 : Full International and Global Accounts for Research in input-Output analysis. Multi-regional IO tables from Eurostat and the European Commission's Joint Research Centre, used for many Tier 2 countries.
+
+GHGRP
+: EPA's Greenhouse Gas Reporting Program, under which large U.S. facilities report their emissions each year.
 
 GWP
 : Global warming potential. The warming effect of 1 kg of a gas relative to 1 kg of CO₂ over a time horizon. The model uses AR6 values with a 100-year horizon.
@@ -53,8 +62,14 @@ RAS
 Redefinitions
 : Adjustments that move secondary products (and their inputs) to the industry where they are the primary product.
 
+Residence basis
+: Emissions accounting that counts emissions by a country's resident businesses and households wherever they occur, matching the boundary of national accounts and IO tables.
+
 Structural reflection
 : Using a detailed table's structure (here, the U.S. tables) as weights to split a coarser table into finer sectors.
+
+Territorial basis
+: Emissions accounting that counts emissions occurring within a country's borders, as national GHG inventories do.
 :::
 
 +++

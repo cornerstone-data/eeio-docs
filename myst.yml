@@ -35,7 +35,7 @@ project:
     - title: The GHG extension
       children:
         - file: ee/index.md
-        - file: ee/data-sources.md
+        - file: ee/country-tiers.md
     - title: Emission factors
       children:
         - file: factors/whats-in-a-release.md
