@@ -82,7 +82,7 @@ Every country's emissions go through the same steps:
 :::
 
 :::{seealso} Checks we run
-- Splitting and mapping keep each country's source totals, so its total emissions in the model match its source data.
+- Splitting and allocation keep each country's source totals, so its total emissions in the model match its source data.
 - U.S. totals by gas match the national inventory.
 
 See [Validation](#validation-hub).
