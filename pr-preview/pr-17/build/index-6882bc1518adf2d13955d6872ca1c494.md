@@ -39,7 +39,7 @@ The two tables balance. For each commodity, total supply equals total use. For e
 
 :::{figure} ../figures/diagrams/io-domestic-imported.svg
 :label: fig-domestic-imported
-:alt: The Use table equals a domestic use table plus an imported use table. Domestic use has Udom for industries and ydom plus exports for final demand, which together form y_nab. Imported use has Uimp for industries and yimp for final demand.
+:alt: The Use table equals a domestic use table plus an imported use table. Domestic use has Udom for industries and ydom plus exports for final demand, which together form ynab (y for national accounting balance). Imported use has Uimp for industries and yimp for final demand.
 The Use table is split into domestic and imported use, for industries and final users alike.
 :::
 
@@ -70,13 +70,13 @@ For more details on the math behind it, [email team @ cornerstonedata.org](mailt
 
 Tables that are already symmetric, with the same sectors on rows and columns, skip step 2: their domestic and imported use are divided by output directly. This applies to the Tier 1 and Tier 2 tables.
 
-## Final demand and output (`y_nab`)
+## Final demand for the national accounting balance
 
-Final demand in the Use table includes purchases of imports. To match domestic production, we need final demand for *domestic* products only. We call this `y_nab`, the final demand for the national accounting balance: domestic final demand for domestic products (`ydom`) plus exports.
+Final demand in the Use table includes purchases of imports. To match domestic production, we need final demand for *domestic* products only. We call this `ynab`, the final demand for the national accounting balance: domestic final demand for domestic products (`ydom`) plus exports.
 
-Here `ydom` is what households, government, and investment buy from domestic producers, and `yimp` is what they buy from abroad. Imports not bought by industries go to final users, so `yimp` is total imports less the row sums of `Uimp`. Exports are the country's own production, so they count toward `y_nab` in full.
+Here `ydom` is what households, government, and investment buy from domestic producers, and `yimp` is what they buy from abroad. Imports not bought by industries go to final users, so `yimp` is total imports less the row sums of `Uimp`. Exports are the country's own production, so they count toward `ynab` in full.
 
-With `y_nab`, the model reproduces the country's commodity output: running `y_nab` through the domestic supply chain (the Leontief inverse of `Adom`) gives back `q`. This is a check that the tables, `Adom`, and `y_nab` are consistent.
+With `ynab`, the model reproduces the country's commodity output: running `ynab` through the domestic supply chain (the Leontief inverse of `Adom`) gives back `q`. This is a check that the tables, `Adom`, and `ynab` are consistent.
 
 ## From single-country tables to the multi-region model
 
