@@ -27,16 +27,16 @@ Characterization factors (`C`) then weight each gas by its global warming potent
 
 `B` has a row for each of seven gases or gas groups: carbon dioxide (CO₂), methane (CH₄), nitrous oxide (N₂O), hydrofluorocarbons (HFCs), perfluorocarbons (PFCs), sulfur hexafluoride (SF₆), and nitrogen trifluoride (NF₃).
 
-They are combined into CO₂-equivalent with 100-year {term}`GWPs <GWP>` from the IPCC's Sixth Assessment Report (AR6). Methane is valued two ways: fossil methane, from fuel production and use, at 29.8, and non-fossil methane, from farming and waste, at 27.0. Fossil methane is valued higher because, once it breaks down, it leaves CO₂ that was not already in the atmosphere.
+They are combined into CO₂-equivalent with 100-year {term}`GWPs <GWP>` from the IPCC's Sixth Assessment Report (AR6) [@forsterEarthsEnergyBudget2021]. Methane is valued two ways: fossil methane, from fuel production and use, at 29.8, and non-fossil methane, from farming and waste, at 27.0. Fossil methane is valued higher because, once it breaks down, it leaves CO₂ that was not already in the atmosphere.
 
-Several sources report emissions as CO₂-equivalent using older GWPs from the Fifth Assessment Report (AR5). These are converted to AR6, gas by gas.
+Several sources report emissions as CO₂-equivalent using older GWPs from the Fifth Assessment Report (AR5) [@myhreAnthropogenicNaturalRadiative2013]. These are converted to AR6, gas by gas.
 
 ## What is and isn't counted
 
 `B` covers emissions from producing goods and services. Some emissions in national inventories do not come from a producing sector, and they are left out:
 
 - **Household direct emissions.** Fuel burned in homes and in personal vehicles is emitted by households, not by an industry, so it is not in `B`.
-- **Land use, land-use change, and forestry (LULUCF).** National inventories, following IPCC guidelines, report farming and LULUCF as separate sectors. Farming emissions are counted, in the farm sectors: methane from livestock and rice, N₂O from agricultural soils, CO₂ from liming and urea, and methane and N₂O from burning crop residues in the field. The LULUCF sector is not counted. This leaves out changes in the carbon stored in forests, soils, and other land, including CO₂ removed from the atmosphere, along with emissions from flooded lands and from forest and grassland fires.
+- **Land use, land-use change, and forestry (LULUCF).** National inventories, following IPCC guidelines [@egglestonIPCCGuidelinesNational2006], report farming and LULUCF as separate sectors. Farming emissions are counted, in the farm sectors: methane from livestock and rice, N₂O from agricultural soils, CO₂ from liming and urea, and methane and N₂O from burning crop residues in the field. The LULUCF sector is not counted. This leaves out changes in the carbon stored in forests, soils, and other land, including CO₂ removed from the atmosphere, along with emissions from flooded lands and from forest and grassland fires.
 
 ## Accounting basis
 
