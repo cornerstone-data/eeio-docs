@@ -3,7 +3,7 @@ title: "The IO model: overview"
 ---
 
 :::{tip} Summary
-Cornerstone uses standardized national input-output tables to represent production recipes and it links them with trade data, thus representing domestic and international supply chains.
+Cornerstone uses standardized national input-output tables to represent production recipes and link them with global trade data, thus representing domestic and international supply chains.
 :::
 
 ## Preparing the IO tables
