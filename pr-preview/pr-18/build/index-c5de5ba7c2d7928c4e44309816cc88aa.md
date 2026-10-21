@@ -52,7 +52,7 @@ Every country's emissions go through the same steps:
 
 1. **Start from source emissions by source sector.** Each source reports emissions on its own sector list, which can be anything from hundreds of activities (the U.S. inventory) to 50 industries (ICIO).
 2. **Split broad sectors where better data exist.** Some sources lump together sectors with very different emissions, such as electricity, gas, and heat, or all of farming. Where other data can separate them, the broad sector is split first, keeping its total.
-3. **Spread onto the common sectors.** Each source sector's emissions are spread over the matching common sectors with {term}`ABSR`, weighted by U.S. emission intensities. The country's total for each source sector is kept.
+3. **Allocate to the common sectors.** For non-Tier 0 countries, each source sector's emissions are allocated to the matching common sectors with {term}`ABSR`, weighted by U.S. emission intensities. The country's total for each source sector is kept.
 4. **Fill in missing gas detail.** Where a source does not separate every gas, the missing split is taken from the U.S. mix for the same sector.
 5. **Convert to AR6** where the source used other GWPs.
 6. **Divide by output.** Emissions for each sector are divided by the same sector's output in the IO model, giving `B`.
