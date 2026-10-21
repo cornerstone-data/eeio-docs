@@ -3,7 +3,7 @@ title: "Update cadence, version 2 (draft, not published)"
 ---
 
 :::{note} Draft
-Option 2 for the update-cadence section of [](../factors/whats-in-a-release.md): a version lifecycle, with a new methodology version about every two years. Not published; this folder is excluded in `myst.yml`.
+Option 2 for the update-cadence section of [](../factors/whats-in-a-release.md), to follow the shared opening paragraph on annual releases: a version lifecycle, with a new methodology version about every two years. Not published; this folder is excluded in `myst.yml`.
 :::
 
 The Cornerstone EEIO follows a version lifecycle, similar to the long-term support model used in software. About every two years, we release a new version with a large methodology update, named after its release year (for example, the 2026 methods and the 2028 methods).

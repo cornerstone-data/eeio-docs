@@ -3,10 +3,8 @@ title: "Update cadence, version 1 (draft, not published)"
 ---
 
 :::{note} Draft
-Option 1 for the update-cadence section of [](../factors/whats-in-a-release.md): two parallel versions, with five-year stable methods and a new time series at each major update. Not published; this folder is excluded in `myst.yml`.
+Option 1 for the update-cadence section of [](../factors/whats-in-a-release.md), to follow the shared opening paragraph on annual releases: two parallel versions, with five-year stable methods and a new time series at each major update. Not published; this folder is excluded in `myst.yml`.
 :::
-
-The Cornerstone EEIO follows an annual update cycle. Every year we release a version named after the release year, so Cornerstone 2027 will be released in 2027. Releases are publicly available every October so companies can plan accordingly. Each release builds on one time series of emission factors: Cornerstone EEIO 2026 publishes the 2017 to 2026 series, and Cornerstone EEIO 2027 only adds the 2027 emission factors to it, so results stay continuous from one year to the next.
 
 The Cornerstone EEIO is developed in two parallel versions, each with its own release cycle (see {numref}`release-cycle`).
 
