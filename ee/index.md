@@ -6,9 +6,10 @@ title: "The GHG extension: overview"
 The GHG extension attaches each sector's own greenhouse gas emissions to the IO model, as emissions of each gas per dollar of output (`B`). Every country follows the same steps, but the emissions data behind them, and how much detail they carry, depend on the country's tier.
 :::
 
-:::{note} Draft
-:class: dropdown
-**Key visual to add:** pipeline from source emissions → split and map to the common sectors → convert to AR6 → divide by output → `B`.
+:::{figure} ../figures/diagrams/ghg-pipeline.svg
+:label: fig-ghg-pipeline
+:alt: Seven boxes in a row joined by arrows. 1, source emissions by source sector, from a national inventory, national accounts, FIGARO, or ICIO. 2, split broad sectors, such as electricity, gas, and heat, or farming. 3, spread onto the 405 common sectors with ABSR, weighted by U.S. intensities. 4, fill in gas detail from the U.S. mix for the sector. 5, convert sources reported as AR5 CO2e to AR6, gas by gas. 6, divide by the same sector's output q in the IO model. The result is B, kilograms of each gas per dollar, for 7 gases and 405 sectors in each country. A dashed line shows the U.S. skipping steps 2 to 4, because it is already on the 405 common sectors with all 7 gases. A bracket under steps 2 to 4 notes that each country's source totals are kept through them.
+From source emissions to direct emission intensities (`B`). Every country follows the same steps; the U.S. starts on the common sectors and skips steps 2 to 4.
 :::
 
 ## What the extension adds
@@ -20,7 +21,7 @@ The IO model traces the dollars that flow through supply chains. The GHG extensi
 
 `B` holds direct emissions only: what the sector emits from its own fuel use, processes, and other activities. Emissions from the sector's suppliers come in through the supply chain ([`L`](../io/index.md#total-requirements)), not through `B`. For example, the emissions from generating electricity stay with the power sector, and other sectors' purchased electricity reaches them through `L`.
 
-Characterization factors (`C`) then weight each gas by its global warming potential, which gives the direct emission factors `D = C × B` and the total emission factors `N = C × B × L` (see [](../reference/notation.md)).
+Characterization factors (`C`) then weight each gas by its global warming potential, which gives the direct emission factors `D = C × B` (see [](../reference/notation.md)).
 
 ## Gases and global warming potentials
 
@@ -57,7 +58,7 @@ Every country's emissions go through the same steps:
 5. **Convert to AR6** where the source used other GWPs.
 6. **Divide by output.** Emissions for each sector are divided by the same sector's output in the IO model, giving `B`. Emissions data years differ by country; see [](country-tiers.md#ghg-data-years).
 
-The U.S. model is built directly on the 405 common sectors, so steps 3 and 4 do not apply. [](country-tiers.md) gives the sources and the variations for each tier.
+The U.S. model is built directly on the 405 common sectors with all seven gases, so steps 2 to 4 do not apply ([](#fig-ghg-pipeline)). [](country-tiers.md) gives the sources and the variations for each tier.
 
 :::{important} Key assumptions
 :class: dropdown
