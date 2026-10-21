@@ -57,7 +57,7 @@ The data dictionary and five other tabs support the data tabs. The data dictiona
 
 ## Update cadence
 
-The Cornerstone EEIO follows an annual update cycle. Every year we release a version named after the release year, so Cornerstone 2027 will be released in 2027. Releases are publicly available every October so companies can plan accordingly. Each release builds on one time series of emission factors: Cornerstone EEIO 2026 publishes the 2017 to 2026 series, and Cornerstone EEIO 2027 only adds the 2027 emission factors to it, so results stay continuous from one year to the next.
+The Cornerstone EEIO follows an annual update cycle. Every year we release a version named after the release year, so Cornerstone 2027 will be released in 2027. Releases are publicly available every October so companies can plan accordingly. Each release builds on one time series of emission factors. For example, Cornerstone EEIO 2026 publishes the 2017 to 2026 series, and Cornerstone EEIO 2027 adds only the 2027 emission factors to it. This keeps results continuous from one year to the next.
 
 ## Learn more
 
