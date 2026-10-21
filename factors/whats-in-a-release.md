@@ -55,26 +55,6 @@ The data dictionary and five other tabs support the data tabs. The data dictiona
 | GoodsServices | The 405 sectors with their code, name and description. Cornerstone recommends using this description to map spend categories to emission factors. |
 | Locations | Every location code and name used in the model: countries by their three-letter code, and regions. |
 
-## Update cadence
-
-The Cornerstone EEIO follows an annual update cycle. Every year we release a version named after the release year, so Cornerstone 2027 will be released in 2027. Releases are publicly available every October so companies can plan accordingly.
-
-The Cornerstone EEIO combines USEEIO and CEDA, and it is developed in two parallel versions, each with its own release cycle (see {numref}`release-cycle`).
-
-**Research version.** This version is updated continuously and has many releases. It is where new science is developed and tested.
-
-**Corporate version.** This version is released every October with data updates, bug fixes and small improvements. Its methods stay stable for five years, so companies can make plans, set targets and measure progress against a consistent model.
-
-**Major updates.** Every five years, a major update brings the science proven in the research version into the corporate version and starts a new five-year period of stable methods. The first period covers 2026 to 2030, and the next major update is in 2031.
-
-:::{figure} ../figures/diagrams/release-cycle.svg
-:label: release-cycle
-:alt: USEEIO and CEDA merge into the Cornerstone EEIO, which follows a research version updated continuously with many releases, and a corporate version released every October with methods stable for five years and a major update every five years.
-:width: 100%
-
-USEEIO and CEDA merge into the Cornerstone EEIO, which follows two parallel versions. The research version is updated continuously, with many releases. The corporate version is released every October with data updates, bug fixes and small improvements, and keeps its methods stable for five years. Every five years, a major update brings proven science from the research version into the corporate version.
-:::
-
 ## Learn more
 
 - **From the field:** *to be added*

@@ -6,12 +6,12 @@ Hand-drawn schematic (no data source). Run from the repo root:
 from pathlib import Path
 
 OUT = Path(__file__).resolve().parents[1] / "diagrams" / "release-cycle.svg"
-W, H = 680, 376
+W, H = 680, 404
 
 INK, MUTED, LINE = "#2C2C2A", "#5F5E5A", "#888780"
 PURPLE = dict(fill="#EEEDFE", stroke="#534AB7", ink="#3C3489", line="#7F77DD", tint="#F6F5FF")
 TEAL = dict(fill="#E1F5EE", stroke="#0F6E56", ink="#085041", tint="#F2FAF6")
-CORAL = dict(fill="#FAECE7", stroke="#993C1D", line="#D85A30")
+CORAL = dict(fill="#FAECE7", stroke="#993C1D", line="#D85A30", ink="#712B13")
 GRAY = dict(fill="#F1EFE8", stroke="#5F5E5A")
 
 els = []
@@ -42,55 +42,58 @@ def down_arrow(x, y1, y2, color=LINE):
 
 
 # predecessors merge into Cornerstone EEIO
-rect(40, 80, 84, 40, GRAY["fill"], GRAY["stroke"]); text(82, 100, "USEEIO", "th", "middle")
-rect(40, 204, 84, 40, GRAY["fill"], GRAY["stroke"]); text(82, 224, "CEDA", "th", "middle")
-right_arrow(124, 146, 100); right_arrow(124, 146, 224)
-rect(148, 24, 98, 282, "#FFFFFF", LINE)
-text(197, 156, "Cornerstone", "th", "middle"); text(197, 174, "EEIO", "th", "middle")
+rect(40, 84, 62, 40, GRAY["fill"], GRAY["stroke"]); text(71, 104, "USEEIO", "th", "middle")
+rect(40, 214, 62, 40, GRAY["fill"], GRAY["stroke"]); text(71, 234, "CEDA", "th", "middle")
+right_arrow(102, 118, 104); right_arrow(102, 118, 234)
+rect(120, 24, 98, 290, "#FFFFFF", LINE)
+text(169, 160, "Cornerstone", "th", "middle"); text(169, 178, "EEIO", "th", "middle")
 
 # lane 1: research version
-LX, LW = 264, 376
+LX, LW = 238, 402
 rect(LX, 24, LW, 88, PURPLE["tint"], PURPLE["stroke"], rx=10)
 text(LX + 14, 44, "Research version", "th", fill=PURPLE["ink"])
 text(LX + LW - 14, 44, "Tests new science", "ts", "end", fill=PURPLE["stroke"])
 text(LX + 14, 62, "Continuously updated, with many releases", "ts", fill=PURPLE["stroke"])
 add(f'<line x1="{LX + 14}" y1="92" x2="{LX + LW - 14}" y2="92" stroke="{PURPLE["line"]}" stroke-width="2"/>')
-for cx in (284, 310, 336, 362, 382, 436, 462, 488, 512, 556, 582, 604, 620):
+for cx in (262, 284, 306, 328, 350, 384, 440, 462, 486, 520, 570, 592, 614):
     dot(cx, 92, 6, PURPLE)
-right_arrow(248, 262, 68, PURPLE["line"])
+right_arrow(222, 236, 68, PURPLE["line"])
 
 # lane 2: corporate version
-rect(LX, 158, LW, 148, TEAL["tint"], TEAL["stroke"], rx=10)
+rect(LX, 158, LW, 156, TEAL["tint"], TEAL["stroke"], rx=10)
 text(LX + 14, 178, "Corporate version", "th", fill=TEAL["ink"])
 text(LX + LW - 14, 178, "For targets and reporting", "ts", "end", fill=TEAL["stroke"])
 text(LX + 14, 196, "One release every October, stable methods", "ts", fill=TEAL["stroke"])
-right_arrow(248, 262, 229, TEAL["stroke"])
-bands = [(272, "2026"), (396, "2031"), (520, "2036")]
+right_arrow(222, 236, 234, TEAL["stroke"])
+bands = [(246, "2026"), (378, "2031"), (510, "2036")]
 for x0, yr in bands:
-    rect(x0, 208, 114, 88, "#FFFFFF", LINE)
-    text(x0 + 57, 224, f"{yr} methods", "th", "middle")
-    text(x0 + 57, 241, "Stable 5 years", "ts", "middle")
-    for k in range(5):
-        cx = x0 + 22 + 17.5 * k
-        dot(cx, 262, 8, CORAL) if k == 0 else dot(cx, 262, 5.5, TEAL)
-    text(x0 + 22, 283, yr, "ts", "middle")
-    text(x0 + 92, 283, str(int(yr) + 4), "ts", "middle")
+    rect(x0, 208, 124, 96, "#FFFFFF", LINE)
+    text(x0 + 62, 224, f"{yr} methods", "th", "middle")
+    text(x0 + 62, 241, "Stable 5 years", "ts", "middle")
+    # time series bar: one wide block (new series) then one small block per annual release
+    rect(x0 + 6, 256, 66, 22, CORAL["fill"], CORAL["stroke"], rx=3)
+    if yr == "2026":  # later series coverage is not decided yet, so those blocks stay blank
+        text(x0 + 39, 267, "2017–2026", "ts", "middle", fill=CORAL["ink"])
+    for k in range(4):
+        rect(x0 + 76 + 11 * k, 256, 8, 22, TEAL["fill"], TEAL["stroke"], rx=2)
+    text(x0 + 39, 292, yr, "ts", "middle")
+    text(x0 + 118, 292, str(int(yr) + 4), "ts", "end")
 
-# proven science: research into the major updates
-for x0 in (396, 520):
-    down_arrow(x0 + 14, 116, 154, CORAL["line"])
-    text(x0 + 24, 135, "Proven science", "ts")
+# proven science: research into the major updates (arrows point at the new-series blocks)
+for x0 in (378, 510):
+    down_arrow(x0 + 39, 116, 154, CORAL["line"])
+    text(x0 + 47, 135, "Proven science", "ts")
 
-text(340, 328, "Each October release: data updates, bug fixes and small improvements", "ts", "middle")
+text(340, 336, "Each October release: data updates, bug fixes and small improvements", "ts", "middle")
 
 # legend
-dot(46, 356, 6, PURPLE); text(58, 356, "Research release", "ts")
-dot(196, 356, 5.5, TEAL); text(208, 356, "Annual release", "ts")
-dot(332, 356, 8, CORAL); text(346, 356, "Major update, every 5 years", "ts")
+dot(46, 362, 6, PURPLE); text(58, 362, "Research release", "ts")
+rect(190, 357, 10, 10, TEAL["fill"], TEAL["stroke"], rx=2); text(208, 362, "Annual release: adds that year to the time series", "ts")
+rect(40, 377, 16, 10, CORAL["fill"], CORAL["stroke"], rx=2); text(64, 382, "Major update, every 5 years: starts a new time series", "ts")
 
 svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img">
 <title>USEEIO and CEDA merge into Cornerstone EEIO, which follows a research version and a corporate version from 2026 to 2040</title>
-<desc>USEEIO and CEDA merge into the Cornerstone EEIO. The research version is updated continuously with many releases. The corporate version is released every October and keeps its methodology stable for five years. Every five years a major update brings proven science from the research version into a new set of methods.</desc>
+<desc>USEEIO and CEDA merge into the Cornerstone EEIO. The research version is updated continuously with many releases. The corporate version is released every October and keeps its methodology stable for five years. A major update every five years brings proven science from the research version into a new time series, and each annual release adds one year to the existing series.</desc>
 <style>
 text{{font-family:Helvetica,Arial,sans-serif}}
 .t{{font-size:14px;fill:{INK}}} .th{{font-size:14px;font-weight:500;fill:{INK}}} .ts{{font-size:12px;fill:{MUTED}}}

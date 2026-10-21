@@ -13,6 +13,7 @@ project:
     - README.md
     - CONTRIBUTING.md
     - _parts/**
+    - drafts/**
   exports:
     - id: guide-pdf
       format: typst
