@@ -68,9 +68,9 @@ Emissions data are published on different schedules, and the model uses the most
 | 2024 | United States |
 | 2023 | China, United Kingdom, FIGARO countries (Tier 2) |
 | 2020 | Japan, ICIO countries (Tier 2) |
-| 2018 | South Korea |
+| 2018 | South Korea, Tier 3 countries |
 
-Emissions stay at their data year. Output, the denominator of `B`, is re-priced to 2024 dollars, so each country's `B` is its data-year emissions per 2024 dollar.
+Emissions stay at their data year. Output, the denominator of `B`, is re-priced to 2024 dollars, so each country's `B` is its data-year emissions per 2024 dollar. Tier 3 countries are the exception: their intensities are 2018 emissions per 2018 dollar.
 
 :::{important} Key assumptions
 :class: dropdown
@@ -84,7 +84,7 @@ Emissions stay at their data year. Output, the denominator of `B`, is re-priced 
 
 - **Assumption:** Each country's emissions from its data year still describe 2024 production.
 - **Why we make it:** Emissions data for 2024 are not yet published for most countries.
-- **How it affects results:** Where emissions per unit of output have fallen since the data year, for example as electricity grids get cleaner, factors may be too high. The gap is largest for South Korea (2018) and for Japan and ICIO countries (2020).
+- **How it affects results:** Where emissions per unit of output have fallen since the data year, for example as electricity grids get cleaner, factors may be too high. The gap is largest for South Korea and Tier 3 countries (2018) and for Japan and ICIO countries (2020).
 
 **Household emissions are excluded**
 

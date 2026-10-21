@@ -19,7 +19,7 @@ The emissions data for each country follow its {term}`tier <Country tier>`: a de
 | Tier 1 | China, Japan, South Korea, United Kingdom | National sources for each country | 2018–2023 | All 7 gases, with gaps filled for South Korea |
 | Tier 2, FIGARO | 40 countries | FIGARO emissions data from Eurostat | 2023 | 6 gas groups |
 | Tier 2, ICIO | 20 countries | OECD emissions data matched to the ICIO tables | 2020 | Total CO₂e only |
-| Tier 3 | 83 countries | A template scaled to each country's emissions per unit of GDP | Varies | Template |
+| Tier 3 | 83 countries | A template scaled to each country's fossil CO₂ per unit of GDP from {term}`EDGAR` | 2018 | CO₂, with other gases from U.S. ratios |
 | Rest of world | | Pooled from four Tier 2 countries | 2020–2023 | As for those countries |
 
 ## Tier 0: The U.S. GHG model
@@ -100,12 +100,14 @@ The OECD data give one CO₂e total for each of the 50 industries, with no split
 
 ## Tier 3: Template emissions
 
-Tier 3 countries have no emissions data by sector. Their direct emission intensities start from the same template as their input recipe, a blend of Mexico (30%), Malaysia (30%), and Tunisia (40%), based on CO₂ intensities from an earlier ICIO edition. Other gases are added using the U.S. ratio of total CO₂e to CO₂ in each sector.
+Tier 3 countries have no emissions data matched to an IO table. Their direct emission intensities start from the same template as their input recipe, a blend of Mexico (30%), Malaysia (30%), and Tunisia (40%). The template uses those countries' CO₂ emissions by industry for 2018, from the OECD's 2021 edition of CO₂ emissions embodied in international trade. Other gases are added using the U.S. ratio of total CO₂e to CO₂ in each sector.
 
 Each country then adjusts the template two ways:
 
-- **Overall level.** All intensities are scaled by the country's fossil CO₂ per unit of GDP relative to the template's.
-- **Electricity.** The electricity sector uses the country's own electricity emissions per dollar of electricity output.
+- **Overall level.** All intensities are scaled by the country's fossil CO₂ per unit of GDP relative to the template's. Fossil CO₂ is from EDGAR (version 6.0) for 2018, and GDP from the IMF World Economic Outlook (October 2021).
+- **Electricity.** The electricity sector uses the country's own power-sector CO₂ from EDGAR for 2018, divided by the value of its electricity output: 2018 generation from the U.S. Energy Information Administration times an average electricity price from the World Bank.
+
+Unlike other countries' intensities, Tier 3 intensities are not re-priced: they are 2018 emissions per 2018 dollar.
 
 ## Rest of world
 
