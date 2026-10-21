@@ -3,12 +3,12 @@ title: "The IO model: overview"
 ---
 
 :::{tip} Summary
-Cornerstone uses standardized national input-output tables to represent production recipes and it links them with trade data, thus representing domestic and international supply chains.
+Cornerstone uses standardized national input-output tables to represent production recipes and link them with global trade data, thus representing domestic and international supply chains.
 :::
 
 ## Preparing the IO tables
 
-Every country enters the model as a national IO table, but countries don't all start from the same kind of table. The first step is to collect the best available table for each country and record where it came from: the source, version, year, valuation, and sector detail. Which table we start from depends on the country's {term}`tier <Country tier>`: the U.S. starts from {term}`Make and Use tables <Make/Use framework>` for 2024 that Cornerstone produces, after {term}`redefinitions <Redefinitions>` and following BEA's 2017 detailed schema, while other countries start from national statistical agency tables, {term}`FIGARO` or {term}`ICIO`, or a template. See [](country-tiers.md) for what each tier starts from.
+Every country enters the model as a national IO table, but countries don't all start from the same kind of table. The first step is to collect the best available table for each country and record where it came from: the source, version, year, valuation, and sector detail. Which table we start from depends on the country's {term}`tier <Country tier>`: the U.S. starts from {term}`Make and Use tables <Make/Use framework>` for 2024 that Cornerstone produces using BEA's methodology, after {term}`redefinitions <Redefinitions>` and following BEA's 2017 detailed schema, while other countries start from national statistical agency tables, {term}`FIGARO` or {term}`ICIO`, or a template. See [](country-tiers.md) for what each tier starts from.
 
 The detailed U.S. structure sets the model's common sector list, and it is used to split other countries' coarser sectors (see {term}`ABSR`). Sector lists and currencies are reconciled in the later steps: mapping to the common sector list, linking with trade data, and balancing.
 
