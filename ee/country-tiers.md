@@ -39,10 +39,6 @@ The U.S. has the most detailed emissions data, and its model is built on all 405
 
 **Households.** Emissions the inventory places in homes and personal vehicles go to households and are not in `B` (see [](index.md)).
 
-:::{note} Changed in U.S. model v0.6
-Fuel burned in trucks, buses, and cars is now placed by who owns and uses the vehicles, and industrial diesel by physical fuel volumes. Previously both were spread by purchases of refined petroleum products, which placed about 350 Mt CO₂ on state and local government. That fuel now goes mainly to transportation, construction, other private industries, and households. See the [release notes](../releases/index.md).
-:::
-
 ## Tier 1: National sources
 
 Each Tier 1 country's emissions come from its own national data.
