@@ -55,22 +55,9 @@ Every country's emissions go through the same steps:
 3. **Allocate to the common sectors.** For non-Tier 0 countries, each source sector's emissions are allocated to the matching common sectors with {term}`ABSR`, weighted by U.S. emission intensities. The country's total for each source sector is kept.
 4. **Fill in missing gas detail.** Where a source does not separate every gas, the missing split is taken from the U.S. mix for the same sector.
 5. **Convert to AR6** where the source used other GWPs.
-6. **Divide by output.** Emissions for each sector are divided by the same sector's output in the IO model, giving `B`.
+6. **Divide by output.** Emissions for each sector are divided by the same sector's output in the IO model, giving `B`. Emissions data years differ by country; see [](country-tiers.md#ghg-data-years).
 
 The U.S. model is built directly on the 405 common sectors, so steps 3 and 4 do not apply. [](country-tiers.md) gives the sources and the variations for each tier.
-
-## Data years
-
-Emissions data are published on different schedules, and the model uses the most recent of each.
-
-| Emissions data year | Countries |
-|---|---|
-| 2024 | United States |
-| 2023 | China, United Kingdom, FIGARO countries (Tier 2) |
-| 2020 | Japan, ICIO countries (Tier 2) |
-| 2018 | South Korea, Tier 3 countries |
-
-Emissions stay at their data year. Output, the denominator of `B`, is re-priced to 2024 dollars, so each country's `B` is its data-year emissions per 2024 dollar. Tier 3 countries are the exception: their intensities are 2018 emissions per 2018 dollar.
 
 :::{important} Key assumptions
 :class: dropdown
@@ -79,12 +66,6 @@ Emissions stay at their data year. Output, the denominator of `B`, is re-priced 
 - **Assumption:** Within each source sector, a country's emissions are spread over the common sectors in proportion to U.S. emission intensities.
 - **Why we make it:** Outside the U.S., emissions data come on far fewer sectors than the 405 common sectors, and the U.S. data are the most detailed available.
 - **How it affects results:** Each country's total for each source sector is correct, but its split between detailed sectors follows the U.S. pattern. Where a country's mix of processes differs from the U.S. (for example, a different steelmaking route), detailed sectors within the same source sector could be too high or too low.
-
-**Data-year emissions per 2024 dollar**
-
-- **Assumption:** Each country's emissions from its data year still describe 2024 production.
-- **Why we make it:** Emissions data for 2024 are not yet published for most countries.
-- **How it affects results:** Where emissions per unit of output have fallen since the data year, for example as electricity grids get cleaner, factors may be too high. The gap is largest for South Korea and Tier 3 countries (2018) and for Japan and ICIO countries (2020).
 
 **Household emissions are excluded**
 

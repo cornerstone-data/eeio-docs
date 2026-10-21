@@ -113,8 +113,32 @@ Unlike other countries' intensities, Tier 3 intensities are not re-priced: they 
 
 The rest-of-world region's direct emission intensities are the output-weighted average of four Tier 2 countries: Colombia and Chile (from ICIO) and Mexico and Türkiye (from FIGARO). See [](../io/index.md) for how the region is used.
 
+(ghg-data-years)=
+## Data years
+
+Emissions data are published on different schedules, and the model uses the most recent for each country.
+
+| Tier | Countries | Emissions data year | Intensities per |
+|---|---|---|---|
+| Tier 0 | United States | 2024 | 2024 dollar |
+| Tier 1 | China, United Kingdom | 2023 | 2024 dollar |
+| Tier 1 | Japan | 2020 | 2024 dollar |
+| Tier 1 | South Korea | 2018 | 2024 dollar |
+| Tier 2 | FIGARO countries | 2023 | 2024 dollar |
+| Tier 2 | ICIO countries | 2020 | 2024 dollar |
+| Tier 3 | 83 countries | 2018 | 2018 dollar |
+| Rest of world | | 2020–2023, from its four countries | 2024 dollar |
+
+Emissions stay at their data year. Output, the denominator of `B`, is re-priced to 2024 dollars, so each country's `B` is its data-year emissions per 2024 dollar. Tier 3 countries are the exception: their intensities are not re-priced.
+
 :::{important} Key assumptions
 :class: dropdown
+**Data-year emissions per 2024 dollar**
+
+- **Assumption:** Each country's emissions from its data year still describe 2024 production.
+- **Why we make it:** Emissions data by sector, matched to each source's IO sectors, are published with a lag of two to six years.
+- **How it affects results:** Where emissions per unit of output have fallen since the data year, for example as electricity grids get cleaner, factors may be too high. The gap is largest for South Korea and Tier 3 countries (2018) and for Japan and ICIO countries (2020). Tier 3 intensities are also per 2018 dollar, so price changes since 2018 are not reflected.
+
 **ICIO countries take the U.S. gas mix**
 
 - **Assumption:** For ICIO countries, the split of each sector's CO₂e total into gases follows the U.S. mix for that sector.
