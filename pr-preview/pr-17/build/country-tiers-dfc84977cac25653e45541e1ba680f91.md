@@ -56,7 +56,8 @@ Most of the remaining large economies come from one of two multi-regional tables
 |  | FIGARO | ICIO |
 |---|---|---|
 | Publisher | Eurostat and JRC | OECD |
-| Countries in the model | 40 | 20 |
+| Countries in source table | 49 | 80 |
+| Countries used in Cornerstone EEIO | 40 | 20 |
 | Version | 2026 | 2025 |
 | Data year | 2023 | 2020 |
 | Table type | Symmetric IO table, product by product | Symmetric IO table, industry by industry |
