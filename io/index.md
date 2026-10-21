@@ -64,7 +64,7 @@ The direct requirements tables turn the Supply and Use tables into recipes: the 
 2. **Market shares.** Divide each commodity's column of the Supply table by its output `q`. This gives the share of each commodity made by each industry.
 3. **Combine.** Multiply the two to get inputs per dollar of each *commodity*. Doing this with domestic use gives `Adom`; doing it with imported use gives `Aimp`.
 
-For more details on the math behind it, [email team @ cornerstonedata.org](mailto:team@cornerstonedata.org). 
+For more details on the math behind it, contact [team@cornerstonedata.org](mailto:team@cornerstonedata.org). 
 
 `Adom` and `Aimp` add up to the total direct requirements `A`. A column of `A` is the input recipe for \$1 of that commodity, split by where the inputs come from.
 
