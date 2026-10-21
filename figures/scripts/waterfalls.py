@@ -55,27 +55,16 @@ def draw(name, c):
         txt = "~0%" if pct == 0 else f"{pct:+.1f}%".replace("-", "−")
         texts.append((max(level, new), txt))
         level = new
-    other = c["end"] - level
-    labels.append("Other"); bottoms.append(min(level, c["end"])); heights.append(abs(other)); colors.append(OTHER)
-    pct_other = other / c["base"] * 100
-    texts.append((max(level, c["end"]), f"{pct_other:+.1f}%".replace("-", "−")))
     labels.append(c["end_label"]); bottoms.append(0); heights.append(c["end"]); colors.append(TOTAL)
     texts.append((c["end"], f'{c["end"]:.4f}\n({c["net"]})'))
 
     fig, ax = plt.subplots(figsize=(11, 5.6), dpi=170)
     xs = range(len(labels))
     bars = ax.bar(xs, heights, bottom=bottoms, color=colors, width=0.62, zorder=3)
-    bars[-2].set_hatch("////"); bars[-2].set_edgecolor("#888780"); bars[-2].set_linewidth(0.6)
-    # connectors between bars
-    run = [c["base"]]
-    for h, b, col in list(zip(heights, bottoms, colors))[1:-2]:
-        run.append(b + h if col == UP else b)
-    top = c["base"]
     pos = c["base"]
     levels = [c["base"]]
     for _, pct in c["steps"]:
         pos += c["base"] * pct / 100; levels.append(pos)
-    levels.append(c["end"])
     for i in range(len(levels)):
         ax.plot([i + 0.31, i + 1 - 0.31], [levels[i], levels[i]], color="#B4B2A9", lw=0.8, zorder=2)
     span = c["ylim"][1] - c["ylim"][0]
@@ -95,7 +84,7 @@ def draw(name, c):
     for ext in ("png", "svg"):
         fig.savefig(OUT / f"{name}.{ext}", facecolor="white")
     plt.close(fig)
-    print(name, "baseline", c["base"], "end", c["end"], "other", round(other, 4), f"({pct_other:+.2f}%)")
+    print(name, "baseline", c["base"], "end", c["end"], "last step level", round(levels[-1], 4))
 
 
 for n, c in CHARTS.items():
