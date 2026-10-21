@@ -26,13 +26,13 @@ The emissions data for each country follow its {term}`tier <Country tier>`: a de
 
 The U.S. has the most detailed emissions data, and its model is built on all 405 common sectors.
 
-**National totals.** The U.S. greenhouse gas inventory sets the national totals for 2024, by emitting activity and gas. These come from the University of Maryland's GHG inventory analysis, which follows the tables of EPA's *Inventory of U.S. Greenhouse Gas Emissions and Sinks*, with detail from EPA's inventory for 2023 where it is needed (for example, agricultural soils and fluorinated gases). The inventory is on a {term}`territorial basis <Territorial basis>`.
+**National totals.** The U.S. greenhouse gas inventory sets the national totals for 2024, by emitting activity and gas. These come from the University of Maryland's GHG inventory analysis [@desaiGreenhouseGasInventory2026], which follows the tables of EPA's *Inventory of U.S. Greenhouse Gas Emissions and Sinks*, with detail from EPA's inventory for 2023 where it is needed (for example, agricultural soils and fluorinated gases) [@epaInventoryUSGreenhouse2025]. The inventory is on a {term}`territorial basis <Territorial basis>`.
 
 **Placing the totals on industries.** The inventory names an industry for some emissions and not others, so each emitting activity is placed on industries by one of these routes:
 
 - **Directly.** Where the inventory names the industry, as for most process and fugitive emissions (petroleum and natural gas systems, cement, and other industrial processes), the emissions go to that industry.
-- **Facility reports.** Most fuel burned at industrial plants is placed using what the plants themselves report: emissions reported to EPA's {term}`GHGRP`, and to the National Emissions Inventory, matched to one record per site. Power plants come from EPA's eGRID for 2024. For manufacturing natural gas, coal, and petroleum fuels, each industry's share comes from facility reports where they cover at least 80% of the industry's combustion, and from the Manufacturing Energy Consumption Survey (2022) where they don't.
-- **Physical fuel use.** Fuel burned in vehicles and equipment is placed on the industries that use it, based on fuel volumes. Highway fuel is split by vehicle owner using Federal Highway Administration data for 2024, with federal fleets from GSA's Federal Fleet Report and private trucks by business type from the Census Bureau's Vehicle Inventory and Use Survey (2021). Industrial diesel is split across agriculture, construction, mining, and manufacturing from fuel sales and survey data.
+- **Facility reports.** Most fuel burned at industrial plants is placed using what the plants themselves report: emissions reported to EPA's {term}`GHGRP` [@epaGreenhouseGasReporting2026], and to the National Emissions Inventory [@epaNationalEmissionsInventory2025], matched to one record per site. Power plants come from eGRID for 2024 [@cornerstoneEGRID20242026]. For manufacturing natural gas, coal, and petroleum fuels, each industry's share comes from facility reports where they cover at least 80% of the industry's combustion, and from the Manufacturing Energy Consumption Survey (2022) where they don't [@eiaManufacturingEnergyConsumption2025].
+- **Physical fuel use.** Fuel burned in vehicles and equipment is placed on the industries that use it, based on fuel volumes. Highway fuel is split by vehicle owner using Federal Highway Administration data for 2024 [@fhwaHighwayStatistics2025], with federal fleets from GSA's Federal Fleet Report [@gsaFederalFleetReport2025] and private trucks by business type from the Census Bureau's Vehicle Inventory and Use Survey (2021) [@censusVehicleInventoryUse2023]. Industrial diesel is split across agriculture, construction, mining, and manufacturing from fuel sales and survey data [@eiaFuelOilKerosene2022; @eiaManufacturingEnergyConsumption2025].
 - **Purchases.** The remaining emissions are allocated to the industries that buy the relevant fuel or product, in proportion to their purchases in the U.S. Use table.
 
 **Households.** Emissions the inventory places in homes and personal vehicles go to households and are not in `B` (see [](index.md)).
@@ -45,17 +45,17 @@ Each Tier 1 country's emissions come from its own national data.
 |---|---|---|---|
 | China | Built from several sources (see below) | 2023 | 211, matching the IO table |
 | Japan | Environmental data published with the Input-Output Tables for Japan | 2020 | Matching the IO table |
-| South Korea | GHG data published with the Bank of Korea input-output tables | 2018 | Matching the IO table |
-| United Kingdom | ONS atmospheric emissions accounts | 2023 | By industry |
+| South Korea | GHG data published with the Bank of Korea input-output tables [@bokUpdatedInputOutput2020] | 2018 | Matching the IO table |
+| United Kingdom | ONS atmospheric emissions accounts [@onsAtmosphericEmissionsGreenhouse2024] | 2023 | By industry |
 
 China's data are on a territorial basis, and the UK's on a residence basis.
 
 **China** has no published emissions table matching its IO table, so we build one:
 
-- CO₂ from fossil fuels and cement sets the totals, from Our World in Data, and is placed on sectors by each sector's physical fuel use from China's national energy statistics.
-- Power-sector CO₂ is set to match China's official 2023 grid emission factor.
-- CH₄ and N₂O come from the Community Emissions Data System ({term}`CEDS`), and farm CH₄ and N₂O from China's first Biennial Transparency Report.
-- Fluorinated gases come from China's first Biennial Transparency Report, brought forward to 2023 with {term}`EDGAR` trends.
+- CO₂ from fossil fuels and cement sets the totals, from Our World in Data [@ritchieCO2GreenhouseGas2023], and is placed on sectors by each sector's physical fuel use from China's national energy statistics.
+- Power-sector CO₂ is set to match China's official 2023 grid emission factor [@meeAnnouncementRelease2025].
+- CH₄ and N₂O come from the Community Emissions Data System ({term}`CEDS`) [@hoeslyCEDSAggregate2025; @hoeslyHistorical17502014Anthropogenic2018], and farm CH₄ and N₂O from China's first Biennial Transparency Report [@chinaFirstBiennialTransparency2024].
+- Fluorinated gases come from China's first Biennial Transparency Report, brought forward to 2023 with {term}`EDGAR` trends [@crippaGHGEmissionsAll2025].
 
 Household fuel use is not separated in China's national totals, so its CO₂ is spread over the industries rather than left out.
 
@@ -69,7 +69,7 @@ Tier 2 countries take their emissions from the same source as their IO table, so
 
 |  | FIGARO | ICIO |
 |---|---|---|
-| Publisher | Eurostat | OECD |
+| Publisher | Eurostat [@eurostatGreenhouseGasEmission2026] | OECD [@oecdGreenhouseGasFootprints2025; @yamanoCO2EmissionsEmbodied2020] |
 | Version | 2026 | 2025 |
 | Data year | 2023 | 2020 |
 | Sectors | 64 industries (NACE Rev. 2) | 50 industries (ISIC Rev. 4) |
@@ -81,29 +81,29 @@ Tier 2 countries take their emissions from the same source as their IO table, so
 
 FIGARO emissions come from two kinds of underlying data:
 
-- **Air emissions accounts (30 countries).** The 27 EU member states report emissions by industry in their air emissions accounts. For Norway, Switzerland, and Türkiye, Eurostat fills in the industry split.
-- **EDGAR estimates (10 countries).** For Argentina, Australia, Brazil, Canada, India, Indonesia, Mexico, Russia, Saudi Arabia, and South Africa, Eurostat estimates emissions by industry from {term}`EDGAR`. EDGAR groups some activities together, so we correct the split. Within mining, refining, and the power and gas utilities, CO₂, CH₄, and N₂O are re-split using {term}`CEDS` shares, holding the combined total fixed. Shares for steel, chemicals, and non-metallic minerals are also reset to CEDS, and process CO₂ is kept off trade and service industries.
+- **Air emissions accounts (30 countries).** The 27 EU member states report emissions by industry in their air emissions accounts [@eurostatAirEmissionsAccounts2026]. For Norway, Switzerland, and Türkiye, Eurostat fills in the industry split.
+- **EDGAR estimates (10 countries).** For Argentina, Australia, Brazil, Canada, India, Indonesia, Mexico, Russia, Saudi Arabia, and South Africa, Eurostat estimates emissions by industry from {term}`EDGAR` [@crippaGHGEmissionsAll2025; @schaafEmissionsDatabaseGlobal2025]. EDGAR groups some activities together, so we correct the split. Within mining, refining, and the power and gas utilities, CO₂, CH₄, and N₂O are re-split using {term}`CEDS` shares [@hoeslyCEDSAggregate2025], holding the combined total fixed. Shares for steel, chemicals, and non-metallic minerals are also reset to CEDS, and process CO₂ is kept off trade and service industries.
 
 For both groups, FIGARO's industries are first converted to products using FIGARO's supply table, to match the product-by-product IO table. The same broad sectors split in the IO table are split here too:
 
-- Electricity, gas, and heat are separated using Eurostat energy balances and CEDS gas distribution methane.
-- Agriculture is split into farm sectors using FAOSTAT CH₄ and N₂O and Eurostat agricultural accounts.
+- Electricity, gas, and heat are separated using Eurostat energy balances [@eurostatCompleteEnergyBalances2026] and CEDS gas distribution methane.
+- Agriculture is split into farm sectors using FAOSTAT CH₄ and N₂O [@faoFAOSTATEmissionsTotals2025] and Eurostat agricultural accounts [@eurostatEconomicAccountsAgriculture2026].
 - Mining, non-metallic minerals, and basic metals are split as in the IO table.
 
 The products are then mapped to the common sectors with {term}`ABSR`. The last gas group, SF₆ with NF₃, is split using the U.S. share of SF₆ in each sector.
 
 ### ICIO countries
 
-The OECD data give one CO₂e total for each of the 50 industries, with no split by gas. Farming is split out first, using FAOSTAT CH₄ and N₂O, before the totals are mapped to the common sectors with ABSR. The split by gas comes entirely from the U.S. mix for each sector. Electricity is mapped as one sector, with no separate split for gas and heat.
+The OECD data give one CO₂e total for each of the 50 industries, with no split by gas. Farming is split out first, using FAOSTAT CH₄ and N₂O [@faoFAOSTATEmissionsTotals2025], before the totals are mapped to the common sectors with ABSR. The split by gas comes entirely from the U.S. mix for each sector. Electricity is mapped as one sector, with no separate split for gas and heat.
 
 ## Tier 3: Template emissions
 
-Tier 3 countries have no emissions data matched to an IO table. Their direct emission intensities start from the same template as their input recipe, a blend of Mexico (30%), Malaysia (30%), and Tunisia (40%). The template uses those countries' CO₂ emissions by industry for 2018, from the OECD's 2021 edition of CO₂ emissions embodied in international trade. Other gases are added using the U.S. ratio of total CO₂e to CO₂ in each sector.
+Tier 3 countries have no emissions data matched to an IO table. Their direct emission intensities start from the same template as their input recipe, a blend of Mexico (30%), Malaysia (30%), and Tunisia (40%). The template uses those countries' CO₂ emissions by industry for 2018, from the OECD's 2021 edition of CO₂ emissions embodied in international trade [@oecdCarbonDioxideEmissions2021]. Other gases are added using the U.S. ratio of total CO₂e to CO₂ in each sector.
 
 Each country then adjusts the template two ways:
 
-- **Overall level.** All intensities are scaled by the country's fossil CO₂ per unit of GDP relative to the template's. Fossil CO₂ is from EDGAR (version 6.0) for 2018, and GDP from the IMF World Economic Outlook (October 2021).
-- **Electricity.** The electricity sector uses the country's own power-sector CO₂ from EDGAR for 2018, divided by the value of its electricity output: 2018 generation from the U.S. Energy Information Administration times an average electricity price from the World Bank.
+- **Overall level.** All intensities are scaled by the country's fossil CO₂ per unit of GDP relative to the template's. Fossil CO₂ is from EDGAR (version 6.0) for 2018 [@crippaGHGEmissionsAll2021; @monfortiferrarioEDGARV60Greenhouse2021], and GDP from the IMF World Economic Outlook (October 2021) [@imfWorldEconomicOutlook2021].
+- **Electricity.** The electricity sector uses the country's own power-sector CO₂ from EDGAR for 2018, divided by the value of its electricity output: 2018 generation from the U.S. Energy Information Administration [@eiaInternationalEnergyStatistics2026] times an average electricity price from the World Bank.
 
 ## Rest of world
 
