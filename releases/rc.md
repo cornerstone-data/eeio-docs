@@ -4,29 +4,32 @@ title: "Cornerstone EEIO 2026 - RC"
 
 ## Release date: October 27th, 2026
 
-## Summary
-
+:::{tip} Summary
 The Cornerstone EEIO 2026 - RC (Release Candidate) is the first stage of a phased approach to releasing the Cornerstone EEIO 2026 model, the successor of USEEIO and CEDA. It is a global environmentally-extended input-output (EEIO) model that produces spend-based emission factors, in kg CO₂e per USD for 405 sectors across 148 countries, plus 15 regional averages and one global average. It uses 2024 as the base year and is available to use for 2024, 2025 and 2026 measurements.
 
 This release candidate will be superseded in December by the release of the Cornerstone EEIO 2026 final version, which will include a time series from 2017 to 2026.
 
 Download this release on Zenodo here.
+:::
 
-**Why have a Release Candidate?**
-
+:::{note} Why have a Release Candidate?
+:class: dropdown
 2026 is an unprecedented year of development because it is the first time we are combining CEDA and USEEIO into one model and also the first time we are releasing a time series. The intention behind having a two phased approach to the release is to give companies additional time for impact assessments on their most recent year of measurements, while the developers finish the validation process for the time series. This enables companies to understand footprint changes before applying the time series.
+:::
 
-**Will there be any changes for years 2024 to 2026 once the time series is released?**
-
+:::{note} Will there be any changes for years 2024 to 2026 once the time series is released?
+:class: dropdown
 We do not foresee significant changes, but some sector-country combinations could be impacted by improvements driven from the time series model development. Users should consider this version as a release candidate and wait for the final 2026 version of this model that will be released in early December for reporting and rebaselining purposes.
+:::
 
-**What to expect from the time series?**
-
+:::{note} What to expect from the time series?
+:class: dropdown
 The time series (2017-2026) will use the same methodology for all years and only change the underlying data that represents each country’s economic structure and emissions data. For example, in the US each year of the dataset will use the US electricity grid emissivity for each year, capturing any decarbonization on this sector year over year.
 
 This is the first time that either USEEIO or CEDA releases a time series built this way. In the past CEDA has released a time series built with inflation adjustments for years prior and after the base year. Moving forward the Cornerstone EEIO will only apply inflation adjustments to the years after the base year, for which there is no reported data (e.g. 2025 and 2026 are inflation adjusted from the 2024 base year).
 
 To learn more about the methodology behind Cornerstone EEIO refer to [the IO model](../io/index.md) and [the GHG extension](../ee/index.md).
+:::
 
 ## What changed
 
@@ -40,7 +43,7 @@ Three groups of improvements sit behind the changes.
 
 Together these make the 2017–2026 time series possible.
 
-**Why do these improvements matter?**
+## Why do these improvements matter?
 
 They translate real world changes to corporate footprints. Three examples show how:
 
@@ -52,10 +55,10 @@ For example, China’s battery factor rises by ~30% driven by a change in the co
 
 :::{figure} ../images/rc-china-battery.png
 :label: rc-china-battery
-:alt: Bar chart of China battery production. In 2020, output was 382 GWh, mostly lead-acid. In 2023, output was 1,183 GWh, mostly lithium-ion.
-:width: 60%
+:alt: Stacked bar chart of China battery production. In 2020, output was 382 GWh, mostly lead-acid. In 2023, output was 1,183 GWh, mostly lithium-ion.
+:width: 65%
 
-China battery production in 2020 and 2023, by battery type. Output is in GWh and approximate.
+**China battery production, 2020 and 2023.** Output in GWh. The split by battery type is approximate. Sources: NBS input-output tables 2020 and 2023; MIIT; China lead-acid battery industry statistics.
 :::
 
 ### New data for Europe
@@ -64,12 +67,12 @@ Cornerstone adopts the most recent release of FIGARO, Eurostat’s official inpu
 
 This data update lowers European factors by about 4% in median. The most significant change is in electricity factors, which fall in every EU country. This change is driven by an increase in renewable energy and by an increase in energy prices due to the gas-supply shocks the Ukraine war has caused in Europe. For example, Germany’s power factor fell by 60%, as renewables grew from 35% to over 50% of generation and wholesale power prices more than doubled.
 
-:::{figure} ../images/rc-europe-power.png
-:label: rc-europe-power
-:alt: Germany's power emission factor falls by 60% and the Netherlands' by 77%, with the share of the change attributed to a cleaner grid and to higher prices for each.
-:width: 60%
+:::{figure} ../images/rc-germany-power.png
+:label: rc-germany-power
+:alt: Bar showing that about 25% of the fall in Germany's power emission factor comes from a cleaner grid and about 75% from higher prices.
+:width: 100%
 
-Change in the power emission factor in Germany and the Netherlands, and what drove it.
+**Germany's power emission factor falls by 60%.** About 25% of the change comes from a cleaner grid, as renewables grew from 35% to over 50% of generation, and about 75% from higher prices, as wholesale power prices more than doubled, from about €44 to €95 per MWh. Sources: Ember, Öko-Institut, SMARD, Vattenfall.
 :::
 
 ### Incorporation of imports in the US
@@ -78,34 +81,14 @@ USEEIO treated the US as a closed economy: every product used in the US was assu
 
 ## How do the emission factors change?
 
-The charts compare the new factors with each model they replace. Emission factors are production-weighted totals in kg CO₂e per 2024 USD.
+The charts compare the new factors with each model they replace.
 
 :::{figure} ../images/rc-factor-comparison.png
 :label: rc-factor-comparison
 :alt: Two waterfall charts. Against CEDA 2025, the factor goes from 0.6957 to 0.5281 (24.1% lower), with data updates adding 6.3% and methodology changes removing 28.6%. Against USEEIO v1.4 for the US, it goes from 0.2474 to 0.2448 (1.0% lower), with data updates removing 4.2% and methodology changes adding 3.3%.
 :width: 100%
 
-Production-weighted emission factors for Cornerstone 2026 against CEDA 2025 and USEEIO v1.4, split into data updates and methodology changes.
-:::
-
-### Drivers of the change vs. USEEIO
-
-:::{figure} ../figures/diagrams/waterfall-vs-useeio.png
-:label: waterfall-vs-useeio
-:alt: Waterfall chart of the US emission factor from USEEIO v1.4 (0.2474) to Cornerstone 2026 (0.2448), by driver.
-:width: 100%
-
-Change in the US production-weighted emission factor from USEEIO v1.4 to Cornerstone 2026, by driver. Percentages are changes relative to the USEEIO baseline.
-:::
-
-### Drivers of the change vs. CEDA
-
-:::{figure} ../figures/diagrams/waterfall-vs-ceda.png
-:label: waterfall-vs-ceda
-:alt: Waterfall chart of the global emission factor from CEDA 2025 (0.6957) to Cornerstone 2026 (0.5281), by driver.
-:width: 100%
-
-Change in the global production-weighted emission factor from CEDA 2025 to Cornerstone 2026, by driver. Percentages are changes relative to the CEDA 2025 baseline.
+**Emission factors fall 24.1% against CEDA 2025 and 1.0% against USEEIO v1.4 (US).** Production-weighted totals in kg CO₂e per 2024 USD, split into data updates and methodology changes.
 :::
 
 :::{important} Your footprint may not follow the median
