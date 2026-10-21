@@ -17,7 +17,7 @@ In the multi-regional model, every row and column is a country–sector pair. `D
 | `x` | Industry output | Total output of each industry: the row sums of `V` | \$ |
 | `q` | Commodity output | Total domestic output of each commodity: the column sums of `V` | \$ |
 | `y` (`ydom`, `yimp`) | Final demand | Purchases by households, government, investment, and exports, split into domestic and imported | \$ |
-| `y_nab` | Final demand for the national accounting balance | Final demand for domestic production: `ydom` plus exports | \$ |
+| `ynab` | Final demand for the national accounting balance | Final demand for domestic production: `ydom` plus exports | \$ |
 | `E` | Emissions | Emissions of each gas by each sector | kg gas |
 | `B` | Direct emission intensities | Emissions of each gas per dollar of a sector's own output | kg gas / \$ |
 | `C` | Characterization factors | Global warming potentials that convert each gas to CO₂e | kg CO₂e / kg gas |
