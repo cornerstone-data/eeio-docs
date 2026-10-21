@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="376" viewBox="0 0 680 376" role="img">
+<title>USEEIO and CEDA merge into Cornerstone EEIO, which follows a research version and a corporate version from 2026 to 2040</title>
+<desc>USEEIO and CEDA merge into the Cornerstone EEIO. The research version is updated continuously with many releases. The corporate version is released every October and keeps its methodology stable for five years. Every five years a major update brings proven science from the research version into a new set of methods.</desc>
+<style>
+text{font-family:Helvetica,Arial,sans-serif}
+.t{font-size:14px;fill:#2C2C2A} .th{font-size:14px;font-weight:500;fill:#2C2C2A} .ts{font-size:12px;fill:#5F5E5A}
+</style>
+<rect width="680" height="376" fill="#FFFFFF"/>
+<rect x="40" y="80" width="84" height="40" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text class="th" x="82" y="100" text-anchor="middle" dominant-baseline="central">USEEIO</text>
+<rect x="40" y="204" width="84" height="40" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text class="th" x="82" y="224" text-anchor="middle" dominant-baseline="central">CEDA</text>
+<line x1="124" y1="100" x2="140" y2="100" stroke="#888780" stroke-width="1.5"/>
+<polygon points="146,100 138,95.5 138,104.5" fill="#888780"/>
+<line x1="124" y1="224" x2="140" y2="224" stroke="#888780" stroke-width="1.5"/>
+<polygon points="146,224 138,219.5 138,228.5" fill="#888780"/>
+<rect x="148" y="24" width="98" height="282" rx="8" fill="#FFFFFF" stroke="#888780" stroke-width="1"/>
+<text class="th" x="197" y="156" text-anchor="middle" dominant-baseline="central">Cornerstone</text>
+<text class="th" x="197" y="174" text-anchor="middle" dominant-baseline="central">EEIO</text>
+<rect x="264" y="24" width="376" height="88" rx="10" fill="#F6F5FF" stroke="#534AB7" stroke-width="1"/>
+<text class="th" x="278" y="44" text-anchor="start" dominant-baseline="central" fill="#3C3489">Research version</text>
+<text class="ts" x="626" y="44" text-anchor="end" dominant-baseline="central" fill="#534AB7">Tests new science</text>
+<text class="ts" x="278" y="62" text-anchor="start" dominant-baseline="central" fill="#534AB7">Continuously updated, with many releases</text>
+<line x1="278" y1="92" x2="626" y2="92" stroke="#7F77DD" stroke-width="2"/>
+<circle cx="284" cy="92" r="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<circle cx="310" cy="92" r="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<circle cx="336" cy="92" r="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<circle cx="362" cy="92" r="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<circle cx="382" cy="92" r="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<circle cx="436" cy="92" r="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<circle cx="462" cy="92" r="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<circle cx="488" cy="92" r="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<circle cx="512" cy="92" r="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<circle cx="556" cy="92" r="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<circle cx="582" cy="92" r="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<circle cx="604" cy="92" r="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<circle cx="620" cy="92" r="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<line x1="248" y1="68" x2="256" y2="68" stroke="#7F77DD" stroke-width="1.5"/>
+<polygon points="262,68 254,63.5 254,72.5" fill="#7F77DD"/>
+<rect x="264" y="158" width="376" height="148" rx="10" fill="#F2FAF6" stroke="#0F6E56" stroke-width="1"/>
+<text class="th" x="278" y="178" text-anchor="start" dominant-baseline="central" fill="#085041">Corporate version</text>
+<text class="ts" x="626" y="178" text-anchor="end" dominant-baseline="central" fill="#0F6E56">For targets and reporting</text>
+<text class="ts" x="278" y="196" text-anchor="start" dominant-baseline="central" fill="#0F6E56">One release every October, stable methods</text>
+<line x1="248" y1="229" x2="256" y2="229" stroke="#0F6E56" stroke-width="1.5"/>
+<polygon points="262,229 254,224.5 254,233.5" fill="#0F6E56"/>
+<rect x="272" y="208" width="114" height="88" rx="8" fill="#FFFFFF" stroke="#888780" stroke-width="1"/>
+<text class="th" x="329" y="224" text-anchor="middle" dominant-baseline="central">2026 methods</text>
+<text class="ts" x="329" y="241" text-anchor="middle" dominant-baseline="central">Stable 5 years</text>
+<circle cx="294.0" cy="262" r="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<circle cx="311.5" cy="262" r="5.5" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<circle cx="329.0" cy="262" r="5.5" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<circle cx="346.5" cy="262" r="5.5" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<circle cx="364.0" cy="262" r="5.5" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text class="ts" x="294" y="283" text-anchor="middle" dominant-baseline="central">2026</text>
+<text class="ts" x="364" y="283" text-anchor="middle" dominant-baseline="central">2030</text>
+<rect x="396" y="208" width="114" height="88" rx="8" fill="#FFFFFF" stroke="#888780" stroke-width="1"/>
+<text class="th" x="453" y="224" text-anchor="middle" dominant-baseline="central">2031 methods</text>
+<text class="ts" x="453" y="241" text-anchor="middle" dominant-baseline="central">Stable 5 years</text>
+<circle cx="418.0" cy="262" r="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<circle cx="435.5" cy="262" r="5.5" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<circle cx="453.0" cy="262" r="5.5" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<circle cx="470.5" cy="262" r="5.5" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<circle cx="488.0" cy="262" r="5.5" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text class="ts" x="418" y="283" text-anchor="middle" dominant-baseline="central">2031</text>
+<text class="ts" x="488" y="283" text-anchor="middle" dominant-baseline="central">2035</text>
+<rect x="520" y="208" width="114" height="88" rx="8" fill="#FFFFFF" stroke="#888780" stroke-width="1"/>
+<text class="th" x="577" y="224" text-anchor="middle" dominant-baseline="central">2036 methods</text>
+<text class="ts" x="577" y="241" text-anchor="middle" dominant-baseline="central">Stable 5 years</text>
+<circle cx="542.0" cy="262" r="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<circle cx="559.5" cy="262" r="5.5" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<circle cx="577.0" cy="262" r="5.5" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<circle cx="594.5" cy="262" r="5.5" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<circle cx="612.0" cy="262" r="5.5" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text class="ts" x="542" y="283" text-anchor="middle" dominant-baseline="central">2036</text>
+<text class="ts" x="612" y="283" text-anchor="middle" dominant-baseline="central">2040</text>
+<line x1="410" y1="116" x2="410" y2="148" stroke="#D85A30" stroke-width="1.5"/>
+<polygon points="410,154 405.5,146 414.5,146" fill="#D85A30"/>
+<text class="ts" x="420" y="135" text-anchor="start" dominant-baseline="central">Proven science</text>
+<line x1="534" y1="116" x2="534" y2="148" stroke="#D85A30" stroke-width="1.5"/>
+<polygon points="534,154 529.5,146 538.5,146" fill="#D85A30"/>
+<text class="ts" x="544" y="135" text-anchor="start" dominant-baseline="central">Proven science</text>
+<text class="ts" x="340" y="328" text-anchor="middle" dominant-baseline="central">Each October release: data updates, bug fixes and small improvements</text>
+<circle cx="46" cy="356" r="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text class="ts" x="58" y="356" text-anchor="start" dominant-baseline="central">Research release</text>
+<circle cx="196" cy="356" r="5.5" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text class="ts" x="208" y="356" text-anchor="start" dominant-baseline="central">Annual release</text>
+<circle cx="332" cy="356" r="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text class="ts" x="346" y="356" text-anchor="start" dominant-baseline="central">Major update, every 5 years</text>
+</svg>
