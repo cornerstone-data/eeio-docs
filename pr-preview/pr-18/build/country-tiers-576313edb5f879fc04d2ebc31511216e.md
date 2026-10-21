@@ -107,8 +107,6 @@ Each country then adjusts the template two ways:
 - **Overall level.** All intensities are scaled by the country's fossil CO₂ per unit of GDP relative to the template's. Fossil CO₂ is from EDGAR (version 6.0) for 2018, and GDP from the IMF World Economic Outlook (October 2021).
 - **Electricity.** The electricity sector uses the country's own power-sector CO₂ from EDGAR for 2018, divided by the value of its electricity output: 2018 generation from the U.S. Energy Information Administration times an average electricity price from the World Bank.
 
-Unlike other countries' intensities, Tier 3 intensities are not re-priced: they are 2018 emissions per 2018 dollar.
-
 ## Rest of world
 
 The rest-of-world region's direct emission intensities are the output-weighted average of four Tier 2 countries: Colombia and Chile (from ICIO) and Mexico and Türkiye (from FIGARO). See [](../io/index.md) for how the region is used.
@@ -118,26 +116,26 @@ The rest-of-world region's direct emission intensities are the output-weighted a
 
 Emissions data are published on different schedules, and the model uses the most recent for each country.
 
-| Tier | Countries | Emissions data year | Intensities per |
-|---|---|---|---|
-| Tier 0 | United States | 2024 | 2024 dollar |
-| Tier 1 | China, United Kingdom | 2023 | 2024 dollar |
-| Tier 1 | Japan | 2020 | 2024 dollar |
-| Tier 1 | South Korea | 2018 | 2024 dollar |
-| Tier 2 | FIGARO countries | 2023 | 2024 dollar |
-| Tier 2 | ICIO countries | 2020 | 2024 dollar |
-| Tier 3 | 83 countries | 2018 | 2018 dollar |
-| Rest of world | | 2020–2023, from its four countries | 2024 dollar |
+| Tier | Countries | Emissions data year |
+|---|---|---|
+| Tier 0 | United States | 2024 |
+| Tier 1 | China, United Kingdom | 2023 |
+| Tier 1 | Japan | 2020 |
+| Tier 1 | South Korea | 2018 |
+| Tier 2 | FIGARO countries | 2023 |
+| Tier 2 | ICIO countries | 2020 |
+| Tier 3 | 83 countries | 2018 |
+| Rest of world | | 2020–2023, from its four countries |
 
-Emissions stay at their data year. Output, the denominator of `B`, is re-priced to 2024 dollars, so each country's `B` is its data-year emissions per 2024 dollar. Tier 3 countries are the exception: their intensities are not re-priced.
+Emissions stay at their data year. For the data year of each country's IO table, see [](../reference/methods-by-country.md).
 
 :::{important} Key assumptions
 :class: dropdown
-**Data-year emissions per 2024 dollar**
+**Data-year emissions describe current production**
 
 - **Assumption:** Each country's emissions from its data year still describe 2024 production.
 - **Why we make it:** Emissions data by sector, matched to each source's IO sectors, are published with a lag, in some cases of several years.
-- **How it affects results:** Where emissions per unit of output have fallen since the data year, for example as electricity grids get cleaner, factors may be too high. The gap is largest for South Korea and Tier 3 countries (2018) and for Japan and ICIO countries (2020). Tier 3 intensities are also per 2018 dollar, so price changes since 2018 are not reflected.
+- **How it affects results:** Where emissions per unit of output have fallen since the data year, for example as electricity grids get cleaner, factors may be too high. The gap is largest for South Korea and Tier 3 countries (2018) and for Japan and ICIO countries (2020).
 
 **ICIO countries take the U.S. gas mix**
 
