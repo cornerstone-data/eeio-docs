@@ -37,7 +37,7 @@ Four countries have detailed national IO tables that we use directly.
 
 | Country | Source table | Data year | Sectors | Imports | Units |
 |---|---|---|---|---|---|
-| China | National Bureau of Statistics national IO table | 2023 | 211 | Not separated in the source; split using China's domestic and import shares from ICIO (2021 edition, 2018 data) | 10,000 yuan |
+| China | National Bureau of Statistics national IO table | 2023 | 211 | Not separated in the source; split using China's domestic and import shares from FIGARO 2023 data | 10,000 yuan |
 | Japan | Input-Output Tables for Japan | 2020 | 390 | Separate domestic and import tables | Million yen |
 | South Korea | Bank of Korea input-output tables, detailed | 2018 | 381 | Separate domestic and import tables | Million won |
 | United Kingdom | ONS Input-Output Analytical Tables, product by product | 2023 | 104 | Separate imports use table | £ million |
