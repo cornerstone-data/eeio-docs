@@ -18,7 +18,7 @@ The IO model traces the dollars that flow through supply chains. The GHG extensi
 - **Emissions** (`E`): kilograms of each gas emitted by the sector in a year.
 - **Direct emission intensities** (`B`): those emissions divided by the sector's output (`q`), so kilograms of each gas per dollar of output.
 
-`B` holds direct emissions only: what the sector emits from its own fuel use, processes, and other activities. Emissions from the sector's suppliers come in through the supply chain (`L`), not through `B`. For example, the emissions from generating electricity stay with the power sector, and other sectors' purchased electricity reaches them through `L`.
+`B` holds direct emissions only: what the sector emits from its own fuel use, processes, and other activities. Emissions from the sector's suppliers come in through the supply chain ([`L`](../io/index.md#total-requirements)), not through `B`. For example, the emissions from generating electricity stay with the power sector, and other sectors' purchased electricity reaches them through `L`.
 
 Characterization factors (`C`) then weight each gas by its global warming potential, which gives the direct emission factors `D = C × B` and the total emission factors `N = C × B × L` (see [](../reference/notation.md)).
 
