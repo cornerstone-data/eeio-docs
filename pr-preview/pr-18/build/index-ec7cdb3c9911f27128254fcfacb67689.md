@@ -35,7 +35,7 @@ Several sources report emissions as CO₂-equivalent using older GWPs from the F
 `B` covers emissions from producing goods and services. Some emissions in national inventories do not come from a producing sector, and they are left out:
 
 - **Household direct emissions.** Fuel burned in homes and in personal vehicles is emitted by households, not by an industry, so it is not in `B`.
-- **Land use, land-use change, and forestry (LULUCF).** Emissions and removals from land are not included.
+- **Land use, land-use change, and forestry (LULUCF).** National inventories, following IPCC guidelines, report farming and LULUCF as separate sectors. Farming emissions are counted, in the farm sectors: methane from livestock and rice, N₂O from agricultural soils, CO₂ from liming and urea, and methane and N₂O from burning crop residues in the field. The LULUCF sector is not counted. This leaves out changes in the carbon stored in forests, soils, and other land, including CO₂ removed from the atmosphere, along with emissions from flooded lands and from forest and grassland fires.
 
 ## Accounting basis
 
