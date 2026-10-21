@@ -136,7 +136,7 @@ Emissions stay at their data year. Output, the denominator of `B`, is re-priced 
 **Data-year emissions per 2024 dollar**
 
 - **Assumption:** Each country's emissions from its data year still describe 2024 production.
-- **Why we make it:** Emissions data by sector, matched to each source's IO sectors, are published with a lag of two to six years.
+- **Why we make it:** Emissions data by sector, matched to each source's IO sectors, are published with a lag, in some cases of several years.
 - **How it affects results:** Where emissions per unit of output have fallen since the data year, for example as electricity grids get cleaner, factors may be too high. The gap is largest for South Korea and Tier 3 countries (2018) and for Japan and ICIO countries (2020). Tier 3 intensities are also per 2018 dollar, so price changes since 2018 are not reflected.
 
 **ICIO countries take the U.S. gas mix**
