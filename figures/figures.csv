@@ -1,3 +1,5 @@
 id,page,type,data_source,generator_script,owner,status
 release-cycle,factors/whats-in-a-release.md,diagram,none (hand-drawn schematic),figures/scripts/release_cycle.py,Yohanna Maldonado,draft
 release-lifecycle,factors/whats-in-a-release.md,diagram,none (hand-drawn schematic),figures/scripts/release_lifecycle.py,Yohanna Maldonado,draft (option 2)
+waterfall-vs-useeio,releases/rc.md (draft),chart,"Roundtable 2 deck, slide 17 (percent steps)",figures/scripts/waterfalls.py,Yohanna Maldonado,draft (steps do not sum to the net change)
+waterfall-vs-ceda,releases/rc.md (draft),chart,"Roundtable 2 deck, slide 25 (percent steps)",figures/scripts/waterfalls.py,Yohanna Maldonado,draft (steps do not sum to the net change)
