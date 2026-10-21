@@ -35,8 +35,6 @@ The U.S. has the most detailed emissions data, and its model is built on all 405
 - **Physical fuel use.** Fuel burned in vehicles and equipment is placed on the industries that use it, based on fuel volumes. Highway fuel is split by vehicle owner using Federal Highway Administration data for 2024, with federal fleets from GSA's Federal Fleet Report and private trucks by business type from the Census Bureau's Vehicle Inventory and Use Survey (2021). Industrial diesel is split across agriculture, construction, mining, and manufacturing from fuel sales and survey data.
 - **Purchases.** The remaining emissions are allocated to the industries that buy the relevant fuel or product, in proportion to their purchases in the U.S. Use table.
 
-**Checks inside the build.** After placing the emissions, every industry's emissions are held at or above what its own facilities report to the GHGRP, and industries whose facilities cover nearly all their combustion are held at or below it. National totals for each activity and gas are unchanged.
-
 **Households.** Emissions the inventory places in homes and personal vehicles go to households and are not in `B` (see [](index.md)).
 
 ## Tier 1: National sources
@@ -157,8 +155,8 @@ Emissions stay at their data year. For the data year of each country's IO table,
 :::
 
 :::{seealso} Checks we run
-- Each country's total emissions are kept through splitting and mapping.
-- For the U.S., each industry is checked against what its own facilities report.
+- Each country's total emissions are kept through splitting and allocation.
+- **U.S. facility floor and ceiling.** After the U.S. emissions are allocated, every industry's emissions are held at or above what its own facilities report to the {term}`GHGRP`, and industries whose facilities cover nearly all their combustion are held at or below it. U.S. national totals for each activity and gas are unchanged.
 
 See [Validation](#validation-hub).
 :::
