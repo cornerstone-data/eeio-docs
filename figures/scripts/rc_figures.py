@@ -8,6 +8,10 @@ background, no title and no source line on the image (those live in the figure c
 - rc-china-battery.png: China battery production. Totals are the slide labels. The split by
   battery type is read off the slide graphic, so it is approximate.
 - rc-germany-power.png: Germany's power factor, share of the change from a cleaner grid vs prices.
+- rc-us-parts-imports.png: where US auto parts imports came from in 2024 (all vehicle types, so an
+  indicator for light trucks rather than a measure of that sector). Source: International Trade
+  Administration auto parts data as reported by MNI, March 2025 (www.mnimarkets.com). Europe (11.9%) and
+  ASEAN (almost 7%) are combined regions in the source; the remainder is derived (100% minus the listed shares).
 
 Run from the repo root (needs matplotlib):
     uv run --with matplotlib python figures/scripts/rc_figures.py
@@ -107,5 +111,33 @@ def germany():
     plt.close(fig)
 
 
-comparison(); china(); germany()
+def parts_origin():
+    shares = [  # (label, percent, colour group)
+        ("Mexico", 41.0, "na"), ("Europe (combined)", 11.9, "other"), ("Canada", 10.0, "na"),
+        ("China", 9.3, "asia"), ("Japan", 8.0, "asia"), ("ASEAN (combined)", 7.0, "other"),
+        ("South Korea", 6.4, "asia"),
+    ]
+    rest = 100 - sum(v for _, v, _ in shares)
+    shares.append(("Other (remainder)", rest, "rest"))
+    colours = {"na": DARK_TEAL, "asia": "#1D9E75", "other": LIGHT_TEAL, "rest": "#D3D1C7"}
+    fig, ax = plt.subplots(figsize=(7.5, 4.2), dpi=200)
+    for i, (label, v, g) in enumerate(shares):
+        ax.barh(i, v, color=colours[g], height=0.62)
+        txt = f"{v:.1f}%" if label not in ("ASEAN (combined)", "Other (remainder)") else f"~{v:.0f}%"
+        ax.text(v + 0.8, i, txt, va="center", color=INK, fontweight="medium")
+    ax.set_yticks(range(len(shares))); ax.set_yticklabels([l for l, _, _ in shares], color=INK)
+    ax.invert_yaxis(); ax.set_xlim(0, 48)
+    for sp in ("top", "right", "bottom"):
+        ax.spines[sp].set_visible(False)
+    ax.spines["left"].set_color("#B4B2A9")
+    ax.set_xticks([]); ax.tick_params(axis="y", length=0)
+    handles = [plt.Rectangle((0, 0), 1, 1, color=colours[k]) for k in ("na", "asia", "other", "rest")]
+    ax.legend(handles, ["North America", "East Asia", "Other regions", "Not allocated"], loc="lower right",
+              frameon=False, fontsize=9.5, labelcolor=INK)
+    fig.tight_layout()
+    fig.savefig(OUT / "rc-us-parts-imports.png", facecolor="white")
+    plt.close(fig)
+
+
+comparison(); china(); germany(); parts_origin()
 print("wrote", *(p.name for p in sorted(OUT.glob("rc-*.png"))))
