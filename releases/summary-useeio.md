@@ -62,7 +62,15 @@ Cornerstone EEIO also uses facility-level reported emissions data from the US EP
 
 USEEIO treated the US as a closed economy: every product used in the US was assumed to be made in the US. Cornerstone uses trade data to model each import in the country that produced it. Many imports come from more emissions-intensive economies such as China and India, so US factors tend to rise by 10 to 30% on average. This is the main upward pressure and the main reason for the change for USEEIO users.
 
-For example, about 40% of the US crude oil mix is imported. Emissions from that oil are allocated to the producing countries, and Canadian oil is up to twice as emissions-intensive as US oil.
+One example is light trucks and utility vehicles. The US factor rises by ~24%, mostly because many of their components are now modeled as imports from the countries that make them. Public data suggests that about 60% of the components of a US-assembled light truck are imported, with Mexico the largest source, followed by Europe and Canada (see {numref}`us-parts-imports`).
+
+:::{figure} ../images/rc-us-parts-imports.png
+:label: us-parts-imports
+:alt: One horizontal stacked bar showing the estimated origin of light-truck components. Made in the US 41%. Imported: Mexico 24%, Europe 7%, Canada 6%, China 5%, Japan 5%, ASEAN 4%, South Korea 4%, other 4%.
+:width: 100%
+
+**Estimated origin of the components of a US-assembled light truck.** Sources: [NHTSA AALA parts content data](https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports); [International Trade Administration data as reported by MNI (March 2025)](https://www.mnimarkets.com/articles/us-auto-tariffs-impact-broad-based-across-regions-1743036084321).
+:::
 
 For the full list of data and methodology changes, see the [](change-log.md). For the equivalent summary against CEDA, see [](summary-ceda.md).
 

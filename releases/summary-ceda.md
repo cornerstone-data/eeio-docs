@@ -3,36 +3,60 @@ title: "Summary of changes vs. CEDA"
 ---
 
 :::{tip} Summary
-Cornerstone EEIO 2026 replaces CEDA 2025. The global production-weighted emission factor falls by 24.1%, from 0.6957 to 0.5281 kg CO₂e per 2024 USD. Data updates raise factors (+6.3%) and methodology changes lower them by more (−28.6%). Four changes drive about 95% of the impact: benchmark-informed improvements, auto-balanced structural reflection (ABSR), new data for China, and new data for Europe.
+Cornerstone EEIO 2026 is the continuation of CEDA 2025. For global factors, the net change is on median −23.3% in kg CO₂e per 2024 USD (production-weighted), driven by a combination of data and methodology changes.
 :::
 
 :::{figure} ../images/summary-vs-ceda.png
 :label: summary-vs-ceda
-:alt: Waterfall chart of the global emission factor. From CEDA 2025 at 0.6957, data updates add 6.3% and methodology changes remove 28.6%, ending at 0.5281 for Cornerstone 2026, 24.1% lower.
+:alt: Waterfall chart of the global emission factor. From CEDA 2025 at 0.6942, data updates add 5.8% and methodology changes remove 27.5%, ending at 0.5324 for Cornerstone 2026, 23.3% lower.
 :width: 80%
 
 **Cornerstone 2026 against CEDA 2025 (global).** Global production-weighted total emission factor, in kg CO₂e per 2024 USD, split into data updates and methodology changes.
 :::
 
 :::{important} Your footprint may not follow the median
-A company's change depends on which sectors and countries its spend falls in. A small median can hide large moves in individual sectors, in both directions. From a sample of 400 corporate footprints, the median company will experience a decrease of 13.7%, and 24% of companies will see their footprint move by more than 20%.
+A company's change depends on which sectors and countries its spend falls in. A small median can hide large moves in individual sectors, in both directions. From a sample of 400 corporate footprints, the median company will experience a decrease of 14% but there is a range of possibilities, as shown in the histogram below.
+:::
+
+:::{figure} ../images/company-footprint-change-ceda.png
+:label: company-footprint-change-ceda
+:alt: Histogram of the change in the footprint of 400 companies against CEDA. Nearly all companies decrease, mostly between 0% and 40%, with a median of a 14% decrease. A few companies change by less than 1% or increase slightly.
+:width: 90%
+
+**Change in the footprint of 400 companies, Cornerstone 2026 against CEDA 2025.** Each bar groups companies by the percentage change in their total footprint. Bars outside the shaded ±20% band are in green. Bar heights are approximate.
 :::
 
 ## What drives the change for CEDA users
 
-:::{figure} ../figures/diagrams/waterfall-vs-ceda.png
-:label: waterfall-vs-ceda
-:alt: Waterfall chart of the global emission factor from CEDA 2025 (0.6957) to Cornerstone 2026 (0.5281), by driver. The largest are benchmark-informed improvements (−19.0%), ABSR (−10.7%) and China data (+7.8%).
+Four changes drive ~95% of the impact: China data, Europe and global data, ABSR and benchmark-informed improvements.
+
+:::{figure} ../images/drivers-vs-ceda.png
+:label: drivers-vs-ceda
+:alt: Waterfall chart of the global emission factor from CEDA 2025 (0.6942) to Cornerstone 2026 (0.5324), by driver. China data adds 7.6%, Europe and other global data lower it by 1.8%, ABSR lowers it by 11.0% and benchmark-informed improvements lower it by 17.2%. Model reconciliation, US data, nowcasting, bug fixes and UK and global trade data are each within 0.7% of zero.
 :width: 100%
 
-**Change in the global production-weighted emission factor from CEDA 2025 to Cornerstone 2026, by driver.** Percentages are changes relative to the CEDA 2025 baseline. Increases are in coral and decreases in teal. The vertical axis starts at 0.50.
+**Change in the global production-weighted emission factor from CEDA 2025 to Cornerstone 2026, by driver.** Percentages are changes relative to the CEDA 2025 baseline. Numbers 1 to 4 mark the four drivers described below. The vertical axis starts at 0.50.
 :::
 
-The smaller changes are model reconciliation (about 0%), US data (+0.1%), nowcasting and facility-reported data (−0.7%), bug fixes (−0.4%), and UK and global trade data (about 0%).
+### New data for China
 
-### Benchmark-informed improvements
+Cornerstone adopts the most recent economic data released by the Chinese National Bureau of Statistics (2023 vs. 2020), which reflects methodology changes, changes in the economic structure, and sector-specific decarbonization.
 
-This is the largest driver. See the benchmarking section below.
+For example, China's battery factor rises by ~30% driven by a change in the composition of battery production in China. From 2020 to 2023, battery production more than tripled, but more importantly it shifted to require more lithium-ion and less lead-acid as inputs. This is because the majority of the market growth in batteries is in EVs and grid storage, which require lithium-ion. Lithium-ion needs lithium chemicals and power-hungry cell factories, being more carbon intensive per dollar than lead-acid batteries, driving the emission factor up.
+
+:::{figure} ../images/rc-china-battery.png
+:label: summary-china-battery
+:alt: Stacked bar chart of China battery production. In 2020, output was 382 GWh, mostly lead-acid. In 2023, output was 1,183 GWh, mostly lithium-ion.
+:width: 65%
+
+**China battery production, 2020 and 2023.** Output in GWh. The split by battery type is approximate. Sources: NBS input-output tables 2020 and 2023; MIIT; China lead-acid battery industry statistics.
+:::
+
+### New data for Europe
+
+Cornerstone adopts the most recent release of FIGARO, Eurostat's official input-output and emissions dataset. FIGARO is more granular than the OECD dataset for Europe, is available as a time series through 2023, and is updated every year, matching Cornerstone's release cadence.
+
+This data update lowers European factors by about 4% in median. The most significant change is in electricity factors, which fall in every EU country. This change is driven by an increase in renewable energy and by an increase in energy prices due to the gas-supply shocks the Ukraine war has caused in Europe. For example, Germany's power factor fell by 60%, as renewables grew from 35% to over 50% of generation and wholesale power prices more than doubled.
 
 ### Auto-balanced structural reflection (ABSR)
 
@@ -40,18 +64,6 @@ Structural reflection is the method CEDA uses to give every country the same sec
 
 - All countries share the same 405 sectors, so emission factors compare like for like.
 - Each economy balances production and consumption, in both money and emissions.
-
-### New data for China
-
-China's National Bureau of Statistics released benchmark input-output tables for 2023. The last update was for 2020. The new tables come from China's 5th National Economic Census and have more detail: 211 sectors instead of 153.
-
-This raises China's emission factors by about 10% at the median. It reflects methodology changes, changes in the economic structure, and sector-specific decarbonization. For example, China's battery factor rises by about 30%. Battery production grew from 382 GWh in 2020 to 1,183 GWh in 2023, and lithium-ion batteries, which are about twice as carbon-intensive per dollar as lead-acid, took a larger share.
-
-### New data for Europe
-
-Cornerstone adopts FIGARO, Eurostat's official input-output and emissions dataset. FIGARO is more granular than the OECD dataset for Europe, is available as a time series through 2023, and is updated every year, matching Cornerstone's release cadence.
-
-This lowers European factors by about 4% at the median. Electricity factors fall in every EU country. For example, Germany's power factor falls by 60%, as renewables grew from 35% to over 50% of generation. The Netherlands' falls by 77%, after a coal ban and a gas-heavy grid.
 
 ## Third-party benchmarking
 
