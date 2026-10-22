@@ -16,7 +16,7 @@ Cornerstone EEIO 2026 is the continuation of the USEEIO Supply Chain GHG Emissio
 
 ::::{important} Your footprint may not follow the median
 :class: dropdown
-A company's change depends on which sectors and countries its spend falls in. A small median can hide large moves in individual sectors, in both directions. From a sample of 400 corporate footprints, the median company will experience a decrease of 1.3%. Open this box to see the full range.
+A company's change depends on which sectors and countries its spend falls in. A small median can hide large moves in individual sectors, in both directions. From a sample of 400 corporate footprints, the median company will experience a decrease of 1.3%.
 
 :::{figure} ../images/company-footprint-change.png
 :label: company-footprint-change
