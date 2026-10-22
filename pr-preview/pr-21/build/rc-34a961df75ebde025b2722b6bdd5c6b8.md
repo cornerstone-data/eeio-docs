@@ -92,10 +92,10 @@ The charts compare the new factors with each model they replace.
 
 :::{figure} ../images/rc-factor-comparison.png
 :label: rc-factor-comparison
-:alt: Two waterfall charts. Against CEDA 2025, the factor goes from 0.6957 to 0.5281 (24.1% lower), with data updates adding 6.3% and methodology changes removing 28.6%. Against USEEIO v1.4 for the US, it goes from 0.2474 to 0.2448 (1.0% lower), with data updates removing 4.2% and methodology changes adding 3.3%.
+:alt: Two waterfall charts. Against CEDA 2025, the factor goes from 0.6942 to 0.5324 (23.3% lower), with data updates adding 5.8% and methodology changes removing 27.5%. Against USEEIO v1.4 for the US, it goes from 0.2474 to 0.2454 (0.8% lower), with data updates adding 0.4% and methodology changes removing 1.2%.
 :width: 100%
 
-**Emission factors fall 24.1% against CEDA 2025 and 1.0% against USEEIO v1.4 (US).** Production-weighted totals in kg CO₂e per 2024 USD, split into data updates and methodology changes.
+**Emission factors fall 23.3% against CEDA 2025 and 0.8% against USEEIO v1.4 (US).** Production-weighted totals in kg CO₂e per 2024 USD, split into data updates and methodology changes.
 :::
 
 :::{important} Your footprint may not follow the median
