@@ -67,6 +67,14 @@ The ABSR method is an improvement in this methodology. It achieves two goals tha
 - All countries share the same 405 sectors, so emission factors compare like for like.
 - Each economy balances production and consumption in terms of monetary transactions and emissions.
 
+:::{figure} ../images/absr-diagram.png
+:label: absr-diagram
+:alt: Diagram of the ABSR method. Countries A, B and C start with different numbers of sectors, so the sector granularity varies by country. ABSR disaggregates and balances each economy, giving every country the same 405 sectors, with row and column totals that check out.
+:width: 100%
+
+**How ABSR works.** ABSR disaggregates each country's economy into the same 405 sectors and balances it, so that production and consumption match in both money and emissions.
+:::
+
 ## Third-party benchmarking
 
 Cornerstone uses benchmark data built from about 1,000 sources to review the key sectors that drive about 50% of global emissions. Each review ends in one of three outcomes:
