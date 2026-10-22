@@ -167,6 +167,7 @@ def cement():
     for s in ("top", "right", "bottom"):
         ax.spines[s].set_visible(False)
     ax.spines["left"].set_color("#B4B2A9"); ax.set_xticks([]); ax.tick_params(axis="y", length=0)
+    ax.set_xlabel("kg CO$_2$e per USD", color=MUTED, fontsize=9.5, loc="left")
     fig.tight_layout()
     fig.savefig(OUT / "cement-ef.png", facecolor="white")
     plt.close(fig)

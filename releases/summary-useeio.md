@@ -52,10 +52,10 @@ Cornerstone EEIO also uses facility-level reported emissions data from the US EP
 
 :::{figure} ../images/cement-ef.png
 :label: cement-ef
-:alt: Bar chart of the cement sector emission factor. USEEIO 4.35, Cornerstone 5.21.
+:alt: Bar chart of the cement sector emission factor in kg CO₂e per USD. USEEIO 4.35, Cornerstone 5.21.
 :width: 60%
 
-**Cement sector emission factor, USEEIO v1.4 and Cornerstone 2026.**
+**Cement sector emission factor, USEEIO v1.4 and Cornerstone 2026.** In kg CO₂e per USD.
 :::
 
 ### Trade impact: modeling imports
