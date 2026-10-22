@@ -9,7 +9,7 @@ The Cornerstone EEIO 2026 - RC (Release Candidate) is the first stage of a phase
 
 This release candidate will be superseded in December by the release of the Cornerstone EEIO 2026 final version, which will include a time series from 2017 to 2026.
 
-Download this release on Zenodo here.
+Download this release on [Zenodo](https://zenodo.org/doi/10.5281/zenodo.23396891) here.
 :::
 
 :::{note} Why have a Release Candidate?
