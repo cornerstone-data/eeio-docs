@@ -83,13 +83,11 @@ Cornerstone uses benchmark data built from about 1,000 sources to review the key
 - **Model improvement.** The gap is traced to a data source or an allocation method, and fixed with more data or a corrected implementation.
 - **Known discrepancy.** The difference is documented, because of a limitation in how the model is built or a gap in the data.
 
-About 70% of country-sector pairs with a verified benchmark are within 25% of it. 21% are 25–50% apart and 10% are 50% or more apart.
-
 | Outcome | Example | Gap before and after |
 |---|---|---|
-| Sharper benchmark | US electricity: the benchmark covered only private utilities, while the model also includes state and local utilities. Aligning scope gives a benchmark of 2.37 against the model's 2.44 kg CO₂e per USD. | 15% to 3% |
-| Model improvement | Brazil dairy: the model was allocating methane from beef to dairy for lack of country-specific data. Brazil's national accounts of emissions and output fixed it. | 51% to 5% |
-| Known discrepancy | US oil and gas: the benchmark roughly doubles methane using aerial and satellite measurements. The model uses the EPA inventory, as for every other sector. Resolving this needs more research. | 22% (stays) |
+| Sharper benchmark | US electricity: the benchmark covered only private utilities, while the model also includes state and local utilities. Aligning scope reduces the gap. | 15% to 3% |
+| Model improvement | Brazil dairy: the model was allocating methane from beef to dairy for lack of country-specific data. The model now uses Brazil's national accounts of emissions and output for this sector, reducing the gap. | 51% to 5% |
+| Known discrepancy | US oil and gas: the benchmark roughly doubles methane using aerial and satellite measurements. The model uses the EPA inventory, as for every other sector. This is documented as a known discrepancy. | 22% (stays) |
 
 For the full list of data and methodology changes, see the [](change-log.md). For the equivalent summary against USEEIO, see [](summary-useeio.md).
 
