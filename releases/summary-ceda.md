@@ -60,10 +60,12 @@ This data update lowers European factors by about 4% in median. The most signifi
 
 ### Auto-balanced structural reflection (ABSR)
 
-Structural reflection is the method CEDA uses to give every country the same sectors. ABSR improves it. It achieves two goals that are hard to deliver together in a global model:
+Structural reflection is the method CEDA uses to maintain the same sectoral granularity across all countries.
+
+The ABSR method is an improvement in this methodology. It achieves two goals that are hard to deliver together in a global model:
 
 - All countries share the same 405 sectors, so emission factors compare like for like.
-- Each economy balances production and consumption, in both money and emissions.
+- Each economy balances production and consumption in terms of monetary transactions and emissions.
 
 ## Third-party benchmarking
 
