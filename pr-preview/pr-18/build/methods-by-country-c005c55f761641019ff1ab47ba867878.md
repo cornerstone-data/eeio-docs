@@ -96,7 +96,7 @@ The release candidate's 2024, 2025, and 2026 factors are all built from the same
 | Israel | ISR | 2 | ICIO, 2025 edition | 2020 | OECD GHG emissions for ICIO, 2025 edition | 2020 |
 | Italy | ITA | 2 | FIGARO, 2026 edition | 2023 | FIGARO, from air emissions accounts | 2023 |
 | Jamaica | JAM | 3 | Tier 3 IO template | 2020 | Tier 3 GHG template, scaled to national CO₂ total | 2018 |
-| Japan | JPN | 1 | Input-Output Tables for Japan | 2020 | Environmental data published with the Japan IO tables | 2020 |
+| Japan | JPN | 1 | Input-Output Tables for Japan | 2020 | NIES 3EID dataset | 2020 |
 | Jordan | JOR | 3 | Tier 3 IO template | 2020 | Tier 3 GHG template, scaled to national CO₂ total | 2018 |
 | Kazakhstan | KAZ | 2 | ICIO, 2025 edition | 2020 | OECD GHG emissions for ICIO, 2025 edition | 2020 |
 | Kenya | KEN | 3 | Tier 3 IO template | 2020 | Tier 3 GHG template, scaled to national CO₂ total | 2018 |

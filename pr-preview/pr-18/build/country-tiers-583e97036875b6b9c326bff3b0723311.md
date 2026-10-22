@@ -44,11 +44,11 @@ Each Tier 1 country's emissions come from its own national data.
 | Country | Source | Data year | Sectors |
 |---|---|---|---|
 | China | Built from several sources (see below) | 2023 | 211, matching the IO table |
-| Japan | Environmental data published with the Input-Output Tables for Japan | 2020 | Matching the IO table |
+| Japan | NIES 3EID dataset [@nansai3EID2020IOT2025] | 2020 | Matching the IO table |
 | South Korea | GHG data published with the Bank of Korea input-output tables [@bokUpdatedInputOutput2020] | 2018 | Matching the IO table |
-| United Kingdom | ONS atmospheric emissions accounts [@onsAtmosphericEmissionsGreenhouse2024] | 2023 | By industry |
+| United Kingdom | ONS atmospheric emissions accounts [@onsAtmosphericEmissionsGreenhouse2026] | 2023 | By industry |
 
-China's data are on a territorial basis, and the UK's on a residence basis.
+China's data are on a territorial basis, and the UK's on a residence basis. Japan's 3EID data are built on the same 2020 IO table and reconciled to Japan's national GHG inventory.
 
 **China** has no published emissions table matching its IO table, so we build one:
 
@@ -70,7 +70,7 @@ Tier 2 countries take their emissions from the same source as their IO table, so
 |  | FIGARO | ICIO |
 |---|---|---|
 | Publisher | Eurostat [@eurostatGreenhouseGasEmission2026] | OECD [@oecdGreenhouseGasFootprints2025; @yamanoCO2EmissionsEmbodied2020] |
-| Version | 2026 | 2025 |
+| Version | 2025 FIGARO tables | 2025 |
 | Data year | 2023 | 2020 |
 | Sectors | 64 industries (NACE Rev. 2) | 50 industries (ISIC Rev. 4) |
 | Gases | CO₂, CH₄, N₂O, HFCs, PFCs, and SF₆ with NF₃ | Total CO₂e only |
@@ -89,6 +89,8 @@ For both groups, FIGARO's industries are first converted to products using FIGAR
 - Electricity, gas, and heat are separated using Eurostat energy balances [@eurostatCompleteEnergyBalances2026] and CEDS gas distribution methane.
 - Agriculture is split into farm sectors using FAOSTAT CH₄ and N₂O [@faoFAOSTATEmissionsTotals2025] and Eurostat agricultural accounts [@eurostatEconomicAccountsAgriculture2026].
 - Mining, non-metallic minerals, and basic metals are split as in the IO table.
+
+The emissions are built on the 2025 FIGARO tables, while the FIGARO IO tables are the 2026 edition. Only each country's direct emissions by industry are used, so the difference matters mainly for non-EU countries, where Eurostat estimates the emissions.
 
 The products are then mapped to the common sectors with {term}`ABSR`. The last gas group, SF₆ with NF₃, is split using the U.S. share of SF₆ in each sector.
 
