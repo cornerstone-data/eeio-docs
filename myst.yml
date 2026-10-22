@@ -20,14 +20,7 @@ project:
       output: exports/cornerstone-eeio-guide.pdf
   toc:
     - file: index.md
-    - title: Introduction to EEIO models
-      children:
-        - file: intro/what-is-eeio.md
-        - file: intro/io-part.md
-        - file: intro/multi-regional.md
-        - file: intro/ee-part.md
-        - file: intro/emission-factors.md
-        - file: intro/uses-and-limits.md
+    - file: intro/what-is-eeio.md
     - title: The IO model
       children:
         - file: io/index.md
