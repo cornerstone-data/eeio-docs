@@ -84,12 +84,6 @@ About 70% of country-sector pairs with a verified benchmark are within 25% of it
 
 For the full list of data and methodology changes, see the [](change-log.md). For the equivalent summary against USEEIO, see [](summary-useeio.md).
 
-## Learn more
-
-- **From the field:** *to be added*
-- **Cornerstone papers:** *to be added*
-- **Code:** *to be added*
-
 +++
 
 :::{div}

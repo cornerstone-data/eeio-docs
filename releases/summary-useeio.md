@@ -75,12 +75,6 @@ One example is light trucks and utility vehicles. The US factor rises by ~24%, m
 
 For the full list of data and methodology changes, see the [](change-log.md). For the equivalent summary against CEDA, see [](summary-ceda.md).
 
-## Learn more
-
-- **From the field:** *to be added*
-- **Cornerstone papers:** *to be added*
-- **Code:** [Methods discussion log](https://github.com/cornerstone-data/methods/discussions), the record of each model reconciliation decision.
-
 +++
 
 :::{div}
