@@ -4,7 +4,7 @@ subtitle: "Release candidate · Release date: October 27, 2026"
 ---
 
 :::{tip} Summary
-The Cornerstone EEIO 2026 - RC (Release Candidate) is the first stage of a phased approach to releasing the Cornerstone EEIO 2026 model, the successor of USEEIO and CEDA. It is a global environmentally-extended input-output (EEIO) model that produces spend-based emission factors, in kg CO₂e per USD for 405 sectors across 148 countries, plus 15 regional averages and one global average. It uses 2024 as the base year and is available to use for 2024, 2025 and 2026 measurements.
+The Cornerstone EEIO 2026 - RC (Release Candidate) is the first stage of a phased approach to releasing the Cornerstone EEIO 2026 model, the successor of USEEIO and CEDA. It is a global environmentally-extended input-output (EEIO) model that produces spend-based emission factors, in kg CO₂e per USD for 405 sectors across 148 countries, plus 21 regional averages and one global average. It uses 2024 as the base year and is available to use for 2024, 2025 and 2026 measurements.
 
 This release candidate will be superseded in December by the release of the Cornerstone EEIO 2026 final version, which will include a time series from 2017 to 2026.
 
