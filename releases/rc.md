@@ -81,10 +81,10 @@ USEEIO treated the US as a closed economy: every product used in the US was assu
 
 :::{figure} ../images/rc-us-parts-imports.png
 :label: rc-us-parts-imports
-:alt: One horizontal stacked bar showing the estimated origin of light-truck components. Made in the US 41%. Imported: Mexico 24%, Europe combined 7%, Canada 6%, China 5%, Japan 5%, ASEAN combined 4%, South Korea 4%, other 4%.
+:alt: One horizontal stacked bar showing the estimated origin of light-truck components. Made in the US 41%. Imported: Mexico 24%, Europe 7%, Canada 6%, China 5%, Japan 5%, ASEAN 4%, South Korea 4%, other 4%.
 :width: 100%
 
-**Estimated origin of the components of a US-assembled light truck.** US and Canadian content together is 47%, the average of 87 light trucks assembled in the US, from the American Automobile Labeling Act data for model year 2025 (unweighted, ranges at their midpoint). That data does not separate the US from Canada, so Canada is estimated from its 10% share of US auto parts imports, which gives about 6% of components from Canada and 41% made in the US. The other origins apply the 2024 mix of US auto parts imports to the imported share. That mix covers parts for all vehicle types, Europe and ASEAN are combined regions in the source, and Other is the remainder, so the split is indicative. Sources: [NHTSA AALA parts content data](https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports), as compiled on [Wikipedia](https://en.wikipedia.org/wiki/List_of_automobiles_manufactured_in_the_United_States); International Trade Administration data as reported by [MNI (March 2025)](https://www.mnimarkets.com/articles/us-auto-tariffs-impact-broad-based-across-regions-1743036084321).
+**Estimated origin of the components of a US-assembled light truck.** Sources: [NHTSA AALA parts content data](https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports); [International Trade Administration data as reported by MNI (March 2025)](https://www.mnimarkets.com/articles/us-auto-tariffs-impact-broad-based-across-regions-1743036084321).
 :::
 
 ## How do the emission factors change?

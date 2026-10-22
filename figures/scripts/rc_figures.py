@@ -118,8 +118,8 @@ def germany():
 
 def parts_origin():
     us_canada = 47.0                       # US and Canadian content, mean of 87 light trucks (AALA, MY2025)
-    mix = [("Mexico", 41.0), ("Europe (combined)", 11.9), ("Canada", 10.0), ("China", 9.3), ("Japan", 8.0),
-           ("ASEAN (combined)", 7.0), ("South Korea", 6.4)]
+    mix = [("Mexico", 41.0), ("Europe", 11.9), ("Canada", 10.0), ("China", 9.3), ("Japan", 8.0),
+           ("ASEAN", 7.0), ("South Korea", 6.4)]
     mix.append(("Other", 100 - sum(v for _, v in mix)))            # remainder of parts imports (6.4%)
     canada_share = dict(mix)["Canada"] / 100
     rest_of_world = 100 * (1 - canada_share) * 0 + sum(v for n, v in mix if n != "Canada")  # 90.0
@@ -134,8 +134,8 @@ def parts_origin():
     # draw order: US first, then imports by size
     idx = [0] + sorted(range(1, len(parts)), key=lambda i: (-floors[i], i))
     parts = [parts[i] for i in idx]; floors = [floors[i] for i in idx]
-    palette = {"Made in the US": "#5F5E5A", "Mexico": "#0F6E56", "Canada": "#5DCAA5", "Europe (combined)": "#378ADD",
-               "China": "#D85A30", "Japan": "#BA7517", "ASEAN (combined)": "#7F77DD", "South Korea": "#D4537E",
+    palette = {"Made in the US": "#5F5E5A", "Mexico": "#0F6E56", "Canada": "#5DCAA5", "Europe": "#378ADD",
+               "China": "#D85A30", "Japan": "#BA7517", "ASEAN": "#7F77DD", "South Korea": "#D4537E",
                "Other": "#B4B2A9"}
     dark_text = {"Canada", "Other"}
     fig, ax = plt.subplots(figsize=(9.5, 3.1), dpi=200)
