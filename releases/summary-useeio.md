@@ -31,12 +31,11 @@ A company's change depends on which sectors and countries its spend falls in. A 
 
 Three changes drive ~95% of the impact: model reconciliation, nowcasting and facility-reported data, and the modeling of imports.
 
-:::{figure} ../images/drivers-vs-useeio.png
+:::{iframe} ../../interactive/drivers-waterfall.html?d=useeio
 :label: drivers-vs-useeio
-:alt: Waterfall chart of the US emission factor from USEEIO v1.4 (0.2474) to Cornerstone 2026 (0.2454), by driver. Model reconciliation lowers it by 3.5%, US data adds 0.4%, nowcasting and facility reported data lower it by 5.8%, trade impact adds 8.6% and benchmark-informed improvements add 0.2%. The first three steps belong to the US model and the last two to the US portion of the global model.
 :width: 100%
 
-**Change in the US production-weighted emission factor from USEEIO v1.4 to Cornerstone 2026, by driver.** Percentages are changes relative to the USEEIO baseline. The vertical axis starts at 0.215.
+**Change in the US production-weighted emission factor from USEEIO v1.4 to Cornerstone 2026, by driver.** Percentages are changes relative to the USEEIO baseline. Hover over a bar for details. The vertical axis does not start at zero.
 :::
 
 ### Model reconciliation

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drivers of change</title>
+<style>
+  :root { --ink:#2C2C2A; --muted:#5F5E5A; --grid:#E8E6DF; --base:#B4B2A9; --end:#5F5E5A; --data:#D85A30; --meth:#1D9E75; --bg:#fff; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#ECEBE6; --muted:#A8A69E; --grid:#3A3935; --bg:#1c1c1b; --base:#76746D; --end:#C9C7BF; } }
+  body { margin:0; padding:8px 8px 6px; background:var(--bg); color:var(--ink); font:14px/1.4 -apple-system,"Helvetica Neue",Arial,sans-serif; }
+  .bar { display:flex; justify-content:flex-end; margin-bottom:2px; }
+  .legend { display:flex; gap:16px; color:var(--muted); font-size:13px; }
+  .legend i { display:inline-block; width:12px; height:12px; margin-right:6px; vertical-align:-1px; }
+  .wrap { overflow-x:auto; } svg { display:block; overflow:visible; }
+  text { fill:var(--ink); font-size:inherit; } svg { font-size:11.5px; }
+  .muted { fill:var(--muted); }
+  .col rect.b { transition:opacity .15s; } .col { cursor:default; }
+  svg.hov .col:not(.on) { opacity:.35; }
+  #tip { position:fixed; pointer-events:none; background:var(--ink); color:var(--bg); padding:8px 10px; border-radius:6px; font-size:12.5px; max-width:260px; opacity:0; transition:opacity .1s; z-index:5; }
+  #tip b { display:block; margin-bottom:2px; }
+  .note { color:var(--muted); font-size:12px; margin-top:2px; }
+</style>
+</head>
+<body>
+<div class="bar">
+  <div class="legend"><span><i style="background:var(--data)"></i>Data update</span><span><i style="background:var(--meth)"></i>Methodology</span></div>
+</div>
+<div class="wrap"><svg id="chart" role="img" aria-label="Waterfall chart of the change in the production-weighted emission factor, by driver"></svg></div>
+<div class="note" id="note"></div>
+<div id="tip"></div>
+<script>
+const D = {
+  useeio: {
+    base:["USEEIO<br>v1.4", 0.2474], end:0.2454, net:"−0.8%", lo:0.215, hi:0.255, force:false,
+    note:"kg CO₂e per 2024 USD, production-weighted.",
+    bands:[[1,3,"US MODEL"],[4,5,"GLOBAL MODEL"]],
+    steps:[["Model<br>reconciliation",-3.5,"m","Adopting one model's approach on each of 18 differences, e.g. BEA tables after redefinitions."],
+           ["US<br>data",0.4,"d","Updated US emissions data (UMD GHGIA, 2023 to 2024)."],
+           ["Nowcasting &<br>facility data",-5.8,"m","Annual 2017–2024 US tables and EPA GHGRP facility-reported emissions."],
+           ["Trade<br>impact",8.6,"m","Imports modelled in the country that produced them instead of as US-made."],
+           ["Benchmark-<br>informed",0.2,"m","Fixes found by reviewing sectors against third-party benchmarks."]]
+  },
+  ceda: {
+    base:["CEDA<br>2025", 0.6942], end:0.5324, net:"−23.3%", lo:0.50, hi:0.80, force:true,
+    note:"kg CO₂e per 2024 USD, production-weighted.",
+    bands:[[1,3,"US MODEL"],[4,9,"GLOBAL MODEL"]],
+    steps:[["Model<br>reconciliation",0,"m","Adopting one model's approach on each of 18 US differences."],
+           ["US<br>data",0.1,"d","Updated US emissions data (UMD GHGIA, 2023 to 2024)."],
+           ["Nowcasting &<br>facility data",-0.7,"m","Annual 2017–2024 US tables and EPA GHGRP facility-reported emissions."],
+           ["Bug<br>fixes",-0.2,"m","HS mapping, AR5 to AR6 conversion and UK table loading."],
+           ["UK & global<br>trade data",0,"d","UK 2023 tables and BACI 2024 trade data."],
+           ["China<br>data",7.6,"d","China 2023 input-output tables and emissions."],
+           ["Europe & other<br>global data",-1.8,"d","FIGARO 2023 where available, otherwise OECD 2020."],
+           ["ABSR",-11.0,"m","Auto-balanced structural reflection: same 405 sectors, balanced in money and emissions."],
+           ["Benchmark-<br>informed",-17.2,"m","Fixes found by reviewing key sectors against about 1,000 third-party sources."]]
+  }
+};
+const svg = document.getElementById("chart"), tip = document.getElementById("tip"), NS = "http://www.w3.org/2000/svg";
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const fmt = p => Math.abs(p) < .05 ? "~0%" : (p>0?"+":"−")+Math.abs(p).toFixed(1)+"%";
+function el(n, a, parent, txt){ const e=document.createElementNS(NS,n); for(const k in a) e.setAttribute(k,a[k]); if(txt!==undefined) e.textContent=txt; (parent||svg).appendChild(e); return e; }
+function label(x,y,html,cls,parent,anchor="middle"){ const t=el("text",{x,y,"text-anchor":anchor,class:cls||""},parent); html.split("<br>").forEach((l,i)=>el("tspan",{x,dy:i?15:0},t,l)); return t; }
+
+function draw(key){
+  const d = D[key], W=Math.max(document.querySelector(".wrap").clientWidth, 480), L=46, R=14, T=22, B=64,
+    H=Math.max(innerHeight - document.querySelector(".bar").offsetHeight - document.getElementById("note").offsetHeight - 54, 230), n=d.steps.length+2;
+  svg.setAttribute("width",W); svg.setAttribute("height",H); svg.setAttribute("viewBox",`0 0 ${W} ${H}`); svg.innerHTML="";
+  const y = v => T+(H-T-B)*(1-(v-d.lo)/(d.hi-d.lo)), cw=(W-L-R)/n, bw=cw*.62, cx=i=>L+cw*(i+.5); svg.style.fontSize = cw<80 ? "10px" : "11.5px";
+  for(let v=Math.ceil(d.lo*50)/50; v<=d.hi+1e-9; v+=(d.hi-d.lo)>.1?.05:.01){ const yy=y(v);
+    el("line",{x1:L,x2:W-R,y1:yy,y2:yy,stroke:css("--grid")}); label(L-8,yy+4,v.toFixed(v<.1?3:2),"muted",null,"end"); }
+  d.bands.forEach(([a,b,t])=>{ el("rect",{x:L+cw*a+3,y:T,width:cw*(b-a+1)-6,height:H-T-B,fill:"currentColor",opacity:.05,rx:4}); label(L+cw*(a+b+1)/2,T+16,t,"muted"); });
+  el("line",{x1:L,x2:W-R,y1:y(d.lo),y2:y(d.lo),stroke:css("--base")});
+  const cols=[]; let level=d.base[1];
+  cols.push({i:0,lo:d.lo,hi:level,c:"--base",top:level.toFixed(4),lab:d.base[0],tip:["Baseline",d.base[0].replace("<br>"," ")+": "+level.toFixed(4)+" kg CO₂e per USD"]});
+  d.steps.forEach((s,k)=>{ const nx = d.force&&k==d.steps.length-1 ? d.end : level+d.base[1]*s[1]/100;
+    cols.push({i:k+1,lo:Math.min(level,nx),hi:Math.max(level,nx),c:s[2]=="d"?"--data":"--meth",top:fmt(s[1]),lab:s[0],from:level,to:nx,tip:[s[0].replace("<br>"," ")+" · "+fmt(s[1]),s[3]]});
+    el("line",{x1:cx(k)+bw/2,x2:cx(k+1)-bw/2,y1:y(level),y2:y(level),stroke:css("--base"),"stroke-dasharray":"3 3"}); level=nx; });
+  const last=d.steps.length;
+  el("line",{x1:cx(last)+bw/2,x2:cx(last+1)-bw/2,y1:y(level),y2:y(level),stroke:css("--base"),"stroke-dasharray":"3 3"});
+  cols.push({i:last+1,lo:d.lo,hi:d.end,c:"--end",top:d.end.toFixed(4)+"\n"+d.net+" net",lab:"Cornerstone<br>2026",tip:["Cornerstone 2026",d.end.toFixed(4)+" kg CO₂e per USD ("+d.net+" net)"]});
+  cols.forEach(c=>{ const g=el("g",{class:"col"}); const h=Math.max(y(c.lo)-y(c.hi),1.5);
+    el("rect",{class:"b",x:cx(c.i)-bw/2,y:y(c.hi),width:bw,height:h,fill:css(c.c),rx:2},g);
+    const col = c.c=="--data"||c.c=="--meth" ? css(c.c) : css("--ink");
+    c.top.split("\n").forEach((l,j,a)=>{ const t=label(cx(c.i),y(c.hi)-6-(a.length-1-j)*15,l,"",g); t.style.fill=col; t.style.fontWeight=500; });
+    label(cx(c.i),H-B+18,c.lab,"",g);
+    const hit=el("rect",{x:cx(c.i)-cw/2,y:T,width:cw,height:H-T-B+50,fill:"transparent"},g);
+    g.addEventListener("mousemove",e=>{ svg.classList.add("hov"); g.classList.add("on"); tip.innerHTML=`<b>${c.tip[0]}</b>${c.tip[1]}`; tip.style.opacity=1;
+      tip.style.left=Math.min(e.clientX+14,innerWidth-280)+"px"; tip.style.top=(e.clientY+14)+"px"; });
+    g.addEventListener("mouseleave",()=>{ svg.classList.remove("hov"); g.classList.remove("on"); tip.style.opacity=0; }); });
+  document.getElementById("note").textContent=d.note;
+}
+const KEY = new URLSearchParams(location.search).get("d") === "ceda" ? "ceda" : "useeio";
+draw(KEY);
+addEventListener("resize", () => draw(KEY));
+</script>
+</body>
+</html>

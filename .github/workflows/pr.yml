@@ -30,6 +30,9 @@ jobs:
       - name: Build HTML (fails on errors)
         if: github.event.action != 'closed'
         run: myst build --html --strict
+      - name: Copy interactive figures into the site
+        if: github.event.action != 'closed'
+        run: mkdir -p _build/html/interactive && cp figures/interactive/*.html _build/html/interactive/
       - name: Deploy or remove preview
         # Fork PRs can't push to gh-pages; they still get the build check above.
         if: github.event.pull_request.head.repo.full_name == github.repository

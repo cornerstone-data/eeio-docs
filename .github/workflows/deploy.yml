@@ -33,6 +33,8 @@ jobs:
         run: npm install -g mystmd
       - name: Build HTML
         run: myst build --html --strict
+      - name: Copy interactive figures into the site
+        run: mkdir -p _build/html/interactive && cp figures/interactive/*.html _build/html/interactive/
       - name: Publish to the hub's eeio/ folder
         uses: peaceiris/actions-gh-pages@v4
         with:
