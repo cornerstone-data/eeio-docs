@@ -3,7 +3,7 @@ title: "What is an EEIO model?"
 ---
 
 :::{tip} Summary
-An environmentally-extended input-output ({term}`EEIO`) model joins tables of how an economy's sectors buy from one another with data on what each sector emits. Together they produce emission factors: the greenhouse gas emissions across a whole supply chain per dollar spent on a sector's products.
+An environmentally-extended input-output ({term}`EEIO`) model joins tables of how an economy's sectors buy from one another with data on environmental attributes of each sector. When the EEIO model included GHG emissions, it can produce emission factors that represent the GHG emissions across a whole supply chain per dollar spent on a sector's products.
 :::
 
 :::{figure} ../figures/diagrams/eeio-overview.svg
@@ -26,11 +26,11 @@ Each data component is put into a matrix, named by a letter that is common in in
 
 ## EEIO and life cycle assessment
 
-An EEIO model has the same matrix structure as the models used for life cycle assessment (LCA). In both, a matrix of the inputs each activity needs is inverted to trace every upstream supplier, and a matrix of emissions per unit of each activity is multiplied through it. The difference is that EEIO describes sectors in dollars, where LCA usually describes individual processes in physical units. Because of this shared structure, EEIO data can serve as background data in LCA, as discussed in {cite:t}`ingwersenConsideringInputoutputDerived2026`.
+An EEIO model has the same matrix structure as the models used for life cycle assessment (LCA) [@suhDevelopingSectoralEnvironmental2005]. In both, a matrix of the inputs each activity needs is inverted to trace every upstream supplier, and a matrix of emissions per unit of each activity is multiplied through it. The difference is that EEIO describes sectors in dollars, where LCA usually describes individual processes in physical units. Because of this shared structure, EEIO data can serve as background data in LCA, as discussed in {cite:t}`ingwersenConsideringInputoutputDerived2026`.
 
 ## Multi-regional models
 
-A single-country model assumes imported products are made the same way, and with the same emissions, as products made at home. A multi-regional input-output ({term}`MRIO`) model instead links countries' input-output tables through international trade, so each import carries the supply chain and emissions of the country that made it. For the companies reporting to CDP, using an MRIO model instead of a U.S. single-region model raises their estimated upstream emissions by about 10% [@davisImportanceMultiregionalAccounting2025]. The Cornerstone model is an MRIO model; see [](../io/index.md#from-single-country-tables-to-the-multi-region-model).
+A single-country model assumes imported products are made the same way, and with the same emissions, as products made at home. A multi-regional input-output ({term}`MRIO`) model instead links countries' input-output tables through international trade, so each import carries the supply chain and emissions as it was produced in the origin country. For the companies reporting to CDP, using an MRIO model instead of a U.S. single-region model raises their estimated upstream emissions by about 10% [@davisImportanceMultiregionalAccounting2025]. The Cornerstone model is an MRIO model; see [](../io/index.md#from-single-country-tables-to-the-multi-region-model).
 
 ## Further reading
 
@@ -38,7 +38,3 @@ For a book-length introduction to EEIO and its use in LCA, see {cite:t}`hendrick
 
 +++
 
-:::{div}
-:class: page-status
-Applies to: RC · Last reviewed: RC
-:::
