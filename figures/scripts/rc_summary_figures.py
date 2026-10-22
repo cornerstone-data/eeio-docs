@@ -116,9 +116,6 @@ def drivers(name, base_label, base, end, net, steps, bands, ylim, n_ticks_label=
         ax.bar(i, max(hi - lo, span * 0.002), bottom=lo, color=colour, width=0.6, zorder=2)
         text = "~0%" if abs(pct) < 0.05 else f"{pct:+.1f}%".replace("-", "−")
         ax.text(i, hi + span * 0.012, text, ha="center", va="bottom", color=colour, fontweight="medium")
-        if badge:
-            ax.text(i + 0.36, hi + span * 0.03, str(badge), ha="center", va="center", color="white", fontsize=9, fontweight="medium",
-                    bbox=dict(boxstyle="circle,pad=0.3", fc=INK, ec="none"), zorder=4)
         ax.plot([i - 0.7, i - 0.3], [level, level], color="#B4B2A9", lw=0.9, ls=(0, (3, 3)), zorder=1)
         level = new
         xs.append(i); labels.append(label)

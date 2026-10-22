@@ -14,9 +14,9 @@ Cornerstone EEIO 2026 is the continuation of the USEEIO Supply Chain GHG Emissio
 **Cornerstone 2026 against USEEIO v1.4 (US).** US production-weighted total emission factor, in kg CO₂e per 2024 USD, split into data updates and methodology changes.
 :::
 
-:::{important} Your footprint may not follow the median
-A company's change depends on which sectors and countries its spend falls in. A small median can hide large moves in individual sectors, in both directions. From a sample of 400 corporate footprints, the median company will experience a decrease of 1.3% but there is a range of possibilities, as shown in the histogram below.
-:::
+::::{important} Your footprint may not follow the median
+:class: dropdown
+A company's change depends on which sectors and countries its spend falls in. A small median can hide large moves in individual sectors, in both directions. From a sample of 400 corporate footprints, the median company will experience a decrease of 1.3%. Open this box to see the full range.
 
 :::{figure} ../images/company-footprint-change.png
 :label: company-footprint-change
@@ -25,6 +25,7 @@ A company's change depends on which sectors and countries its spend falls in. A 
 
 **Change in the footprint of 400 companies, Cornerstone 2026 against USEEIO v1.4.** Each bar groups companies by the percentage change in their total footprint. Bars outside the shaded ±20% band are in green. Bar heights are approximate.
 :::
+::::
 
 ## What drives the change for USEEIO users
 
@@ -35,7 +36,7 @@ Three changes drive ~95% of the impact: model reconciliation, nowcasting and fac
 :alt: Waterfall chart of the US emission factor from USEEIO v1.4 (0.2474) to Cornerstone 2026 (0.2454), by driver. Model reconciliation lowers it by 3.5%, US data adds 0.4%, nowcasting and facility reported data lower it by 5.8%, trade impact adds 8.6% and benchmark-informed improvements add 0.2%. The first three steps belong to the US model and the last two to the US portion of the global model.
 :width: 100%
 
-**Change in the US production-weighted emission factor from USEEIO v1.4 to Cornerstone 2026, by driver.** Percentages are changes relative to the USEEIO baseline. Numbers 1 to 3 mark the three drivers described below. The vertical axis starts at 0.215.
+**Change in the US production-weighted emission factor from USEEIO v1.4 to Cornerstone 2026, by driver.** Percentages are changes relative to the USEEIO baseline. The vertical axis starts at 0.215.
 :::
 
 ### Model reconciliation

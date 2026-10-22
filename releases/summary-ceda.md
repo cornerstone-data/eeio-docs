@@ -14,9 +14,9 @@ Cornerstone EEIO 2026 is the continuation of CEDA 2025. For global factors, the 
 **Cornerstone 2026 against CEDA 2025 (global).** Global production-weighted total emission factor, in kg CO₂e per 2024 USD, split into data updates and methodology changes.
 :::
 
-:::{important} Your footprint may not follow the median
-A company's change depends on which sectors and countries its spend falls in. A small median can hide large moves in individual sectors, in both directions. From a sample of 400 corporate footprints, the median company will experience a decrease of 14% but there is a range of possibilities, as shown in the histogram below.
-:::
+::::{important} Your footprint may not follow the median
+:class: dropdown
+A company's change depends on which sectors and countries its spend falls in. A small median can hide large moves in individual sectors, in both directions. From a sample of 400 corporate footprints, the median company will experience a decrease of 14%. Open this box to see the full range.
 
 :::{figure} ../images/company-footprint-change-ceda.png
 :label: company-footprint-change-ceda
@@ -25,6 +25,7 @@ A company's change depends on which sectors and countries its spend falls in. A 
 
 **Change in the footprint of 400 companies, Cornerstone 2026 against CEDA 2025.** Each bar groups companies by the percentage change in their total footprint. Bars outside the shaded ±20% band are in green. Bar heights are approximate.
 :::
+::::
 
 ## What drives the change for CEDA users
 
@@ -35,7 +36,7 @@ Four changes drive ~95% of the impact: China data, Europe and global data, ABSR 
 :alt: Waterfall chart of the global emission factor from CEDA 2025 (0.6942) to Cornerstone 2026 (0.5324), by driver. China data adds 7.6%, Europe and other global data lower it by 1.8%, ABSR lowers it by 11.0% and benchmark-informed improvements lower it by 17.2%. Model reconciliation, US data, nowcasting, bug fixes and UK and global trade data are each within 0.7% of zero.
 :width: 100%
 
-**Change in the global production-weighted emission factor from CEDA 2025 to Cornerstone 2026, by driver.** Percentages are changes relative to the CEDA 2025 baseline. Numbers 1 to 4 mark the four drivers described below. The vertical axis starts at 0.50.
+**Change in the global production-weighted emission factor from CEDA 2025 to Cornerstone 2026, by driver.** Percentages are changes relative to the CEDA 2025 baseline. The vertical axis starts at 0.50.
 :::
 
 ### New data for China
