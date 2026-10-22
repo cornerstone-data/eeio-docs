@@ -1,7 +1,6 @@
 ---
 title: "Cornerstone EEIO 2026 - RC"
-subtitle: Release candidate
-date: 2026-10-27
+subtitle: "Release candidate · Release date: October 27, 2026"
 ---
 
 :::{tip} Summary
