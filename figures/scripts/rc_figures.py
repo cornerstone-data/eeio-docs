@@ -57,9 +57,10 @@ def panel(ax, start_label, start, steps, end_label, end, net):
         if i == len(steps):
             new = end
         lo, hi = min(level, new), max(level, new)
-        ax.bar(i, hi - lo, bottom=lo, color=UP if pct > 0 else DOWN, width=0.62)
+        colour = "#D85A30" if label.startswith("Data") else "#1D9E75"  # data update / methodology, as on the summary pages
+        ax.bar(i, hi - lo, bottom=lo, color=colour, width=0.62)
         txt = f"{pct:+.1f}%".replace("-", "−")
-        ax.text(i, hi * 1.015, txt, ha="center", va="bottom", color=UP if pct > 0 else DOWN, fontweight="medium")
+        ax.text(i, hi * 1.015, txt, ha="center", va="bottom", color=colour, fontweight="medium")
         ax.plot([i - 0.69, i - 0.31], [level, level], color="#B4B2A9", lw=0.9, ls=(0, (3, 3)))
         level = new
         xs.append(i); labels.append(label)
@@ -75,10 +76,10 @@ def panel(ax, start_label, start, steps, end_label, end, net):
 
 def comparison():
     fig, axes = plt.subplots(1, 2, figsize=(11, 3.7), dpi=200)
-    panel(axes[0], "CEDA\n2025", 0.6957, [("Data\nupdates", 6.3), ("Methodology\nchanges", -28.6)],
-          "Cornerstone\n2026", 0.5281, "−24.1%")
-    panel(axes[1], "USEEIO\nv1.4 (US)", 0.2474, [("Data\nupdates", -4.2), ("Methodology\nchanges", 3.3)],
-          "Cornerstone\n2026", 0.2448, "−1.0%")
+    panel(axes[0], "CEDA\n2025", 0.6942, [("Data\nupdates", 5.8), ("Methodology\nchanges", -27.5)],
+          "Cornerstone\n2026", 0.5324, "−23.3%")
+    panel(axes[1], "USEEIO\nv1.4 (US)", 0.2474, [("Data\nupdates", 0.4), ("Methodology\nchanges", -1.2)],
+          "Cornerstone\n2026", 0.2454, "−0.8%")
     fig.tight_layout(w_pad=3)
     fig.savefig(OUT / "rc-factor-comparison.png", facecolor="white")
     plt.close(fig)
