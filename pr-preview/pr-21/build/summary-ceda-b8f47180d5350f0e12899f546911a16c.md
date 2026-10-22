@@ -91,6 +91,8 @@ Cornerstone uses benchmark data built from about 1,000 sources to review the key
 
 For the full list of data and methodology changes, see the [](change-log.md). For the equivalent summary against USEEIO, see [](summary-useeio.md).
 
+For even additional details or custom support on how to navigate the changes in your footprint, sign up for a demo of the enterprise product [here](https://watershed.com/en-GB/solutions/ceda).
+
 +++
 
 :::{div}

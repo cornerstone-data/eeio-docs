@@ -98,6 +98,8 @@ The USEEIO and the US portion of CEDA had 18 methodological differences. Corners
 
 For the summaries of these changes, see [](summary-useeio.md) and [](summary-ceda.md).
 
+For even additional details or custom support on how to navigate the changes in your footprint, sign up for a demo of the enterprise product [here](https://watershed.com/en-GB/solutions/ceda).
+
 +++
 
 :::{div}
