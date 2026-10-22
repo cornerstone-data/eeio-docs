@@ -105,10 +105,6 @@ A company’s change depends on which sectors and countries its spend falls in. 
 
 For a more detailed change log against the USEEIO or CEDA, please refer to [](changelog-useeio.md) and [](changelog-ceda.md). For even additional details or custom support on how to navigate the changes in your footprint, sign up for a demo of the enterprise product [here](https://watershed.com/en-GB/solutions/ceda).
 
-## Give feedback
-
-[Open an issue on GitHub](https://github.com/cornerstone-data/eeio-docs/issues/new).
-
 +++
 
 :::{div}
