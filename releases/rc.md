@@ -63,7 +63,7 @@ For example, China’s battery factor rises by ~30% driven by a change in the co
 
 ### New data for Europe
 
-Cornerstone adopts the most recent release of FIGARO, Eurostat’s official input-output and emissions dataset. FIGARO is more granular than the OECD dataset for Europe, is available through 2023 vs. 2020, and is updated every year, matching Cornerstone’s release cadence.
+Cornerstone adopts the most recent release of FIGARO, Eurostat’s official input-output and emissions dataset. FIGARO is more granular than the OECD dataset for Europe, is available as a time series through 2023, and is updated every year, matching Cornerstone’s release cadence.
 
 This data update lowers European factors by about 4% in median. The most significant change is in electricity factors, which fall in every EU country. This change is driven by an increase in renewable energy and by an increase in energy prices due to the gas-supply shocks the Ukraine war has caused in Europe. For example, Germany’s power factor fell by 60%, as renewables grew from 35% to over 50% of generation and wholesale power prices more than doubled.
 
