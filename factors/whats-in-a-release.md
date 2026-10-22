@@ -59,12 +59,6 @@ The data dictionary and five other tabs support the data tabs. The data dictiona
 
 The Cornerstone EEIO follows an annual update cycle. Every year we release a version named after the release year, so Cornerstone 2027 will be released in 2027. Releases are publicly available every October so companies can plan accordingly.
 
-## Learn more
-
-- **From the field:** *to be added*
-- **Cornerstone papers:** *to be added*
-- **Code:** *to be added*
-
 +++
 
 :::{div}
