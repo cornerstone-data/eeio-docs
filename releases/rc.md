@@ -14,7 +14,7 @@ Download this release on [Zenodo](https://zenodo.org/doi/10.5281/zenodo.23396891
 
 :::{note} Why have a Release Candidate?
 :class: dropdown
-2026 is an unprecedented year of development because it is the first time we are combining CEDA and USEEIO into one model and also the first time we are releasing a time series. The intention behind having a two phased approach to the release is to give companies additional time for impact assessments on their most recent year of measurements, while the developers finish the validation process for the time series. This enables companies to understand footprint changes before applying the time series.
+2026 is an unprecedented year of development because it is the first time we are combining CEDA and USEEIO into one model and also the first time we are releasing a time series. The intention behind having a two phased approach to the release is to give companies additional time for impact assessments on their most recent year of measurements, while the time series is under development. This enables companies to understand footprint changes before applying the time series.
 :::
 
 :::{note} Will there be any changes for years 2024 to 2026 once the time series is released?
