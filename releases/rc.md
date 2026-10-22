@@ -77,7 +77,7 @@ This data update lowers European factors by about 4% in median. The most signifi
 
 ### Incorporation of imports in the US
 
-USEEIO treated the US as a closed economy: every product used in the US was assumed to be made in the US. Cornerstone uses trade data to model each import in the country that produced it. Many imports come from more emissions-intensive economies such as China and India, so US factors tend to rise by 10 to 30% on average. This is the main upward pressure and the main reason for the change for USEEIO users. One example is light trucks and utility vehicles. The US factor rises by ~24.1%, mostly because many of their components are now modeled as imports from the countries that make them. Public data suggests that about 60% of the components of a US-assembled light truck are imported, with Mexico the largest source, followed by Europe and Canada (see {numref}`rc-us-parts-imports`).
+USEEIO treated the US as a closed economy: every product used in the US was assumed to be made in the US. Cornerstone uses trade data to model each import in the country that produced it. Many imports come from more emissions-intensive economies such as China and India, so US factors tend to rise by 10 to 30% on average. This is the main upward pressure and the main reason for the change for USEEIO users. One example is light trucks and utility vehicles. The US factor rises by ~24%, mostly because many of their components are now modeled as imports from the countries that make them. Public data suggests that about 60% of the components of a US-assembled light truck are imported, with Mexico the largest source, followed by Europe and Canada (see {numref}`rc-us-parts-imports`).
 
 :::{figure} ../images/rc-us-parts-imports.png
 :label: rc-us-parts-imports
@@ -103,7 +103,7 @@ The charts compare the new factors with each model they replace.
 A company’s change depends on which sectors and countries its spend falls in. A small median can hide large moves in individual sectors, in both directions.
 :::
 
-For a more detailed change log against the USEEIO or CEDA, please refer to [](changelog-useeio.md) and [](changelog-ceda.md).
+For a more detailed change log against the USEEIO or CEDA, please refer to [](changelog-useeio.md) and [](changelog-ceda.md). For even additional details or custom support on how to navigate the changes in your footprint, sign up for a demo of the enterprise product [here](https://watershed.com/en-GB/solutions/ceda).
 
 ## Give feedback
 
