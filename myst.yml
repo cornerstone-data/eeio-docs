@@ -56,8 +56,9 @@ project:
       children:
         - file: releases/rc.md
           children:
-            - file: releases/changelog-useeio.md
-            - file: releases/changelog-ceda.md
+            - file: releases/summary-useeio.md
+            - file: releases/summary-ceda.md
+            - file: releases/change-log.md
     - file: faq.md
 site:
   template: book-theme

@@ -1,6 +1,6 @@
 """Write the two release-candidate waterfall charts to figures/diagrams/.
 
-Source: the Practitioners Forum Roundtable 2 deck (slides 17 and 25). Steps are the percentage
+Source: the Practitioners Forum Roundtable 2 deck (slide 25). The USEEIO driver chart is now drawn by rc_summary_figures.py. Steps are the percentage
 changes shown on the slides, converted to kg CO2e per USD against each baseline. The listed steps
 do not sum exactly to the net change on the slides, so the remainder is drawn as "Other" until the
 science team confirms the attribution.
@@ -22,14 +22,6 @@ plt.rcParams.update({"font.family": ["Helvetica", "Arial", "DejaVu Sans"], "font
                      "svg.fonttype": "none"})
 
 CHARTS = {
-    "waterfall-vs-useeio": dict(
-        title="US production-weighted emission factor: Cornerstone 2026 vs. USEEIO v1.4",
-        ylabel="kg CO$_2$e per 2024 USD",
-        base_label="USEEIO\nv1.4", base=0.2474, end_label="Cornerstone\n2026", end=0.2448,
-        steps=[("Model\nreconciliation", -3.5), ("US\ndata", 0.4), ("Nowcasting &\nfacility data", -5.8),
-               ("Trade\nimpact", 9.0), ("Benchmark-\ninformed\nimprovements", -0.5)],
-        ylim=(0.220, 0.262), net="−1.0% net",
-    ),
     "waterfall-vs-ceda": dict(
         title="Global production-weighted emission factor: Cornerstone 2026 vs. CEDA 2025",
         ylabel="kg CO$_2$e per 2024 USD",

@@ -1,35 +1,22 @@
 ---
-title: "Change log vs. CEDA"
+title: "Summary of changes vs. CEDA"
 ---
 
 :::{tip} Summary
 Cornerstone EEIO 2026 replaces CEDA 2025. The global production-weighted emission factor falls by 24.1%, from 0.6957 to 0.5281 kg CO₂e per 2024 USD. Data updates raise factors (+6.3%) and methodology changes lower them by more (−28.6%). Four changes drive about 95% of the impact: benchmark-informed improvements, auto-balanced structural reflection (ABSR), new data for China, and new data for Europe.
 :::
 
-## The changes at a glance
+:::{figure} ../images/summary-vs-ceda.png
+:label: summary-vs-ceda
+:alt: Waterfall chart of the global emission factor. From CEDA 2025 at 0.6957, data updates add 6.3% and methodology changes remove 28.6%, ending at 0.5281 for Cornerstone 2026, 24.1% lower.
+:width: 80%
 
-Emission factors are global production-weighted totals, in kg CO₂e per 2024 USD.
-
-| | Cornerstone 2026 vs. CEDA 2025 |
-|---|---|
-| Emission factor, before and after | 0.6957 to 0.5281 |
-| **Net change** | **−24.1%** |
-| Data updates | +6.3% |
-| Methodology changes | −28.6% |
-| Median change in a company's total footprint | −13.7% |
-| Companies whose footprint moves by more than 20% | 24% |
-
-*Company figures come from a sample of 400 corporate footprints that combine spend-based and activity data.*
-
-:::{important} Your footprint may not follow the median
-A company's change depends on which sectors and countries its spend falls in. A small median can hide large moves in individual sectors, in both directions.
+**Cornerstone 2026 against CEDA 2025 (global).** Global production-weighted total emission factor, in kg CO₂e per 2024 USD, split into data updates and methodology changes.
 :::
 
-## What the science improvements mean in practice
-
-1. **A more current picture of the US economy that accounts for imports.** US input-output tables are rebuilt for every year from 2017 to 2024, manufacturing uses facility-reported emissions, and imports are modeled where they are made.
-2. **Newer data for Europe, the UK and China, and better gap-filling for the rest.** Europe moves from the OECD's ICIO tables to Eurostat's FIGARO (through 2023). China moves to the latest National Bureau of Statistics tables (through 2023), with more sectors. Countries without data are filled with the auto-balanced structural reflection method.
-3. **A validation process that feeds back into the model.** Third-party benchmarks review the sectors behind about 50% of global emissions. Gaps are traced and fixed in the data or the method, not overridden in the output.
+:::{important} Your footprint may not follow the median
+A company's change depends on which sectors and countries its spend falls in. A small median can hide large moves in individual sectors, in both directions. From a sample of 400 corporate footprints, the median company will experience a decrease of 13.7%, and 24% of companies will see their footprint move by more than 20%.
+:::
 
 ## What drives the change for CEDA users
 
@@ -62,7 +49,7 @@ This raises China's emission factors by about 10% at the median. It reflects met
 
 ### New data for Europe
 
-Cornerstone adopts FIGARO, Eurostat's official input-output and emissions dataset. FIGARO is more granular than the OECD dataset for Europe, is available through 2023, and is updated every year, matching Cornerstone's release cadence.
+Cornerstone adopts FIGARO, Eurostat's official input-output and emissions dataset. FIGARO is more granular than the OECD dataset for Europe, is available as a time series through 2023, and is updated every year, matching Cornerstone's release cadence.
 
 This lowers European factors by about 4% at the median. Electricity factors fall in every EU country. For example, Germany's power factor falls by 60%, as renewables grew from 35% to over 50% of generation. The Netherlands' falls by 77%, after a coal ban and a gas-heavy grid.
 
@@ -82,7 +69,7 @@ About 70% of country-sector pairs with a verified benchmark are within 25% of it
 | Model improvement | Brazil dairy: the model was allocating methane from beef to dairy for lack of country-specific data. Brazil's national accounts of emissions and output fixed it. | 51% to 5% |
 | Known discrepancy | US oil and gas: the benchmark roughly doubles methane using aerial and satellite measurements. The model uses the EPA inventory, as for every other sector. Resolving this needs more research. | 22% (stays) |
 
-For the equivalent change log against USEEIO, see [](changelog-useeio.md).
+For the full list of data and methodology changes, see the [](change-log.md). For the equivalent summary against USEEIO, see [](summary-useeio.md).
 
 ## Learn more
 

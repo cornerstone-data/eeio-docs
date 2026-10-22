@@ -1,5 +1,9 @@
 id,page,type,data_source,generator_script,owner,status
 release-cycle,factors/whats-in-a-release.md,diagram,none (hand-drawn schematic),figures/scripts/release_cycle.py,Yohanna Maldonado,draft
 release-lifecycle,factors/whats-in-a-release.md,diagram,none (hand-drawn schematic),figures/scripts/release_lifecycle.py,Yohanna Maldonado,draft (option 2)
-waterfall-vs-useeio,releases/rc.md (draft),chart,"Roundtable 2 deck, slide 17 (percent steps)",figures/scripts/waterfalls.py,Yohanna Maldonado,draft (steps do not sum to the net change)
 waterfall-vs-ceda,releases/rc.md (draft),chart,"Roundtable 2 deck, slide 25 (percent steps)",figures/scripts/waterfalls.py,Yohanna Maldonado,draft (steps do not sum to the net change)
+summary-vs-useeio,releases/summary-useeio.md,chart,"Change log working Doc (summary chart)",figures/scripts/rc_summary_figures.py,Yohanna Maldonado,draft
+summary-vs-ceda,releases/summary-ceda.md,chart,"Roundtable 2 deck, slide 15 (percent steps)",figures/scripts/rc_summary_figures.py,Yohanna Maldonado,draft
+company-footprint-change,releases/summary-useeio.md,chart,"Change log working Doc (histogram; heights read off the image)",figures/scripts/rc_summary_figures.py,Yohanna Maldonado,draft (approximate)
+drivers-vs-useeio,releases/summary-useeio.md,chart,"Change log working Doc (driver waterfall)",figures/scripts/rc_summary_figures.py,Yohanna Maldonado,draft (steps do not sum to the net change)
+cement-ef,releases/summary-useeio.md,chart,"Change log working Doc (values 4.35 and 5.21; unit to confirm)",figures/scripts/rc_summary_figures.py,Yohanna Maldonado,draft
