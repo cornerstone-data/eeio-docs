@@ -63,8 +63,8 @@ function label(x,y,html,cls,parent,anchor="middle"){ const t=el("text",{x,y,"tex
 
 function draw(key){
   const d = D[key], W=Math.max(document.querySelector(".wrap").clientWidth, 480), L=46, R=14, T=22, B=64,
-    H=Math.max(innerHeight - document.querySelector(".bar").offsetHeight - document.getElementById("note").offsetHeight - 54, 230), n=d.steps.length+2;
-  svg.setAttribute("width",W); svg.setAttribute("height",H); svg.setAttribute("viewBox",`0 0 ${W} ${H}`); svg.innerHTML="";
+    avail=innerHeight - document.querySelector(".bar").offsetHeight - document.getElementById("note").offsetHeight - 54, H=Math.max(avail, 230), n=d.steps.length+2;
+  const k = avail < 230 ? Math.max(avail,120)/230 : 1; svg.setAttribute("width",W*k); svg.setAttribute("height",H*k); svg.setAttribute("viewBox",`0 0 ${W} ${H}`); svg.innerHTML="";
   const y = v => T+(H-T-B)*(1-(v-d.lo)/(d.hi-d.lo)), cw=(W-L-R)/n, bw=cw*.62, cx=i=>L+cw*(i+.5); svg.style.fontSize = cw<80 ? "10px" : "11.5px";
   for(let v=Math.ceil(d.lo*50)/50; v<=d.hi+1e-9; v+=(d.hi-d.lo)>.1?.05:.01){ const yy=y(v);
     el("line",{x1:L,x2:W-R,y1:yy,y2:yy,stroke:css("--grid")}); label(L-8,yy+4,v.toFixed(v<.1?3:2),"muted",null,"end"); }
