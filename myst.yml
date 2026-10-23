@@ -43,7 +43,6 @@ project:
         - file: factors/choose-a-factor.md
         - file: factors/prices-and-margins.md
         - file: factors/year-and-currency.md
-        - file: factors/downloads.md
     - file: validation/index.md
     - file: benchmarking/index.md
     - title: Reference
