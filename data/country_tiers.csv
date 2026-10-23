@@ -1,149 +1,149 @@
-iso3,tier,io_source
-AUS,2,FIGARO
-AUT,2,FIGARO
-BEL,2,FIGARO
-CAN,2,FIGARO
-CHL,2,ICIO
-COL,2,ICIO
-CRI,2,ICIO
-CZE,2,FIGARO
-DNK,2,FIGARO
-EST,2,FIGARO
-FIN,2,FIGARO
-FRA,2,FIGARO
-DEU,2,FIGARO
-GRC,2,FIGARO
-HUN,2,FIGARO
-ISL,2,ICIO
-IRL,2,FIGARO
-ISR,2,ICIO
-ITA,2,FIGARO
-JPN,1,National statistical agency
-KOR,1,National statistical agency
-LVA,2,FIGARO
-LTU,2,FIGARO
-LUX,2,FIGARO
-MEX,2,FIGARO
-NLD,2,FIGARO
-NZL,2,ICIO
-NOR,2,FIGARO
-POL,2,FIGARO
-PRT,2,FIGARO
-SVK,2,FIGARO
-SVN,2,FIGARO
-ESP,2,FIGARO
-SWE,2,FIGARO
-CHE,2,FIGARO
-TUR,2,FIGARO
-GBR,1,National statistical agency
-USA,0,Cornerstone nowcast
-ARG,2,FIGARO
-BRA,2,FIGARO
-BGR,2,FIGARO
-KHM,2,ICIO
-CHN,1,National statistical agency
-HRV,2,FIGARO
-CYP,2,FIGARO
-IND,2,FIGARO
-IDN,2,FIGARO
-HKG,2,ICIO
-KAZ,2,ICIO
-LAO,2,ICIO
-MYS,2,ICIO
-MLT,2,FIGARO
-MAR,2,ICIO
-MMR,2,ICIO
-PER,2,ICIO
-PHL,2,ICIO
-ROU,2,FIGARO
-RUS,2,FIGARO
-SAU,2,FIGARO
-SGP,2,ICIO
-ZAF,2,FIGARO
-TWN,2,ICIO
-THA,2,ICIO
-TUN,2,ICIO
-VNM,2,ICIO
-AFG,3,Template
-AGO,3,Template
-ALB,3,Template
-ARE,3,Template
-ATG,3,Template
-BDI,3,Template
-BEN,3,Template
-BFA,3,Template
-BGD,3,Template
-BHR,3,Template
-BHS,3,Template
-BLZ,3,Template
-BOL,3,Template
-BRB,3,Template
-BTN,3,Template
-CAF,3,Template
-CIV,3,Template
-CMR,3,Template
-COG,3,Template
-DMA,3,Template
-DOM,3,Template
-DZA,3,Template
-ECU,3,Template
-EGY,3,Template
-ETH,3,Template
-FJI,3,Template
-GAB,3,Template
-GIN,3,Template
-GMB,3,Template
-GNB,3,Template
-GNQ,3,Template
-GRD,3,Template
-GTM,3,Template
-HND,3,Template
-HTI,3,Template
-IRN,3,Template
-IRQ,3,Template
-JAM,3,Template
-JOR,3,Template
-KEN,3,Template
-KIR,3,Template
-KNA,3,Template
-KWT,3,Template
-LBN,3,Template
-LCA,3,Template
-LKA,3,Template
-LSO,3,Template
-MDA,3,Template
-MDV,3,Template
-MKD,3,Template
-MLI,3,Template
-MNG,3,Template
-MUS,3,Template
-MWI,3,Template
-NAM,3,Template
-NER,3,Template
-NGA,3,Template
-NIC,3,Template
-NPL,3,Template
-NRU,3,Template
-OMN,3,Template
-PAK,3,Template
-PNG,3,Template
-PRY,3,Template
-QAT,3,Template
-RWA,3,Template
-SEN,3,Template
-SLB,3,Template
-SLE,3,Template
-SLV,3,Template
-SWZ,3,Template
-SYC,3,Template
-TCD,3,Template
-TGO,3,Template
-TLS,3,Template
-TTO,3,Template
-TZA,3,Template
-UGA,3,Template
-UKR,3,Template
-URY,3,Template
-VCT,3,Template
-VUT,3,Template
-WSM,3,Template
+iso3,country,tier,io_source,io_year,ghg_source,ghg_year
+AFG,Afghanistan,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+ALB,Albania,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+DZA,Algeria,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+AGO,Angola,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+ATG,Antigua and Barbuda,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+ARG,Argentina,2,"FIGARO, 2026 edition",2023,"FIGARO, from EDGAR with CEDS corrections",2023
+AUS,Australia,2,"FIGARO, 2026 edition",2023,"FIGARO, from EDGAR with CEDS corrections",2023
+AUT,Austria,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+BHS,Bahamas,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+BHR,Bahrain,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+BGD,Bangladesh,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+BRB,Barbados,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+BEL,Belgium,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+BLZ,Belize,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+BEN,Benin,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+BTN,Bhutan,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+BOL,Bolivia,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+BRA,Brazil,2,"FIGARO, 2026 edition",2023,"FIGARO, from EDGAR with CEDS corrections",2023
+BGR,Bulgaria,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+BFA,Burkina Faso,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+BDI,Burundi,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+KHM,Cambodia,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020
+CMR,Cameroon,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+CAN,Canada,2,"FIGARO, 2026 edition",2023,"FIGARO, from EDGAR with CEDS corrections",2023
+CAF,Central African Republic,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+TCD,Chad,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+CHL,Chile,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020
+CHN,China,1,China National Bureau of Statistics IO table,2023,"Built from OWID, CEDS, national energy statistics, and China's BTR1",2023
+COL,Colombia,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020
+COG,Congo,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+CRI,Costa Rica,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020
+CIV,Côte d'Ivoire,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+HRV,Croatia,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+CYP,Cyprus,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+CZE,Czechia,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+DNK,Denmark,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+DMA,Dominica,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+DOM,Dominican Republic,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+ECU,Ecuador,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+EGY,Egypt,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+SLV,El Salvador,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+GNQ,Equatorial Guinea,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+EST,Estonia,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+SWZ,Eswatini,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+ETH,Ethiopia,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+FJI,Fiji,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+FIN,Finland,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+FRA,France,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+GAB,Gabon,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+GMB,Gambia,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+DEU,Germany,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+GRC,Greece,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+GRD,Grenada,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+GTM,Guatemala,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+GIN,Guinea,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+GNB,Guinea-Bissau,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+HTI,Haiti,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+HND,Honduras,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+HKG,Hong Kong,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020
+HUN,Hungary,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+ISL,Iceland,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020
+IND,India,2,"FIGARO, 2026 edition",2023,"FIGARO, from EDGAR with CEDS corrections",2023
+IDN,Indonesia,2,"FIGARO, 2026 edition",2023,"FIGARO, from EDGAR with CEDS corrections",2023
+IRN,Iran,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+IRQ,Iraq,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+IRL,Ireland,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+ISR,Israel,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020
+ITA,Italy,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+JAM,Jamaica,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+JPN,Japan,1,Input-Output Tables for Japan,2020,Environmental data published with the Japan IO tables,2020
+JOR,Jordan,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+KAZ,Kazakhstan,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020
+KEN,Kenya,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+KIR,Kiribati,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+KWT,Kuwait,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+LAO,Laos,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020
+LVA,Latvia,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+LBN,Lebanon,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+LSO,Lesotho,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+LTU,Lithuania,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+LUX,Luxembourg,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+MWI,Malawi,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+MYS,Malaysia,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020
+MDV,Maldives,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+MLI,Mali,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+MLT,Malta,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+MUS,Mauritius,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+MEX,Mexico,2,"FIGARO, 2026 edition",2023,"FIGARO, from EDGAR with CEDS corrections",2023
+MDA,Moldova,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+MNG,Mongolia,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+MAR,Morocco,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020
+MMR,Myanmar,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020
+NAM,Namibia,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+NRU,Nauru,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+NPL,Nepal,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+NLD,Netherlands,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+NZL,New Zealand,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020
+NIC,Nicaragua,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+NER,Niger,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+NGA,Nigeria,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+MKD,North Macedonia,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+NOR,Norway,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+OMN,Oman,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+PAK,Pakistan,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+PNG,Papua New Guinea,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+PRY,Paraguay,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+PER,Peru,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020
+PHL,Philippines,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020
+POL,Poland,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+PRT,Portugal,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+QAT,Qatar,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+ROU,Romania,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+RUS,Russia,2,"FIGARO, 2026 edition",2023,"FIGARO, from EDGAR with CEDS corrections",2023
+RWA,Rwanda,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+KNA,Saint Kitts and Nevis,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+LCA,Saint Lucia,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+VCT,Saint Vincent and the Grenadines,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+WSM,Samoa,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+SAU,Saudi Arabia,2,"FIGARO, 2026 edition",2023,"FIGARO, from EDGAR with CEDS corrections",2023
+SEN,Senegal,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+SYC,Seychelles,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+SLE,Sierra Leone,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+SGP,Singapore,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020
+SVK,Slovakia,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+SVN,Slovenia,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+SLB,Solomon Islands,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+ZAF,South Africa,2,"FIGARO, 2026 edition",2023,"FIGARO, from EDGAR with CEDS corrections",2023
+KOR,South Korea,1,Bank of Korea IO tables,2018,GHG data published with the Bank of Korea IO tables,2018
+ESP,Spain,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+LKA,Sri Lanka,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+SWE,Sweden,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+CHE,Switzerland,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+TWN,Taiwan,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020
+TZA,Tanzania,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+THA,Thailand,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020
+TLS,Timor-Leste,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+TGO,Togo,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+TTO,Trinidad and Tobago,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+TUN,Tunisia,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020
+TUR,Türkiye,2,"FIGARO, 2026 edition",2023,"FIGARO, from air emissions accounts",2023
+UGA,Uganda,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+UKR,Ukraine,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+ARE,United Arab Emirates,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+GBR,United Kingdom,1,ONS IO Analytical Tables,2023,ONS atmospheric emissions accounts,2023
+USA,United States,0,Cornerstone nowcast Make and Use tables,2024,U.S. GHG inventory with facility data,2024
+URY,Uruguay,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+VUT,Vanuatu,3,Tier 3 IO template,2020,"Tier 3 GHG template, scaled to national CO₂ total",2018
+VNM,Viet Nam,2,"ICIO, 2025 edition",2020,"OECD GHG emissions for ICIO, 2025 edition",2020

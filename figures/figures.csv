@@ -4,3 +4,4 @@ io-domestic-imported,io/index.md,diagram (SVG),hand-made,,,draft
 io-tables-to-a,io/index.md,diagram (SVG),hand-made,,,draft
 io-mrio-blocks,io/index.md,diagram (SVG),hand-made (after CEDA team slide 19),,,draft
 country-tiers-map,io/country-tiers.md,map (SVG),data/country_tiers.csv + Natural Earth 1:50m admin-0,figures/scripts/tier_map.py,,draft
+ghg-pipeline,ee/index.md,diagram (SVG),hand-made,,,draft
