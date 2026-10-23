@@ -37,7 +37,7 @@ Where the emissions data come from and how they reach each sector.
 The methods and data behind each country in the model.
 :::
 
-:::{card} Get the factors
+:::{card} Emission factors
 :link: factors/whats-in-a-release.md
 What's in a release, and how to apply the factors correctly.
 :::
@@ -45,6 +45,11 @@ What's in a release, and how to apply the factors correctly.
 :::{card} How we validate
 :link: validation/index.md
 The checks and benchmarks behind each release.
+:::
+
+:::{card} Releases
+:link: releases/index.md
+Release notes and change logs.
 :::
 
 :::{card} FAQs
