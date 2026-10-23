@@ -9,3 +9,10 @@ drivers-vs-ceda,releases/summary-ceda.md,chart,"Change log working Doc (driver w
 company-footprint-change-ceda,releases/summary-ceda.md,chart,"Change log working Doc (histogram)",figures/scripts/rc_summary_figures.py,Yohanna Maldonado,draft (bar heights approximate)
 cement-ef,releases/summary-useeio.md,chart,"Change log working Doc (values 4.35 and 5.21; kg CO2e per USD)",figures/scripts/rc_summary_figures.py,Yohanna Maldonado,draft
 absr-diagram,releases/summary-ceda.md,diagram,"Provided by Yohanna Maldonado",,Yohanna Maldonado,draft (image provided, not generated from a script)
+io-supply-use,io/index.md,diagram (SVG),hand-made,,,draft
+io-domestic-imported,io/index.md,diagram (SVG),hand-made,,,draft
+io-tables-to-a,io/index.md,diagram (SVG),hand-made,,,draft
+io-mrio-blocks,io/index.md,diagram (SVG),hand-made (after CEDA team slide 19),,,draft
+country-tiers-map,io/country-tiers.md,map (SVG),data/country_tiers.csv + Natural Earth 1:50m admin-0,figures/scripts/tier_map.py,,draft
+ghg-pipeline,ee/index.md,diagram (SVG),hand-made,,,draft
+eeio-overview,intro/what-is-eeio.md,diagram (SVG),hand-made,,,draft
