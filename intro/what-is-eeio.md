@@ -32,6 +32,7 @@ An EEIO model has the same matrix structure as the models used for life cycle as
 
 A single-country model assumes imported products are made the same way, and with the same emissions, as products made at home. A multi-regional input-output ({term}`MRIO`) model instead links countries' input-output tables through international trade, so each import carries the supply chain and emissions as it was produced in the origin country. For the companies reporting to the Carbon Disclosure Project (CDP), in one study using an MRIO model instead of a U.S. single-region model raised their estimated upstream emissions by about 10% [@davisImportanceMultiregionalAccounting2025]. The Cornerstone model is an MRIO model; see [](../io/index.md#from-single-country-tables-to-the-multi-region-model).
 
+
 ## Further reading
 
 For a book-length introduction to EEIO and its use in LCA, see {cite:t}`hendricksonEnvironmentalLifeCycle2006a`.
