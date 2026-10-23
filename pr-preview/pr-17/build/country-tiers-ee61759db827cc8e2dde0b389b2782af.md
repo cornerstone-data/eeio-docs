@@ -106,11 +106,3 @@ All tables are converted to 2024 U.S. dollars. Sector lists are reconciled in th
 - **Why we make it:** These countries have no usable published IO table.
 - **How it affects results:** Differences in industry structure between Tier 3 countries are not captured, and imports from countries other than China are given China's supply chains. Factors for these countries carry more uncertainty than those for Tiers 0 to 2.
 :::
-
-
-+++
-
-:::{div}
-:class: page-status
-Applies to: RC · Last reviewed: RC
-:::
