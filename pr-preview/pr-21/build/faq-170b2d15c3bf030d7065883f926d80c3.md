@@ -70,7 +70,7 @@ Plan §3.9 · target: **RC (Oct 27)**, roughly the top 10 questions. Each answer
 ## Practical
 
 ### What license are the factors under, and what attribution is required?
-*To be written. See [](factors/downloads.md).*
+*To be written.*
 
 ### How do I report a possible error or ask a question?
 Open an issue on [GitHub](https://github.com/cornerstone-data/eeio-docs/issues).

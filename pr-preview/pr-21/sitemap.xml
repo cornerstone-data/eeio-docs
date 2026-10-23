@@ -8,21 +8,6 @@
     <loc>http://localhost:3000/intro/what-is-eeio</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/intro/io-part</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/intro/multi-regional</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/intro/ee-part</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/intro/emission-factors</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/intro/uses-and-limits</loc>
-  </url>
-  <url>
     <loc>http://localhost:3000/io</loc>
   </url>
   <url>
@@ -32,7 +17,7 @@
     <loc>http://localhost:3000/ee</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/ee/data-sources</loc>
+    <loc>http://localhost:3000/ee/country-tiers</loc>
   </url>
   <url>
     <loc>http://localhost:3000/factors/whats-in-a-release</loc>
@@ -45,9 +30,6 @@
   </url>
   <url>
     <loc>http://localhost:3000/factors/year-and-currency</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/factors/downloads</loc>
   </url>
   <url>
     <loc>http://localhost:3000/validation</loc>
