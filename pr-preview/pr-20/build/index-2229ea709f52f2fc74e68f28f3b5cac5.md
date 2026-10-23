@@ -111,6 +111,7 @@ There is a simple way to calculate this infinite sum all at once: a special inve
 The tiers here are rounds of suppliers in a supply chain. They are not the same as the {term}`country tiers <Country tier>`, which describe the data available for each country.
 :::
 
+<!--
 ### What the model can and can't trace
 
 `L` follows supply chains through the 66 countries in the multi-region table. The 83 Tier 3 countries are not separate parts of that table, so supply chains can't be traced to them one by one.
@@ -121,6 +122,7 @@ The tiers here are rounds of suppliers in a supply chain. They are not the same 
 | How much is in Kenya or Egypt specifically? | No. Imports from all Tier 3 countries are grouped into the rest-of-world region. |
 | Do the emissions traced to the rest of the world reflect those countries? | Not directly. The region's input recipe and emission intensities come from Colombia, Mexico, Türkiye, and Chile. |
 | Where do a Tier 3 country's own supply chains lead? | Only to its own economy and to its imports as a whole, which are approximated with China's supply chains. |
+-->
 
 :::{important} Key assumptions
 :class: dropdown
@@ -156,10 +158,3 @@ The tiers here are rounds of suppliers in a supply chain. They are not the same 
 -  Supply, Use, and IO tables in national accounts - the United Nations Handbook [@unitednationsHandbookSupplyUse2018]
 - The standard textbook on IO analysis [@millerInputoutputAnalysisFoundations2022];
 -  How BEA builds the U.S. IO accounts [@beaConceptsMethodsUS2009]
-
-+++
-
-:::{div}
-:class: page-status
-Applies to: RC · Last reviewed: RC
-:::
