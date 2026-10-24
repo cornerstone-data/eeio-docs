@@ -130,7 +130,7 @@ Use `N`, the total emission factor, for purchased goods and services. It include
 :::
 
 :::{dropdown} How do I find the right sector for a purchase? What if it spans several sectors?
-Match the purchase to the *good or service you bought*, not to the supplier's industry. Use the description in the **Sector Descriptions** tab (405 sectors), and the **NAICS to Cornerstone mapping** tab if your categories are NAICS-based. If a purchase spans several sectors, split the spend across them, or choose the one that best describes most of the spend. See [](factors/choose-a-factor.md).
+Match the purchase to the *good or service you bought*, not to the supplier's industry. Use the description in the **Sector Descriptions** tab (405 sectors), and the **NAICS to Cornerstone mapping** tab if your categories are NAICS-based. If a purchase spans several sectors, split the spend across them, or choose the one that best describes most of the spend. See [](factors/user-guidance.md).
 :::
 
 :::{dropdown} Do I need to add up factors across the supply chain (for example raw steel plus steel products)?
@@ -138,8 +138,8 @@ No. Factors already include all upstream emissions, so a manufactured good alrea
 :::
 
 :::{dropdown} How do I choose between producer and purchaser price?
-The producer price is what the producer receives. The purchaser price adds trade and transport margins, and is what you pay for a ready-to-buy product. If you're unsure, use producer prices, which are more conservative. If you're confident your spend includes typical margins, for example buying off-the-shelf goods at retail, use purchaser prices. See [](factors/prices-and-margins.md).
-% TODO(confirm): align with the final guidance on prices-and-margins (the plan describes three columns).
+The producer price is what the producer receives. The purchaser price adds trade and transport margins, and is what you pay for a ready-to-buy product. If you're unsure, use producer prices, which are more conservative. If you're confident your spend includes typical margins, for example buying off-the-shelf goods at retail, use purchaser prices. See [](factors/user-guidance.md).
+% TODO(confirm): align with the User guidance page (the plan describes three columns).
 :::
 
 :::{dropdown} Where do the margins come from, and do they apply to every country?
@@ -147,7 +147,7 @@ Cornerstone converts producer-price factors to purchaser-price factors using US 
 :::
 
 :::{dropdown} What year and currency are the factors in?
-Factors are in kg CO₂e per USD in current-year dollars, so a factor in the 2026 tab applies to spend in 2026 US dollars. To use spend in another currency, convert it to USD at the year-of-spend rate, using the **Exchange Rates** tab (local currency per USD for 221 countries and territories, from Open Exchange Rates), then apply the factor for that year. See [](factors/year-and-currency.md).
+Factors are in kg CO₂e per USD in current-year dollars, so a factor in the 2026 tab applies to spend in 2026 US dollars. To use spend in another currency, convert it to USD at the year-of-spend rate, using the **Exchange Rates** tab (local currency per USD for 221 countries and territories, from Open Exchange Rates), then apply the factor for that year. See [](factors/user-guidance.md).
 :::
 
 :::{dropdown} My spend is in a different year than the factor tabs. What should I do?
