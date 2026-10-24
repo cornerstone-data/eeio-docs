@@ -23,6 +23,9 @@
     <loc>http://localhost:3000/factors/whats-in-a-release</loc>
   </url>
   <url>
+    <loc>http://localhost:3000/factors/user-guidance</loc>
+  </url>
+  <url>
     <loc>http://localhost:3000/factors/choose-a-factor</loc>
   </url>
   <url>

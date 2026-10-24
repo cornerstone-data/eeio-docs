@@ -14,7 +14,7 @@ Plan §3.6.1 · target: **RC (Oct 27)**
 **Planned content**
 
 - Validation asks "did we build the model correctly?"; benchmarking asks "are the results plausible compared with independent evidence?" Both feed the next release
-- Headline v0.6 benchmark results for the RC
+- Headline v0.6 benchmark results for 2026-rc.1
 
 **Key visuals**
 
@@ -25,5 +25,5 @@ Plan §3.6.1 · target: **RC (Oct 27)**
 
 :::{div}
 :class: page-status
-Applies to: RC · Last reviewed: RC
+Applies to: 2026-rc.1 · Last reviewed: 2026-rc.1
 :::

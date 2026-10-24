@@ -182,5 +182,5 @@ The release candidate's 2024, 2025, and 2026 factors are all built from the same
 
 :::{div}
 :class: page-status
-Applies to: RC · Last reviewed: RC
+Applies to: 2026-rc.1 · Last reviewed: 2026-rc.1
 :::
