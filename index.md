@@ -1,5 +1,5 @@
 ---
-title: Cornerstone EEIO Model
+title: Cornerstone EEIO
 site:
   hide_outline: true
 ---

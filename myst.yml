@@ -1,7 +1,7 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  title: Cornerstone EEIO Model
+  title: Cornerstone EEIO
   description: Theory, assumptions, data, and practical guidance for the Cornerstone multi-regional EEIO model and its emission factors.
   keywords: [EEIO, MRIO, input-output, emission factors, Scope 3, greenhouse gas]
   authors:
@@ -58,10 +58,9 @@ site:
     - title: FAQs
       url: /faq
   options:
-    logo: images/cornerstone-wordmark.svg
-    logo_dark: images/cornerstone-wordmark-dark.svg
-    logo_text: EEIO Model
-    logo_alt: Cornerstone
+    logo: images/Cornerstone-EEIO-Wordmark-dark.png
+    logo_dark: images/Cornerstone-EEIO-Wordmark-white.png
+    logo_alt: Cornerstone EEIO
     folders: true
     style: _parts/custom.css
   parts:
