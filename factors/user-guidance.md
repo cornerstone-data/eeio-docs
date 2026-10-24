@@ -21,7 +21,7 @@ Every emission factor is defined by a sector, a location, a year and a price bas
 
 Find the sector that best describes what you bought, using the sector descriptions that come with the factors. Pick the sector for the final good or service you purchased. You do not add up factors along a supply chain, because each factor already includes the upstream emissions of that sector. A purchase of steel products, for example, already includes the emissions of making the steel.
 
-Each sector is related to a commodity and follows the BEA standard classification. For crosswalks to other industry classifications such as GICS, NACE and ANZSIC, please enquire about the Watershed enterprise product.
+Each sector is related to a commodity and follows the BEA standard classification. For crosswalks to other industry classifications such as GICS, NACE and ANZSIC, please enquire about the [Watershed enterprise product](https://watershed.com/en-GB/solutions/ceda).
 
 ### Step 2: Choose the country
 
