@@ -26,15 +26,6 @@
     <loc>http://localhost:3000/factors/user-guidance</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/factors/choose-a-factor</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/factors/prices-and-margins</loc>
-  </url>
-  <url>
-    <loc>http://localhost:3000/factors/year-and-currency</loc>
-  </url>
-  <url>
     <loc>http://localhost:3000/validation</loc>
   </url>
   <url>
