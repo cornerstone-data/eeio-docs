@@ -23,7 +23,7 @@ Below these details, the cover lists every other tab with a one-line description
 
 ### Producer and purchaser price tabs
 
-There are two tabs for each year, with identical layouts: `{YEAR}PRO` for producer prices and `{YEAR}PUR` for purchaser prices. The producer price is the cost to the producer plus their profits and taxes paid. The purchaser price adds the value of sales and distribution. Read more about how to choose between purchaser and producer prices in [](prices-and-margins.md).
+There are two tabs for each year, with identical layouts: `{YEAR}PRO` for producer prices and `{YEAR}PUR` for purchaser prices. The producer price is the cost to the producer plus their profits and taxes paid. The purchaser price adds the value of sales and distribution. Read more about how to choose between purchaser and producer prices in [](user-guidance.md).
 
 Each row is one sector in one location, and the columns are:
 
