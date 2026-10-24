@@ -92,13 +92,13 @@ All tables are converted to 2024 U.S. dollars. Sector lists are reconciled in th
 
 - **Assumption:** Countries publish their tables on different price bases (basic, producer, or purchaser prices, and sometimes a mix within one table). We use each table as published and assume these differences do not materially change the direct requirements (`A`).
 - **Why we make it:** Converting every table to one price basis needs product-level tax, subsidy, and margin data for each country, which is not consistently available.
-- **How it affects results:** Where product taxes or trade and transport margins are large, as for fuels, input coefficients could differ from those on a common price basis. See [](../factors/prices-and-margins.md).
+- **How it affects results:** Where product taxes or trade and transport margins are large, as for fuels, input coefficients could differ from those on a common price basis. See [](../factors/user-guidance.md).
 
 **U.S. margins for purchaser prices**
 
 - **Assumption:** Factors are converted from producer to purchaser prices using U.S. trade and transport margins for every country.
 - **Why we make it:** Margin data comparable to the U.S. tables are not available for every country.
-- **How it affects results:** Where a country's wholesale, retail, or transport margins differ from U.S. margins, its purchaser-price factors could be too high or too low. Producer-price factors are not affected. See [](../factors/prices-and-margins.md).
+- **How it affects results:** Where a country's wholesale, retail, or transport margins differ from U.S. margins, its purchaser-price factors could be too high or too low. Producer-price factors are not affected. See [](../factors/user-guidance.md).
 
 **Tier 3 countries share one recipe**
 
