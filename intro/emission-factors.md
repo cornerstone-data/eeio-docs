@@ -32,5 +32,5 @@ Plan §3.1.5 · target: **RC (Oct 27)**
 
 :::{div}
 :class: page-status
-Applies to: RC · Last reviewed: RC
+Applies to: 2026-rc.1 · Last reviewed: 2026-rc.1
 :::

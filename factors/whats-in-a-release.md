@@ -65,5 +65,5 @@ The Cornerstone EEIO follows an annual update cycle. Every year we release a ver
 
 :::{div}
 :class: page-status
-Applies to: RC · Last reviewed: RC
+Applies to: 2026-rc.1 · Last reviewed: 2026-rc.1
 :::
