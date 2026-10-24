@@ -1,8 +1,8 @@
 # Build every PR, publish a preview, and check links.
 # Previews are served from this repo's gh-pages branch at
-#   https://docs.cornerstonedata.org/pr-preview/pr-<number>/
-# (this repo's Pages site has the custom domain docs.cornerstonedata.org, so the
-# base path is /pr-preview/pr-<number>, not /eeio-docs/...).
+#   https://docs.cornerstonedata.org/eeio-docs/pr-preview/pr-<number>/
+# (the hub repo cornerstone-data.github.io owns the custom domain, so this repo's
+# project site is served under /eeio-docs/ on it).
 name: PR build and preview
 on:
   pull_request:
@@ -18,7 +18,7 @@ jobs:
   build-preview:
     runs-on: ubuntu-latest
     env:
-      BASE_URL: /pr-preview/pr-${{ github.event.number }}
+      BASE_URL: /eeio-docs/pr-preview/pr-${{ github.event.number }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
