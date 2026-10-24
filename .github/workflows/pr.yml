@@ -1,7 +1,8 @@
 # Build every PR, publish a preview, and check links.
 # Previews are served from this repo's gh-pages branch at
-#   https://cornerstone-data.github.io/eeio-docs/pr-preview/pr-<number>/
-# (or under docs.cornerstonedata.org/eeio-docs/ once the hub has its custom domain).
+#   https://docs.cornerstonedata.org/pr-preview/pr-<number>/
+# (this repo's Pages site has the custom domain docs.cornerstonedata.org, so the
+# base path is /pr-preview/pr-<number>, not /eeio-docs/...).
 name: PR build and preview
 on:
   pull_request:
@@ -17,7 +18,7 @@ jobs:
   build-preview:
     runs-on: ubuntu-latest
     env:
-      BASE_URL: /eeio-docs/pr-preview/pr-${{ github.event.number }}
+      BASE_URL: /pr-preview/pr-${{ github.event.number }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -30,6 +31,9 @@ jobs:
       - name: Build HTML (fails on errors)
         if: github.event.action != 'closed'
         run: myst build --html --strict
+      - name: Copy interactive figures into the site
+        if: github.event.action != 'closed'
+        run: mkdir -p _build/html/interactive && cp figures/interactive/*.html _build/html/interactive/
       - name: Deploy or remove preview
         # Fork PRs can't push to gh-pages; they still get the build check above.
         if: github.event.pull_request.head.repo.full_name == github.repository

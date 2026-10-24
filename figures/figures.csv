@@ -1,4 +1,14 @@
 id,page,type,data_source,generator_script,owner,status
+release-cycle,factors/whats-in-a-release.md,diagram,none (hand-drawn schematic),figures/scripts/release_cycle.py,Yohanna Maldonado,draft
+release-lifecycle,factors/whats-in-a-release.md,diagram,none (hand-drawn schematic),figures/scripts/release_lifecycle.py,Yohanna Maldonado,draft (option 2)
+summary-vs-useeio,releases/summary-useeio.md,chart,"Change log working Doc (summary chart)",figures/scripts/rc_summary_figures.py,Yohanna Maldonado,draft
+summary-vs-ceda,releases/summary-ceda.md,chart,"Roundtable 2 deck, slide 15 (percent steps)",figures/scripts/rc_summary_figures.py,Yohanna Maldonado,draft
+company-footprint-change,releases/summary-useeio.md,chart,"Change log working Doc (histogram; heights read off the image)",figures/scripts/rc_summary_figures.py,Yohanna Maldonado,draft (approximate)
+drivers-vs-useeio,releases/summary-useeio.md,chart,"Change log working Doc (driver waterfall)",figures/scripts/rc_summary_figures.py,Yohanna Maldonado,draft (steps do not sum to the net change)
+drivers-vs-ceda,releases/summary-ceda.md,chart,"Change log working Doc (driver waterfall)",figures/scripts/rc_summary_figures.py,Yohanna Maldonado,draft (steps sum to -23.2% against the -23.3% net)
+company-footprint-change-ceda,releases/summary-ceda.md,chart,"Change log working Doc (histogram)",figures/scripts/rc_summary_figures.py,Yohanna Maldonado,draft (bar heights approximate)
+cement-ef,releases/summary-useeio.md,chart,"Change log working Doc (values 4.35 and 5.21; kg CO2e per USD)",figures/scripts/rc_summary_figures.py,Yohanna Maldonado,draft
+absr-diagram,releases/summary-ceda.md,diagram,"Provided by Yohanna Maldonado",,Yohanna Maldonado,draft (image provided, not generated from a script)
 io-supply-use,io/index.md,diagram (SVG),hand-made,,,draft
 io-domestic-imported,io/index.md,diagram (SVG),hand-made,,,draft
 io-tables-to-a,io/index.md,diagram (SVG),hand-made,,,draft
@@ -6,3 +16,5 @@ io-mrio-blocks,io/index.md,diagram (SVG),hand-made (after CEDA team slide 19),,,
 country-tiers-map,io/country-tiers.md,map (SVG),data/country_tiers.csv + Natural Earth 1:50m admin-0,figures/scripts/tier_map.py,,draft
 ghg-pipeline,ee/index.md,diagram (SVG),hand-made,,,draft
 eeio-overview,intro/what-is-eeio.md,diagram (SVG),hand-made,,,draft
+user-guidance-ef-by-country,factors/user-guidance.md,chart,"Cornerstone GHG Emission Factors workbook, 2026-rc.1 (2026PRO, sector 541610)",figures/scripts/user_guidance_figures.py,Yohanna Maldonado,draft
+user-guidance-worked-example,factors/user-guidance.md,diagram,"Worked example from the 2026-rc.1 workbook (factor 0.0449; GBP rate 0.74283)",figures/scripts/user_guidance_figures.py,Yohanna Maldonado,draft
