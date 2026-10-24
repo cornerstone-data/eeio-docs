@@ -100,7 +100,7 @@ If a country has no factors of its own, use its regional average. The **Location
 :::
 
 :::{dropdown} What if my supplier is in a country with no data?
-Use the factor for the region it belongs to, or the global average if the region isn't clear. See the **Locations** tab and [](reference/methods-by-country.md), and [](factors/user-guidance.md).
+Use the factor for the region it belongs to, or the global average if the region isn't clear. See the **Locations** tab, [](reference/methods-by-country.md) and [](factors/user-guidance.md).
 :::
 
 :::{dropdown} What do the Scope 3 categories cover?
