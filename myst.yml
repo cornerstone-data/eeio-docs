@@ -33,6 +33,7 @@ project:
     - title: Emission factors
       children:
         - file: factors/whats-in-a-release.md
+        - file: factors/user-guidance.md
         - file: factors/choose-a-factor.md
         - file: factors/prices-and-margins.md
         - file: factors/year-and-currency.md
