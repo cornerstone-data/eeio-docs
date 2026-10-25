@@ -125,3 +125,22 @@ body {
   font-size: 0.8rem;
   opacity: 0.7;
 }
+
+/* Home page tracks: technical documentation (brand blue) and user guide (amber).
+   The card tint and top rule tell the two tracks apart. */
+.track-technical .myst-card {
+  background-color: #eaf6fb;
+  border-color: #9fd3e8;
+  border-top: 4px solid var(--cs-brand);
+}
+.track-technical .myst-card:hover {
+  border-color: var(--cs-brand);
+}
+.track-user .myst-card {
+  background-color: #fdf3e7;
+  border-color: #f0c99a;
+  border-top: 4px solid #e08a1e;
+}
+.track-user .myst-card:hover {
+  border-color: #e08a1e;
+}

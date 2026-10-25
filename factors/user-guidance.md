@@ -11,7 +11,7 @@ This user guidance covers two topics:
 1. How to choose the right emission factor: the country, the year and the exchange rate.
 2. How to choose between purchaser and producer price.
 
-A separate guide explains how to think about the margin emission factors, relevant only for previous USEEIO users.
+A separate page, [](margins.md), explains how the margin emission factors are prepared, which is mainly of interest to previous USEEIO users.
 
 ## Choose the right emission factor
 

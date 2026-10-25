@@ -3,12 +3,12 @@ title: "What's in a release"
 ---
 
 :::{tip} Summary
-The Cornerstone EEIO model is updated annually and versioned with the year of the release, so Cornerstone EEIO 2026 is released in 2026 and the 2027 version will be released in 2027. Every year, the releases will be publicly available in October. Each release publishes emission factors covering 405 sectors across 148 countries, 21 regions and one global average. To download the latest version, check out [Zenodo](https://zenodo.org/doi/10.5281/zenodo.23396891).
+The Cornerstone EEIO model is updated annually and versioned with the year of the release, so Cornerstone EEIO 2026 is released in 2026 and the 2027 version will be released in 2027. Every year, the releases will be publicly available in October. The emission factors are the primary data product of each release, covering 405 sectors across 148 countries, 21 regions and one global average. This page describes the emission factor workbook; how the factors are calculated is in [](calculation.md). To download the latest version, check out [Zenodo](https://zenodo.org/doi/10.5281/zenodo.23396891).
 :::
 
 ## The release
 
-The release includes one Excel workbook that contains: a cover, a data dictionary, a producer-price tab and a purchaser-price tab for each year the data is available for, and five auxiliary tabs.
+The 2026-rc.1 emission factors are published as one Excel workbook that contains: a cover, a data dictionary, a producer-price tab and a purchaser-price tab for each year the data is available for, and five auxiliary tabs.
 
 ### Cover
 
