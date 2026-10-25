@@ -1,5 +1,5 @@
 ---
-title: "History of the Cornerstone EEIO"
+title: "Origins of the Cornerstone EEIO"
 author: Dr. Wesley Ingwersen
 ---
 
