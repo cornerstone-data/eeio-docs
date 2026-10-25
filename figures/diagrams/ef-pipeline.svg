@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 210" width="780" height="210" font-family="DM Sans, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#2c3746">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6a727c"/>
+    </marker>
+  </defs>
+  <rect width="780" height="210" fill="#ffffff"/>
+
+  <!-- Inputs: B and L -->
+  <rect x="14" y="20" width="92" height="36" rx="4" fill="#d4edf7" stroke="#29a7d5" stroke-width="1.5"/>
+  <text x="60" y="43" text-anchor="middle" font-weight="700">B</text>
+  <rect x="14" y="64" width="92" height="36" rx="4" fill="#d4edf7" stroke="#29a7d5" stroke-width="1.5"/>
+  <text x="60" y="87" text-anchor="middle" font-weight="700">L</text>
+  <text x="60" y="118" text-anchor="middle" font-size="10" fill="#6a727c">from the IO model</text>
+  <text x="60" y="131" text-anchor="middle" font-size="10" fill="#6a727c">and GHG extension</text>
+
+  <!-- 1 Total intensities -->
+  <rect x="124" y="20" width="100" height="80" rx="4" fill="#ececea" stroke="#6a727c" stroke-width="1.5"/>
+  <text x="132" y="36" font-size="10" fill="#6a727c">1</text>
+  <text x="174" y="58" text-anchor="middle" font-weight="700">Total</text>
+  <text x="174" y="74" text-anchor="middle" font-weight="700">intensities</text>
+  <text x="174" y="90" text-anchor="middle" font-size="10" fill="#6a727c">M = B × L</text>
+
+  <!-- 2 Characterize -->
+  <rect x="242" y="20" width="100" height="80" rx="4" fill="#ececea" stroke="#6a727c" stroke-width="1.5"/>
+  <text x="250" y="36" font-size="10" fill="#6a727c">2</text>
+  <text x="292" y="58" text-anchor="middle" font-weight="700">Weight by</text>
+  <text x="292" y="74" text-anchor="middle" font-weight="700">GWP</text>
+  <text x="292" y="90" text-anchor="middle" font-size="10" fill="#6a727c">N = C × M</text>
+
+  <!-- 3 Regions and fill -->
+  <rect x="360" y="20" width="100" height="80" rx="4" fill="#ececea" stroke="#6a727c" stroke-width="1.5"/>
+  <text x="368" y="36" font-size="10" fill="#6a727c">3</text>
+  <text x="410" y="58" text-anchor="middle" font-weight="700">Regional</text>
+  <text x="410" y="74" text-anchor="middle" font-weight="700">averages</text>
+  <text x="410" y="90" text-anchor="middle" font-size="10" fill="#6a727c">and gap filling</text>
+
+  <!-- 4 Re-price -->
+  <rect x="478" y="20" width="100" height="80" rx="4" fill="#ececea" stroke="#6a727c" stroke-width="1.5"/>
+  <text x="486" y="36" font-size="10" fill="#6a727c">4</text>
+  <text x="528" y="58" text-anchor="middle" font-weight="700">Re-price to</text>
+  <text x="528" y="74" text-anchor="middle" font-weight="700">each year</text>
+  <text x="528" y="90" text-anchor="middle" font-size="10" fill="#6a727c">2024, 2025, 2026</text>
+
+  <!-- PRO output -->
+  <rect x="610" y="20" width="156" height="36" rx="4" fill="#d4edf7" stroke="#29a7d5" stroke-width="2.5"/>
+  <text x="688" y="43" text-anchor="middle" font-weight="700">Producer price (PRO)</text>
+
+  <!-- 5 PUR -->
+  <rect x="610" y="120" width="156" height="36" rx="4" fill="#d4edf7" stroke="#29a7d5" stroke-width="2.5"/>
+  <text x="688" y="143" text-anchor="middle" font-weight="700">Purchaser price (PUR)</text>
+  <text x="680" y="84" font-size="10" fill="#6a727c" text-anchor="end">5</text>
+  <text x="696" y="92" font-weight="700">× φ</text>
+
+  <!-- arrows -->
+  <line x1="106" y1="38" x2="122" y2="52" stroke="#6a727c" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="106" y1="82" x2="122" y2="68" stroke="#6a727c" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="224" y1="60" x2="240" y2="60" stroke="#6a727c" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="342" y1="60" x2="358" y2="60" stroke="#6a727c" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="460" y1="60" x2="476" y2="60" stroke="#6a727c" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="578" y1="44" x2="608" y2="38" stroke="#6a727c" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="688" y1="56" x2="688" y2="118" stroke="#6a727c" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- note -->
+  <text x="124" y="150" font-size="11" fill="#6a727c">Steps 1 to 3 are in 2024 U.S. dollars at producer price, by country of production.</text>
+  <text x="124" y="166" font-size="11" fill="#6a727c">Step 4 uses U.S. price indexes; step 5 uses U.S. trade and transport margins.</text>
+  <text x="124" y="190" font-size="11" fill="#6a727c">Emissions of the margin services themselves are published separately as margin emission factors.</text>
+</svg>
