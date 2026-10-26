@@ -108,5 +108,5 @@ For a more detailed summary of the changes against USEEIO or CEDA, please refer 
 
 :::{div}
 :class: page-status
-Applies to: 2026-rc · Last reviewed: 2026-rc
+Applies to: 2026-rc
 :::

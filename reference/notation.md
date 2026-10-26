@@ -36,5 +36,5 @@ Team to confirm the final list and whether any others (e.g., value added, `U`/`V
 
 :::{div}
 :class: page-status
-Applies to: 2026-rc · Last reviewed: 2026-rc
+Applies to: 2026-rc
 :::

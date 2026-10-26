@@ -23,5 +23,5 @@ The **Cornerstone EEIO model** is the multi-regional input-output model describe
 
 :::{div}
 :class: page-status
-Applies to: 2026-rc · Last reviewed: 2026-rc
+Applies to: 2026-rc
 :::

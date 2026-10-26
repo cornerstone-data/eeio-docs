@@ -120,7 +120,7 @@ body {
   margin: 0;
 }
 
-/* Page footer line: which release a page applies to and was last checked against (plan §7.1) */
+/* Page footer line: which release a page applies to (plan §7.1) */
 .page-status {
   font-size: 0.8rem;
   opacity: 0.7;

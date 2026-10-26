@@ -171,5 +171,5 @@ Post a comment in the [2026-rc feedback discussion](https://github.com/orgs/corn
 
 :::{div}
 :class: page-status
-Applies to: 2026-rc · Last reviewed: 2026-rc
+Applies to: 2026-rc
 :::

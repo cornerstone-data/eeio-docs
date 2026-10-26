@@ -95,5 +95,5 @@ For goods, the choice changes the result. The 2026 factor for computers in the U
 
 :::{div}
 :class: page-status
-Applies to: 2026-rc · Last reviewed: 2026-rc
+Applies to: 2026-rc
 :::

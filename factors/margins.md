@@ -100,5 +100,5 @@ The USEEIO Supply Chain GHG Emission Factors were published per purchaser dollar
 
 :::{div}
 :class: page-status
-Applies to: 2026-rc · Last reviewed: 2026-rc
+Applies to: 2026-rc
 :::
