@@ -29,7 +29,7 @@ Data are checked when they arrive, as they move through each step of the build, 
 ### On arrival
 
 - **Structure and coverage.** Each source is checked for the countries, sectors, years and units it should contain. A source that is missing a country or sector the model needs is rejected rather than filled silently.
-- **Internal consistency.** Published identities in the source are checked before the data are used. For example, the accounting identities of the FIGARO tables must hold, each sector's emissions in the OECD data must add up to the published total, and the BEA tables are checked against BEA's own benchmark panel and sign conventions.
+- **Internal consistency.** Published identities in the source are checked before the data are used. For example, the accounting identities of the FIGARO tables must be satisfied, each sector's emissions in the OECD data must add up to the published total, and the BEA tables are checked against BEA's own benchmark panel and sign conventions.
 - **Reproducibility.** Extracted datasets are regenerated from the original source and compared with the stored copy, and stored copies older than the method that made them are flagged.
 
 ### Through each transformation
