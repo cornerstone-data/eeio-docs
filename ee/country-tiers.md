@@ -3,7 +3,7 @@ title: "GHG data by country tier"
 ---
 
 :::{tip} Summary
-The emissions data for each country follow its {term}`tier <Country tier>`: a detailed facility- and inventory-based model for the U.S., national sources for the four Tier 1 countries, the FIGARO or ICIO emissions data for Tier 2, and a scaled template for Tier 3. Within Tier 2, the detail available differs by source.
+The emissions data for each country follow its {term}`tier <Country tier>`: a detailed facility- and inventory-based model for the U.S., national sources for the four Tier 1 countries, the FIGARO or ICIO emissions data for Tier 2, and scaled proxy emissions for Tier 3. Within Tier 2, the detail available differs by source.
 :::
 
 :::{note} Draft
@@ -19,7 +19,7 @@ The emissions data for each country follow its {term}`tier <Country tier>`: a de
 | Tier 1 | China, Japan, South Korea, United Kingdom | National sources for each country | 2018–2023 | All 7 gases, with gaps filled for South Korea |
 | Tier 2, FIGARO | 40 countries | FIGARO emissions data from Eurostat | 2023 | 6 gas groups |
 | Tier 2, ICIO | 20 countries | OECD emissions data matched to the ICIO tables | 2020 | Total CO₂e only |
-| Tier 3 | 83 countries | A template scaled to each country's fossil CO₂ per unit of GDP from {term}`EDGAR` | 2018 | CO₂, with other gases from U.S. ratios |
+| Tier 3 | 83 countries | Proxy emissions scaled to each country's fossil CO₂ per unit of GDP from {term}`EDGAR` | 2018 | CO₂, with other gases from U.S. ratios |
 | Rest of world | | Pooled from four Tier 2 countries | 2020–2023 | As for those countries |
 
 ## Tier 0: The U.S. GHG model
@@ -98,13 +98,13 @@ The products are then mapped to the common sectors with {term}`ABSR`. The last g
 
 The OECD data give one CO₂e total for each of the 50 industries, with no split by gas. Farming is split out first, using FAOSTAT CH₄ and N₂O [@faoFAOSTATEmissionsTotals2025], before the totals are mapped to the common sectors with ABSR. The split by gas comes entirely from the U.S. mix for each sector. Electricity is mapped as one sector, with no separate split for gas and heat.
 
-## Tier 3: Template emissions
+## Tier 3: Proxy emissions
 
-Tier 3 countries have no emissions data matched to an IO table. Their direct emission intensities start from the same template as their input recipe, a blend of Mexico (30%), Malaysia (30%), and Tunisia (40%). The template uses those countries' CO₂ emissions by industry for 2018, from the OECD's 2021 edition of CO₂ emissions embodied in international trade [@oecdCarbonDioxideEmissions2021]. Other gases are added using the U.S. ratio of total CO₂e to CO₂ in each sector.
+Tier 3 countries have no emissions data matched to an IO table. Their direct emission intensities start from the same blend as their proxy table: Mexico (30%), Malaysia (30%), and Tunisia (40%). The proxy emissions use those countries' CO₂ emissions by industry for 2018, from the OECD's 2021 edition of CO₂ emissions embodied in international trade [@oecdCarbonDioxideEmissions2021]. Other gases are added using the U.S. ratio of total CO₂e to CO₂ in each sector.
 
-Each country then adjusts the template two ways:
+Each country then adjusts the proxy emissions two ways:
 
-- **Overall level.** All intensities are scaled by the country's fossil CO₂ per unit of GDP relative to the template's. Fossil CO₂ is from EDGAR (version 6.0) for 2018 [@crippaGHGEmissionsAll2021; @monfortiferrarioEDGARV60Greenhouse2021], and GDP from the IMF World Economic Outlook (October 2021) [@imfWorldEconomicOutlook2021].
+- **Overall level.** All intensities are scaled by the country's fossil CO₂ per unit of GDP relative to the proxy's. Fossil CO₂ is from EDGAR (version 6.0) for 2018 [@crippaGHGEmissionsAll2021; @monfortiferrarioEDGARV60Greenhouse2021], and GDP from the IMF World Economic Outlook (October 2021) [@imfWorldEconomicOutlook2021].
 - **Electricity.** The electricity sector uses the country's own power-sector CO₂ from EDGAR for 2018, divided by the value of its electricity output: 2018 generation from the U.S. Energy Information Administration [@eiaInternationalEnergyStatistics2026] times an average electricity price from the World Bank.
 
 ## Rest of world
@@ -149,7 +149,7 @@ Emissions stay at their data year. For the data year of each country's IO table,
 - **Why we make it:** EDGAR merges some activities that CEDS keeps separate, such as public power plants and on-site generation, and refining and extraction.
 - **How it affects results:** The split between these industries changes, but the country's total for the group is unchanged.
 
-**Tier 3 countries share one template**
+**Tier 3 countries share one set of proxy emissions**
 
 - **Assumption:** Tier 3 countries share one pattern of direct emission intensities. They differ only in their overall level, set by fossil CO₂ per unit of GDP, and in their electricity intensity.
 - **Why we make it:** These countries have no emissions data by sector.

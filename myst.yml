@@ -41,13 +41,13 @@ project:
         - file: code/index.md
         - file: validation/index.md
         - file: benchmarking/index.md
-        - file: releases/index.md
+    - file: releases/index.md
+      children:
+        - file: releases/rc.md
           children:
-            - file: releases/rc.md
-              children:
-                - file: releases/summary-useeio.md
-                - file: releases/summary-ceda.md
-                - file: releases/change-log.md
+            - file: releases/summary-useeio.md
+            - file: releases/summary-ceda.md
+            - file: releases/change-log.md
     - title: User guide
       children:
         - file: factors/whats-in-a-release.md
