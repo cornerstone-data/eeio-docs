@@ -29,7 +29,7 @@ The direct emission factors `D` are part of the model but are not published as a
 
 ## Tier 3 countries
 
-The 83 Tier 3 countries are not part of the multi-region table, so their factors are calculated one country at a time, from the template described in [](../io/country-tiers.md#tier-3-no-io-tables) and [](../ee/country-tiers.md#tier-3-template-emissions). Each country's domestic inputs carry its own direct emission intensities through its domestic total requirements, `(I − Adom)⁻¹`. Its imported inputs carry China's total emission factors from the multi-region table. The two parts are added to give the country's `M`.
+The 83 Tier 3 countries are not part of the multi-region table, so their factors are calculated one country at a time, from the template described in [](../io/country-tiers.md#tier-3-proxy-tables) and [](../ee/country-tiers.md#tier-3-template-emissions). Each country's domestic inputs carry its own direct emission intensities through its domestic total requirements, `(I − Adom)⁻¹`. Its imported inputs carry China's total emission factors from the multi-region table. The two parts are added to give the country's `M`.
 
 ## Regional and global averages
 

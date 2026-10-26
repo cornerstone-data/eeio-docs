@@ -16,12 +16,14 @@ Countries by tier. Darker means more detailed IO data. Small countries are shown
 
 The model covers 148 countries plus a rest-of-world region. A country's tier sets which type of table it starts from, how much sector detail that table has, and how it is valued.
 
-| {term}`Country tier` | Countries | Starting tables |
-|---|---|---|
-| Tier 0 | United States | {term}`Make and Use tables <Make/Use framework>` for 2024 produced by Cornerstone (nowcast), after {term}`redefinitions <Redefinitions>`, following BEA's 2017 detailed schema |
-| Tier 1 | China, Japan, South Korea, United Kingdom | IO tables published by each country's statistical agency |
-| Tier 2 | 60 countries | The country's table from {term}`FIGARO` (40 countries) or the {term}`ICIO` (20 countries) |
-| Tier 3 | 83 countries | No usable table: a template built from other countries' tables |
+| {term}`Country tier` | Countries | Share of world GDP | Starting tables |
+|---|---|---|---|
+| Tier 0 | United States | 26.2% | {term}`Make and Use tables <Make/Use framework>` for 2024 produced by Cornerstone (nowcast), after {term}`redefinitions <Redefinitions>`, following BEA's 2017 detailed schema |
+| Tier 1 | China, Japan, South Korea, United Kingdom | 25.5% | IO tables published by each country's statistical agency |
+| Tier 2 | 60 countries | 40.7% | The country's table from {term}`FIGARO` (40 countries) or the {term}`ICIO` (20 countries) |
+| Tier 3 | 83 countries | 5.2% | Proxy table recreated from other countries with available data |
+
+Share of world GDP is each tier's 2024 GDP in current US dollars divided by world GDP. Source: World Bank, World Development Indicators (NY.GDP.MKTP.CD), retrieved October 2026. The shares sum to less than 100% because countries in the rest-of-world region are not counted, and because the World Bank does not report Taiwan (Tier 2).
 
 ## Tier 0: Detailed, annual IO tables
 
@@ -72,15 +74,15 @@ Both are inter-country tables, so each country's own block of the table gives it
 
 Before mapping, five of FIGARO's broad sectors are split into finer ones while keeping their totals: electricity, gas, and heat; water, sewerage, and waste; basic metals (steel, other ferrous, non-ferrous); non-metallic minerals (cement, other); mining (five sectors); and agriculture (11 farm sectors). The tables are then mapped to the common sectors with {term}`ABSR`, and converted to 2024 U.S. dollars the same way as Tier 1.
 
-## Tier 3: No IO tables
+## Tier 3: Proxy tables
 
 The 83 countries that are in neither Tier 1 nor Tier 2 have no usable published table. They are not part of the multi-region table; their factors are calculated one country at a time.
 
-- **Input recipe.** All 83 share one template recipe, a weighted blend of three Tier 2 economies: Mexico (30%), Malaysia (30%), and Tunisia (40%).
-- **Imports.** Each country's own import share splits the template into domestic and imported inputs, with the same share for every sector. The supply chains behind those imports are approximated with China's.
+- **Input recipe.** All 83 share one proxy table recipe, a weighted blend of three Tier 2 economies: Mexico (30%), Malaysia (30%), and Tunisia (40%).
+- **Imports.** Each country's own import share splits the proxy table into domestic and imported inputs, with the same share for every sector. The supply chains behind those imports are approximated with China's.
 - **Emissions.** Direct emission intensities are scaled to the country's own emissions per unit of GDP, and electricity uses the country's own emission intensity.
 
-This template is separate from the rest-of-world region in the multi-region table, which is built from different countries (see [](index.md)).
+This proxy table is separate from the rest-of-world region in the multi-region table, which is built from different countries (see [](index.md)).
 
 ## Currency
 
@@ -102,7 +104,7 @@ All tables are converted to 2024 U.S. dollars. Sector lists are reconciled in th
 
 **Tier 3 countries share one recipe**
 
-- **Assumption:** Tier 3 countries share one template input recipe. Each country differs only in its overall import share, applied equally to every sector, and in its direct emission intensities, which are scaled to the country's emissions per unit of GDP, with its own electricity intensity. Their imported supply chains are approximated with China's.
+- **Assumption:** Tier 3 countries share one proxy table input recipe. Each country differs only in its overall import share, applied equally to every sector, and in its direct emission intensities, which are scaled to the country's emissions per unit of GDP, with its own electricity intensity. Their imported supply chains are approximated with China's.
 - **Why we make it:** These countries have no usable published IO table.
 - **How it affects results:** Differences in industry structure between Tier 3 countries are not captured, and imports from countries other than China are given China's supply chains. Factors for these countries carry more uncertainty than those for Tiers 0 to 2.
 :::
