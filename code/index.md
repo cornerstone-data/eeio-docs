@@ -26,7 +26,7 @@ The `ceda` pipeline builds the rest of the global multi-regional model and produ
 
 ## How the code is checked
 
-Both pipelines are tested automatically on every change, and their main outputs are compared with pinned reference results. See [](../validation/index.md#code-validation).
+Both pipelines are tested automatically on every change, and their main outputs are compared with pinned reference results. See [code validation](../validation/index.md#code-validation).
 
 +++
 
