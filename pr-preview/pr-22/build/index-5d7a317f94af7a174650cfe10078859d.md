@@ -84,7 +84,13 @@ The goal is not an exact match to one external number. It is whether our estimat
 
 ## Results for this release
 
-*Headline counts and a figure will be added for the RC.* See [](../releases/rc.md) for the release summary once those numbers are in.
+:::{figure} ../figures/diagrams/benchmark-2026-rc1.png
+:label: fig-benchmark-2026-rc1
+:alt: Donut chart titled How Cornerstone compares to third-party references. About 70 percent of country-sector pairs with a verified external benchmark fall within 25 percent of the benchmark; 21 percent have a 25 to 50 percent gap; 10 percent have a gap of 50 percent or more.
+Share of country–sector pairs with a verified external benchmark. About 70% fall within 25% of the benchmark; the rest have larger gaps.
+:::
+
+See [](../releases/rc.md) for the release summary.
 
 :::{seealso} Related
 Internal accounting checks live on [](../validation/index.md). Version-specific headlines will also appear in the [](../releases/index.md).
