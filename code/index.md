@@ -22,7 +22,7 @@ Cornerstone EEIO is built by two code pipelines. The open-source `bedrock` pipel
 
 ## `ceda`: the global model and the emission factors
 
-The `ceda` pipeline builds the rest of the global multi-regional model and produces the published emission factors. It takes the U.S. components from a pinned `bedrock` release, adds the IO tables and emissions data for the Tier 1, Tier 2 and Tier 3 countries, maps them to the 405 common sectors with {term}`ABSR`, links the countries through bilateral trade, balances the multi-regional table with {term}`RAS`, and solves for the total requirements. It then calculates the emission factors, the regional and global averages, the factors for each year and at purchaser price, and the margin emission factors, and writes the release files (see [](../factors/calculation.md)). The pipeline grew out of the code behind CEDA and is maintained by Cornerstone. It is currently closed-source.
+The `ceda` pipeline builds the rest of the global multi-regional model and produces the published emission factors. It takes the U.S. components from a pinned `bedrock` release, adds the IO tables and emissions for the Tier 1–3 countries, and maps them to the 405 common sectors with {term}`ABSR`. It then links countries through bilateral trade, balances the multi-regional table with {term}`RAS`, and solves for the total requirements. From that, it calculates the emission factors (including regional and global averages, price-year and purchaser-price variants, and margin factors) and writes the release files (see [](../factors/calculation.md)). The pipeline grew out of the code behind CEDA and is maintained by Cornerstone. It is currently closed-source.
 
 ## How the code is checked
 
