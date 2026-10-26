@@ -38,6 +38,7 @@ project:
           children:
             - file: factors/calculation.md
             - file: factors/margins.md
+        - file: code/index.md
         - file: validation/index.md
         - file: benchmarking/index.md
         - file: releases/index.md
