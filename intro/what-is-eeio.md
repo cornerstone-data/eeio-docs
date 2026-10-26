@@ -21,8 +21,8 @@ EEIO grew out of economic input-output analysis when economist Wassily Leontief 
 Each data component is put into a matrix, named by a letter that is common in input-output analysis and used throughout these docs (see [](../reference/notation.md)). Input-output analysis then combines the matrices with matrix algebra.
 
 - **Input-output tables.** The supply (`V`) and use (`U`) tables record which sectors produce which products, and which products each sector and final user buys. From them come the direct requirements (`A`), the inputs a sector buys per dollar of its output, and the total requirements (`L`, the Leontief inverse), which add up the purchases through every round of suppliers. See [](../io/index.md).
-- **Environmental extension.** Emissions of each gas by each sector (`E`), divided by the sector's output, give the direct emission intensities (`B`). Characterization factors (`C`) convert each gas to CO₂-equivalent. See [](../ee/index.md).
-- **Emission factors.** Combining the two gives the direct emission factors, `D = C × B`, for what a sector emits itself, and the total emission factors, `N = C × B × L`, for what is emitted across its whole supply chain.
+- **Environmental extension.** Emissions of each gas by each sector (`E`), weighted by each gas's global warming potential to give CO₂-equivalent and divided by the sector's output, give the direct emission intensities (`B`). See [](../ee/index.md).
+- **Emission factors.** Adding up the gases in `B` gives the direct emission factors (`D`), for what a sector emits itself. Combining them with the IO tables gives the total emission factors, `N = D × L`, for what is emitted across its whole supply chain.
 
 ## EEIO and life cycle assessment
 

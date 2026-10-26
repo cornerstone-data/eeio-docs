@@ -13,12 +13,12 @@ Plan §3.1.5 · target: **RC (Oct 27)**
 
 **Planned content**
 
-- Introduce the key variables by name: `D = C × B` (direct emission factors) and `N = C × B × L` (total emission factors), where `C` converts each gas to CO₂e
+- Introduce the key variables by name: `D`, the gases in `B` (already in CO₂e) added up (direct emission factors), and `N = D × L` (total emission factors)
 - Worked toy example with real-looking numbers you can follow by hand
 
 **Key visuals**
 
-- 🖼 Matrix "shape" diagram (C × B × L = N), color-coded
+- 🖼 Matrix "shape" diagram (D × L = N), color-coded
 - 🖼 Stacked bar for one real sector: direct, domestic supply chain, imported supply chain by region
 :::
 

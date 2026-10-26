@@ -8,22 +8,24 @@ The emission factors are the model's total emission factors (`N`): the CO₂e em
 
 :::{figure} ../figures/diagrams/ef-pipeline.svg
 :label: fig-ef-pipeline
-:alt: B and L feed step 1, total intensities M equals B times L. Step 2 weights by GWP, N equals C times M. Step 3 forms regional averages and fills gaps. Step 4 re-prices to each year, 2024, 2025 and 2026, giving the producer-price factors. Step 5 multiplies by phi, the producer share of the purchaser price, giving the purchaser-price factors. Notes say steps 1 to 3 are in 2024 U.S. dollars at producer price, step 4 uses U.S. price indexes, step 5 uses U.S. trade and transport margins, and margin emissions are published separately.
+:alt: D and B, in CO2e, and L feed step 1. Step 1 calculates the total emission factors, M equals B times L by gas and N equals D times L in total. Step 2 forms regional averages and fills gaps. Step 3 re-prices to each year, 2024, 2025 and 2026, giving the producer-price factors. Step 4 multiplies by phi, the producer share of the purchaser price, giving the purchaser-price factors. Notes say steps 1 and 2 are in 2024 U.S. dollars at producer price, step 3 uses U.S. price indexes, step 4 uses U.S. trade and transport margins, and margin emissions are published separately.
 From the model matrices to the published factors. The base calculation is in 2024 dollars; each year's factors are re-priced from it. `φ` is the producer share of the purchaser price.
 :::
 
 ## From the model to total emission factors
 
-The IO model gives the total requirements `L`, the output needed from every sector in every country per dollar of final demand (see [](../io/index.md#total-requirements)). The GHG extension gives the direct emission intensities `B`, the kilograms of each gas a sector emits per dollar of its own output (see [](../ee/index.md)). The emission factors combine the two.
+The IO model gives the total requirements `L`, the output needed from every sector in every country per dollar of final demand (see [](../io/index.md#total-requirements)). The GHG extension gives the direct emission intensities `B`, the emissions of each gas a sector emits per dollar of its own output (see [](../ee/index.md)). Each gas is weighted by its 100-year GWP from the IPCC AR6 as its emissions enter the model, so `B` is already in kg CO₂e per dollar, one row per gas (see [](../ee/index.md#gases-and-global-warming-potentials)). Adding up its rows gives the direct emission factors `D`, what a sector emits itself per dollar.
 
-1. **Total intensities by gas.** `M = B × L` traces each sector's direct emissions through every round of suppliers. A column of `M` gives, for \$1 of one commodity from one country, the emissions of each gas anywhere in its supply chain.
-2. **CO₂-equivalent.** The characterization factors `C` weight each gas by its 100-year GWP from the IPCC AR6, so `N = C × M` gives the total emission factors in kg CO₂e per dollar (see [](../ee/index.md#gases-and-global-warming-potentials)). The gas columns of the release are the rows of `M` in CO₂e, and Total GHGs is their sum.
+The total emission factors take one step: multiplying by `L` traces each sector's direct emissions through every round of suppliers.
+
+- `M = B × L` gives the total emission factors by gas. A column of `M` gives, for \$1 of one commodity from one country, the CO₂e of each gas emitted anywhere in its supply chain. These are the gas columns of the release.
+- `N = D × L`, which equals the sum of the rows of `M`, gives the total emission factors. This is the Total GHGs column of the release.
 
 For the 65 countries in Tiers 0 to 2 and the rest-of-world region, `L` is solved once for the whole multi-region table, so `M` follows supply chains across every border in the table. Each column of `N` is one commodity produced in one country, so a factor describes where a product is made, not where it is bought.
 
 The factors are per dollar of commodity output at producer price, in 2024 U.S. dollars, the model's base year. They include every upstream supplier, but not the trade and transport services between the producer and the buyer, which are handled in [](#purchaser-price) and [](margins.md).
 
-The direct emission factors `D = C × B`, which hold only what a sector emits itself, are part of the model but are not published as a separate table.
+The direct emission factors `D` are part of the model but are not published as a separate table.
 
 ## Tier 3 countries
 
@@ -64,7 +66,6 @@ A purchaser pays more than the producer receives: wholesale, retail and transpor
 Here `A_margin` holds the margins paid on each commodity, in dollars of margin per dollar of the commodity at producer price, one row per margin sector, and `φ` is the producer share of the purchaser price.
 
 - **Margins come from the U.S.** `A_margin` is built from U.S. margin data, on the industry-average margins paid by industries and business investment. The same `φ` is applied to every country, region and the global average (see the [key assumptions](../io/country-tiers.md#currency) for the IO tables).
-- **Margins only.** The conversion covers trade and transport margins. Taxes and subsidies on products are not included.
 - **Services and electricity have `φ = 1`.** They carry no trade margins, so their producer- and purchaser-price factors are the same.
 - **Each year has its own `φ`.** The margin coefficients are re-priced to each year with the price indexes of the margin sector and of the commodity, so `φ` changes slightly from year to year.
 
@@ -88,11 +89,11 @@ Published factors are rounded to three significant figures. Total GHGs is rounde
 - **Why we make it:** Consistent sector-level price indexes in U.S. dollars are not available for every country and year.
 - **How it affects results:** Where prices in a country moved differently from U.S. prices, or its exchange rate against the dollar changed, its factors for 2025 and 2026 could be too high or too low.
 
-**U.S. margins and no product taxes in purchaser prices**
+**U.S. margins in purchaser prices**
 
-- **Assumption:** The U.S. share of trade and transport margins in each commodity's purchaser price applies in every country, and product taxes are left out of the conversion.
-- **Why we make it:** Margin and tax data comparable to the U.S. tables are not available for every country.
-- **How it affects results:** Where a country's margins or product taxes differ from the U.S., its purchaser-price factors could be too high or too low. Producer-price factors are not affected.
+- **Assumption:** The U.S. share of trade and transport margins in each commodity's purchaser price applies in every country.
+- **Why we make it:** Margin data comparable to the U.S. tables are not available for every country.
+- **How it affects results:** Where a country's margins differ from the U.S., its purchaser-price factors could be too high or too low. Producer-price factors are not affected.
 
 **Gross-output weights for regional averages**
 

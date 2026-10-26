@@ -3,12 +3,12 @@ title: "The GHG extension: overview"
 ---
 
 :::{tip} Summary
-The GHG extension attaches each sector's own greenhouse gas emissions to the IO model, as emissions of each gas per dollar of output (`B`). Every country follows the same steps, but the emissions data behind them, and how much detail they carry, depend on the country's tier.
+The GHG extension attaches each sector's own greenhouse gas emissions to the IO model, as CO₂-equivalent emissions of each gas per dollar of output (`B`). Every country follows the same steps, but the emissions data behind them, and how much detail they carry, depend on the country's tier.
 :::
 
 :::{figure} ../figures/diagrams/ghg-pipeline.svg
 :label: fig-ghg-pipeline
-:alt: Seven boxes in a row joined by arrows: 1, source emissions by source sector; 2, split broad sectors; 3, allocate to the 405 common sectors; 4, fill in gas detail where needed, drawn dashed, with a note that it is not needed for the U.S., China, Japan, or the UK; 5, convert to AR6; 6, divide by output, first industry output x and then per commodity output q. The result is B, kilograms of each gas per dollar. A bracket under steps 2 to 4 notes that each country's source totals are kept through them.
+:alt: Seven boxes in a row joined by arrows: 1, source emissions by source sector; 2, split broad sectors; 3, allocate to the 405 common sectors; 4, fill in gas detail where needed, drawn dashed, with a note that it is not needed for the U.S., China, Japan, or the UK; 5, convert to CO₂-equivalent with AR6 GWPs; 6, divide by output, first industry output x and then per commodity output q. The result is B, kilograms of CO₂-equivalent of each gas per dollar. A bracket under steps 2 to 4 notes that each country's source totals are kept through them.
 From source emissions to direct emission intensities (`B`). Every country follows the same steps; step 4 is needed only where a source does not separate every gas.
 :::
 
@@ -16,18 +16,18 @@ From source emissions to direct emission intensities (`B`). Every country follow
 
 The IO model traces the dollars that flow through supply chains. The GHG extension adds what each sector emits while making its output. For each country and sector it records:
 
-- **Emissions** (`E`): kilograms of each gas emitted by the sector in a year.
-- **Direct emission intensities** (`B`): those emissions divided by output, so kilograms of each gas per dollar of output.
+- **Emissions** (`E`): the emissions of each gas by the sector in a year, in kilograms of CO₂-equivalent.
+- **Direct emission intensities** (`B`): those emissions divided by output, so kilograms of CO₂-equivalent of each gas per dollar of output.
 
 `B` holds direct emissions only: what the sector emits from its own fuel use, processes, and other activities. Emissions from the sector's suppliers come in through the supply chain ([`L`](../io/index.md#total-requirements)), not through `B`. For example, the emissions from generating electricity stay with the power sector, and other sectors' purchased electricity reaches them through `L`.
 
-Characterization factors (`C`) then weight each gas by its global warming potential, which gives the direct emission factors `D = C × B` (see [](../reference/notation.md)).
+Each gas is weighted by its global warming potential as its emissions enter the model, so `E` and `B` are already in CO₂-equivalent and no separate weighting step is needed. Adding up the gases in `B` gives the direct emission factors `D` (see [](../reference/notation.md)).
 
 ## Gases and global warming potentials
 
 `B` has a row for each of seven gases or gas groups: carbon dioxide (CO₂), methane (CH₄), nitrous oxide (N₂O), hydrofluorocarbons (HFCs), perfluorocarbons (PFCs), sulfur hexafluoride (SF₆), and nitrogen trifluoride (NF₃).
 
-They are combined into CO₂-equivalent with 100-year {term}`GWPs <GWP>` from the IPCC's Sixth Assessment Report (AR6) [@forsterEarthsEnergyBudget2021]. Methane is valued two ways: fossil methane, from fuel production and use, at 29.8, and non-fossil methane, from farming and waste, at 27.0. Fossil methane is valued higher because, once it breaks down, it leaves CO₂ that was not already in the atmosphere.
+Each gas is converted to CO₂-equivalent as its emissions are loaded, with 100-year {term}`GWPs <GWP>` from the IPCC's Sixth Assessment Report (AR6) [@forsterEarthsEnergyBudget2021]. Methane is valued two ways: fossil methane, from fuel production and use, at 29.8, and non-fossil methane, from farming and waste, at 27.0. Fossil methane is valued higher because, once it breaks down, it leaves CO₂ that was not already in the atmosphere.
 
 Several sources report emissions as CO₂-equivalent using older GWPs from the Fifth Assessment Report (AR5) [@myhreAnthropogenicNaturalRadiative2013]. These are converted to AR6, gas by gas.
 
@@ -55,7 +55,7 @@ Every country's emissions go through the same steps:
 2. **Split broad sectors where better data exist.** Some sources lump together sectors with very different emissions, such as electricity, gas, and heat, or all of farming. Where other data can separate them, the broad sector is split first, keeping its total.
 3. **Allocate to the common sectors.** For the U.S., each inventory activity is allocated to the industries that emit it. For other countries, each source sector's emissions are allocated to the matching common sectors with {term}`ABSR`, weighted by U.S. emission intensities. The country's total for each source sector is kept.
 4. **Fill in missing gas detail.** Where a source does not separate every gas, the missing split is taken from the U.S. mix for the same sector. This is not needed for the U.S., China, Japan, or the UK, whose sources cover all seven gases.
-5. **Convert to AR6** where the source used other GWPs.
+5. **Convert to CO₂-equivalent** with AR6 GWPs. Sources reported in CO₂-equivalent with other GWPs are converted to AR6.
 6. **Divide by output.** Each industry's emissions are divided by its output (`x`), then converted to commodities using market shares (who makes each commodity), giving `B` per dollar of commodity output (`q`). Emissions data years differ by country; see [](country-tiers.md#ghg-data-years).
 
 [](country-tiers.md) gives the sources and how each step is done for each tier.
