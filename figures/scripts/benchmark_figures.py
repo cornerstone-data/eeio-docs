@@ -8,12 +8,13 @@ one band by its gap, |model D - benchmark| / benchmark, with model D from the v1
 - 25-50% gap: 18 sectors
 - 50% or more gap: 9 sectors
 
-Percentages are rounded by largest remainder so they add to 100% (69%, 21%, 10%; exact shares are
-69.3%, 20.5% and 10.2%).
+Each percentage is rounded to the nearest whole percent, halves up (69.32%, 20.45% and 10.23% show
+as 69%, 20% and 10%), so the labels add to 99%.
 
 Run from the repo root (needs matplotlib):
     uv run --with matplotlib python figures/scripts/benchmark_figures.py
 """
+from decimal import ROUND_HALF_UP, Decimal
 from pathlib import Path
 
 import matplotlib
@@ -32,21 +33,10 @@ BANDS = [  # (label, sectors, colour)
 plt.rcParams.update({"font.family": ["Helvetica", "Arial", "DejaVu Sans"]})
 
 
-def whole_percents(counts):
-    """Round shares to whole percents that add to 100 (largest remainder)."""
-    total = sum(counts)
-    exact = [100 * c / total for c in counts]
-    pcts = [int(e) for e in exact]
-    by_remainder = sorted(range(len(counts)), key=lambda i: exact[i] - pcts[i], reverse=True)
-    for i in by_remainder[: 100 - sum(pcts)]:
-        pcts[i] += 1
-    return pcts
-
-
 def donut():
     counts = [n for _, n, _ in BANDS]
     total = sum(counts)
-    pcts = whole_percents(counts)
+    pcts = [int((Decimal(100 * n) / total).quantize(Decimal(1), rounding=ROUND_HALF_UP)) for n in counts]
 
     fig = plt.figure(figsize=(6.2, 5.7), dpi=200)
     ax = fig.add_axes([0, 0, 1, 1])
