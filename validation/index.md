@@ -9,8 +9,8 @@ Validation asks "did we build the model correctly?" It checks the code that buil
 
 :::{figure} ../figures/diagrams/quality-pipeline.svg
 :label: fig-quality-pipeline
-:alt: Five boxes in a row show the build: acquire source data, transform (map, split, balance), build the model (A, L, B, D), calculate the emission factors, and publish the release files. Below them, a data validation band spans acquire and transform, a model validation band spans build, calculate and publish, and a code validation band spans all five steps. A note says benchmarking against independent evidence follows the build and feeds the next release.
-Where each kind of validation runs in the build. Code validation covers every step; data validation follows the data in; model validation checks what comes out.
+:alt: Five boxes in a row show the build: acquire source data, transform (map, split, balance), build the model (A, L, B, D), calculate the emission factors, and publish the release files. Below them, a data validation band spans acquire and transform, a model validation band spans build, calculate and publish, and a code validation band spans all five steps.
+Where each kind of validation runs in the build. Code validation covers every step; data validation follows the data in; model validation checks what comes out. Benchmarking against independent evidence follows the build and feeds the next release (see [](../benchmarking/index.md)).
 :::
 
 ## 1. Code validation
