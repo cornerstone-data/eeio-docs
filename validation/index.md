@@ -51,7 +51,7 @@ The model as a whole is checked by asking whether it reproduces the data it was 
 
 ### Recalculating national emissions
 
-An input-output model should give back the emissions it was built from. Running the final demand of every country (`y`) through the model gives the output needed to meet it, `L × y`, and multiplying by the direct emission factors gives the emissions of producing it:
+An input-output model should recalculate the emissions it was built from. Running the final demand of every country (`y`) through the model gives the output needed to meet it (`L × y`), and multiplying by the direct emission factors gives the emissions of producing it:
 
 `E_model = diag(D) × L × y`
 
