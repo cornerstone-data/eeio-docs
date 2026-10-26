@@ -80,5 +80,5 @@ For even additional details or custom support on how to navigate the changes in 
 
 :::{div}
 :class: page-status
-Applies to: 2026-rc.1 · Last reviewed: 2026-rc.1
+Applies to: 2026-rc · Last reviewed: 2026-rc
 :::

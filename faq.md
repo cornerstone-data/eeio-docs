@@ -27,7 +27,7 @@ Both. Data updates reflect real-world change, such as new economic, trade and em
 :::
 
 :::{dropdown} Why is it called a "release candidate"?
-2026 is the first time CEDA and USEEIO are combined in one model, and the first time a time series is released. The two-phase release gives companies time to assess the impact on their most recent year of measurements while the time series is under development. The release candidate (2026-rc.1) is published on October 27, 2026. The full release (2026-v1), with the 2017–2026 time series and the model matrices, follows in early December 2026. See [](releases/rc.md).
+2026 is the first time CEDA and USEEIO are combined in one model, and the first time a time series is released. The two-phase release gives companies time to assess the impact on their most recent year of measurements while the time series is under development. The release candidate (2026-rc) is published on October 27, 2026. The full release (2026-v1), with the 2017–2026 time series and the model matrices, follows in early December 2026. See [](releases/rc.md).
 :::
 
 :::{dropdown} Will the 2024–2026 factors change between the release candidate and the final version?
@@ -148,7 +148,7 @@ Start with [](reference/methods-by-country.md), which lists the data and methods
 :::
 
 :::{dropdown} How do I cite a specific release?
-Cite the version and the release date. For example the Cornerstone EEIO 2026-rc.1 released on October 27th, 2026. See [](factors/whats-in-a-release.md#cover) and [](releases/index.md).
+Cite the version and the release date. For example the Cornerstone EEIO 2026-rc released on October 27th, 2026. See [](factors/whats-in-a-release.md#cover) and [](releases/index.md).
 :::
 
 :::{dropdown} What license are the factors under, and what attribution is required?
@@ -171,5 +171,5 @@ Open an issue on [GitHub](https://github.com/cornerstone-data/eeio-docs/issues).
 
 :::{div}
 :class: page-status
-Applies to: 2026-rc.1 · Last reviewed: 2026-rc.1
+Applies to: 2026-rc · Last reviewed: 2026-rc
 :::

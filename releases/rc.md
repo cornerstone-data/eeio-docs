@@ -1,10 +1,10 @@
 ---
-title: "2026-rc.1 (Release Candidate)"
+title: "2026-rc (Release Candidate)"
 subtitle: "Release note · Release date: October 27, 2026"
 ---
 
 :::{tip} Summary
-The 2026-rc.1 (Release Candidate) is the first stage of a phased approach to releasing Cornerstone EEIO 2026, the successor of USEEIO and CEDA. It publishes the model's primary data product: spend-based GHG emission factors, in kg CO₂e per USD, for 405 sectors across 148 countries, plus 21 regional averages and one global average. The factors are cradle-to-gate, use 2024 as the base year, and are available for 2024, 2025 and 2026 measurements.
+The 2026-rc (Release Candidate) is the first stage of a phased approach to releasing Cornerstone EEIO 2026, the successor of USEEIO and CEDA. It publishes the model's primary data product: spend-based GHG emission factors, in kg CO₂e per USD, for 405 sectors across 148 countries, plus 21 regional averages and one global average. The factors are cradle-to-gate, use 2024 as the base year, and are available for 2024, 2025 and 2026 measurements.
 
 This release candidate will be superseded in December by the full 2026-v1 release, which will include a time series of emission factors from 2017 to 2026 and will be accompanied by the model matrices, in a format still to be decided.
 
@@ -108,5 +108,5 @@ For a more detailed summary of the changes against USEEIO or CEDA, please refer 
 
 :::{div}
 :class: page-status
-Applies to: 2026-rc.1 · Last reviewed: 2026-rc.1
+Applies to: 2026-rc · Last reviewed: 2026-rc
 :::

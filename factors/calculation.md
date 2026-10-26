@@ -113,5 +113,5 @@ Published factors are rounded to three significant figures. Total GHGs is rounde
 
 :::{div}
 :class: page-status
-Applies to: 2026-rc.1 · Last reviewed: 2026-rc.1
+Applies to: 2026-rc · Last reviewed: 2026-rc
 :::

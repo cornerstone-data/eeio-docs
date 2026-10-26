@@ -8,7 +8,7 @@ The Cornerstone EEIO model is updated annually and versioned with the year of th
 
 ## The release
 
-The 2026-rc.1 emission factors are published as one Excel workbook that contains: a cover, a data dictionary, a producer-price tab and a purchaser-price tab for each year the data is available for, and five auxiliary tabs.
+The 2026-rc emission factors are published as one Excel workbook that contains: a cover, a data dictionary, a producer-price tab and a purchaser-price tab for each year the data is available for, and five auxiliary tabs.
 
 ### Cover
 
@@ -65,5 +65,5 @@ The Cornerstone EEIO follows an annual update cycle. Every year we release a ver
 
 :::{div}
 :class: page-status
-Applies to: 2026-rc.1 · Last reviewed: 2026-rc.1
+Applies to: 2026-rc · Last reviewed: 2026-rc
 :::
