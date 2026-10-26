@@ -47,7 +47,7 @@ Data are checked when they arrive, as they move through each step of the build, 
 
 ## 3. Model validation
 
-The model as a whole is checked by asking whether it reproduces the data it was built from, and how its results compare with previous models.
+The model as a whole is checked by asking whether it reproduces the data it was built from and how its results compare with previous models.
 
 ### Recalculating national emissions
 
