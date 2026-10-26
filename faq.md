@@ -3,10 +3,10 @@ title: Frequently asked questions
 ---
 
 :::{tip} Summary
-Short answers to the questions we hear most about Cornerstone EEIO 2026. Each answer links to the page with the full explanation. Cornerstone EEIO is the successor of USEEIO and CEDA, so many answers compare it with those models.
+Short answers to the questions we hear most about Cornerstone EEIO and spend-based emission factors. Each answer links to the page with the full explanation. Cornerstone EEIO is the successor of USEEIO and CEDA, so many answers compare it with those models.
 :::
 
-## About Cornerstone EEIO 2026
+## About Cornerstone EEIO
 
 :::{dropdown} What is the Cornerstone Sustainability Data Initiative, and how does it relate to USEEIO and CEDA?
 Cornerstone launched in August 2025 to bring USEEIO and CEDA together into one open, comprehensive dataset of Scope 3 spend-based emission factors. Cornerstone EEIO 2026 is the first release of that combined model, which builds on both USEEIO and CEDA. Today Cornerstone is the home of 3 additional datasets: eGRID, the GHG EF Hub and Orbae. Learn more at [cornerstonedata.org](https://cornerstonedata.org/), and see the [release candidate note](releases/rc.md) for what is in this release.
