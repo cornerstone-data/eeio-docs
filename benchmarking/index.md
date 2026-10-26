@@ -94,5 +94,5 @@ Internal accounting checks live on [](../validation/index.md). Version-specific 
 
 :::{div}
 :class: page-status
-Applies to: RC · Last reviewed: RC
+Applies to: 2026-rc.1 · Last reviewed: 2026-rc.1
 :::

@@ -1,7 +1,7 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  title: Cornerstone EEIO Model
+  title: Cornerstone EEIO
   description: Theory, assumptions, data, and practical guidance for the Cornerstone multi-regional EEIO model and its emission factors.
   keywords: [EEIO, MRIO, input-output, emission factors, Scope 3, greenhouse gas]
   authors:
@@ -13,6 +13,7 @@ project:
     - README.md
     - CONTRIBUTING.md
     - _parts/**
+    - drafts/**
   exports:
     - id: guide-pdf
       format: typst
@@ -32,10 +33,7 @@ project:
     - title: Emission factors
       children:
         - file: factors/whats-in-a-release.md
-        - file: factors/choose-a-factor.md
-        - file: factors/prices-and-margins.md
-        - file: factors/year-and-currency.md
-        - file: factors/downloads.md
+        - file: factors/user-guidance.md
     - file: validation/index.md
     - file: benchmarking/index.md
     - title: Reference
@@ -47,19 +45,22 @@ project:
     - file: releases/index.md
       children:
         - file: releases/rc.md
+          children:
+            - file: releases/summary-useeio.md
+            - file: releases/summary-ceda.md
+            - file: releases/change-log.md
     - file: faq.md
 site:
   template: book-theme
   nav:
     - title: Get the factors
-      url: /factors/downloads
+      url: https://zenodo.org/doi/10.5281/zenodo.23396891
     - title: FAQs
       url: /faq
   options:
-    logo: images/cornerstone-wordmark.svg
-    logo_dark: images/cornerstone-wordmark-dark.svg
-    logo_text: EEIO Model
-    logo_alt: Cornerstone
+    logo: images/Cornerstone-EEIO-Wordmark-dark.png
+    logo_dark: images/Cornerstone-EEIO-Wordmark-white.png
+    logo_alt: Cornerstone EEIO
     folders: true
     style: _parts/custom.css
   parts:

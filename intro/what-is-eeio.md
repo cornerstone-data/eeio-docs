@@ -3,7 +3,7 @@ title: "What is an EEIO model?"
 ---
 
 :::{tip} Summary
-An environmentally-extended input-output ({term}EEIO) model combines data of how outputs produced by sectors in an economy serve as inputs for other sectors along with environmental attributes of each sector. When the economic data is extended with environmental data this way, such as with GHG emissions, the resulting model can produce emission factors that represent the GHG emissions across a whole supply chain per dollar spent on a sector's products.
+An environmentally-extended input-output ({term}`EEIO`) model combines data of how outputs produced by sectors in an economy serve as inputs for other sectors along with environmental attributes of each sector. When the economic data is extended with environmental data this way, such as with GHG emissions, the resulting model can produce emission factors that represent the GHG emissions across a whole supply chain per dollar spent on a sector's products.
 :::
 
 :::{figure} ../figures/diagrams/eeio-overview.svg

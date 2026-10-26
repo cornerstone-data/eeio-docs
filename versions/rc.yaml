@@ -4,7 +4,7 @@
 release: rc
 model_version: v0.6  # to confirm (plan Q9)
 release_date: 2026-10-27
-zenodo_doi: null
+zenodo_doi: 10.5281/zenodo.23396891
 base_year: 2024
 dollar_years: [2024, 2025, 2026]  # to confirm (plan Q10)
 gwp: AR6-100

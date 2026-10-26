@@ -1,19 +1,12 @@
 ---
-title: Cornerstone EEIO Model
+title: Cornerstone EEIO
 site:
   hide_outline: true
 ---
 
-:::{note} Draft placeholder
-:class: dropdown
-Plan §3.0 · target: **RC (Oct 27)**
+The Cornerstone EEIO model is a multi-regional environmentally-extended input-output model. It links countries' economies through international trade and attaches greenhouse gas emissions to every sector, producing emission factors per dollar of purchases. 
 
-- What the Cornerstone EEIO model is, in three sentences, plus who it's for
-- Current release banner (version, release date, link to data)
-- 🖼 Hero graphic: a world map of economies linked by trade, with emissions flowing through supply chains
-:::
-
-The Cornerstone EEIO model is a multi-regional environmentally-extended input-output model. It links countries' economies through international trade and attaches greenhouse gas emissions to every sector, producing emission factors per dollar of purchases. *Summary and audience to be finalized.*
+The emission factors are available for 405 sectors across 149 countries and 21 regional averages. The model is built as a time series from 2017 up to 2026, with the time series release coming before the end of 2026. These emission factors are most commonly used for Scope 3 measurements in corporate inventories and for academic and policy research. 
 
 ::::{grid} 1 2 2 3
 

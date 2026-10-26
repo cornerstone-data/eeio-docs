@@ -30,6 +30,7 @@ myst build --html --strict   # the same build CI runs
 | `releases/` | One page per model release |
 | `versions/` | Version records (one data file per release) |
 | `figures/` | Hand-made diagrams, figure generator scripts, `figures.csv` inventory |
+| `drafts/` | Unpublished drafts kept in the repo; excluded from the build in `myst.yml` |
 | `data/` | Small cached data extracts for figures |
 | `references.bib` | Bibliography; add entries as pages cite them, reusing keys from the `papers` repo where they exist |
 | `_parts/` | Navbar, footer, and custom CSS |
