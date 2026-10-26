@@ -1,5 +1,5 @@
 ---
-title: Release details
+title: Releases
 ---
 
 :::{tip} Summary

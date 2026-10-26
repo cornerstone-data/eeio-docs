@@ -156,7 +156,7 @@ The factors are published by the Cornerstone Sustainability Data Initiative unde
 :::
 
 :::{dropdown} What does a country's tier mean for how much I can rely on its factors?
-Countries are grouped in four tiers by the input-output data available for them. Tier 0 (US) has detailed annual tables, Tier 1 (China, Japan, South Korea, UK) uses detailed national tables, Tier 2 (60 countries) uses coarser multi-regional tables from FIGARO or ICIO, and Tier 3 (83 countries) has no usable table and uses a template built from other countries. Factors for Tier 3 countries carry more uncertainty. See [](io/country-tiers.md) for the IO data, [](ee/country-tiers.md) for the emissions data and [](reference/methods-by-country.md).
+Countries are grouped in four tiers by the input-output data available for them. Tier 0 (US) has detailed annual tables, Tier 1 (China, Japan, South Korea, UK) uses detailed national tables, Tier 2 (60 countries) uses coarser multi-regional tables from FIGARO or ICIO, and Tier 3 (83 countries) has no usable table and uses a proxy table built from other countries. Factors for Tier 3 countries carry more uncertainty. See [](io/country-tiers.md) for the IO data, [](ee/country-tiers.md) for the emissions data and [](reference/methods-by-country.md).
 :::
 
 :::{dropdown} Can I get help applying the changes to my footprint?

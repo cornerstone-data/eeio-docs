@@ -284,7 +284,7 @@
 <rect x="386" y="437" width="18" height="18" rx="3" fill="#2c8ec4"/>
 <text x="411" y="451" font-size="17" fill="#2c3746"><tspan font-weight="700">Tier 2</tspan><tspan x="411" dy="21" font-size="15" fill="#6a727c">FIGARO or ICIO (60)</tspan></text>
 <rect x="574" y="437" width="18" height="18" rx="3" fill="#72b8dc"/>
-<text x="599" y="451" font-size="17" fill="#2c3746"><tspan font-weight="700">Tier 3</tspan><tspan x="599" dy="21" font-size="15" fill="#6a727c">Template (83)</tspan></text>
+<text x="599" y="451" font-size="17" fill="#2c3746"><tspan font-weight="700">Tier 3</tspan><tspan x="599" dy="21" font-size="15" fill="#6a727c">Proxy tables (83)</tspan></text>
 <rect x="762" y="437" width="18" height="18" rx="3" fill="#dcdcd8"/>
 <text x="787" y="451" font-size="17" fill="#2c3746"><tspan font-weight="700">Not modeled</tspan><tspan x="787" dy="21" font-size="15" fill="#6a727c">Part of rest of world</tspan></text>
 </svg>
