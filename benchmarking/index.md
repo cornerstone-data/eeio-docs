@@ -86,8 +86,8 @@ The goal is not an exact match to one external number. It is whether our estimat
 
 :::{figure} ../figures/diagrams/benchmark-2026-rc1.png
 :label: fig-benchmark-2026-rc1
-:alt: Donut chart titled How Cornerstone compares to third-party references. About 70 percent of country-sector pairs with a verified external benchmark fall within 25 percent of the benchmark; 21 percent have a 25 to 50 percent gap; 10 percent have a gap of 50 percent or more.
-Share of country–sector pairs with a verified external benchmark. About 70% fall within 25% of the benchmark; the rest have larger gaps.
+:alt: Donut chart titled How Cornerstone compares to third-party references. 69 percent of the 88 benchmarked sectors fall within 25 percent of the benchmark; 21 percent have a 25 to 50 percent gap; 10 percent have a gap of 50 percent or more.
+Share of the 88 benchmarked sectors. 69% fall within 25% of the benchmark; the rest have larger gaps.
 :::
 
 We benchmarked the direct emission factor (`D`) of 88 sectors, chosen because they drive a large share of emissions. Together they account for about 52% of global direct emissions in the model.

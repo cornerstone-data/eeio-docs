@@ -18,4 +18,4 @@ ghg-pipeline,ee/index.md,diagram (SVG),hand-made,,,draft
 eeio-overview,intro/what-is-eeio.md,diagram (SVG),hand-made,,,draft
 user-guidance-ef-by-country,factors/user-guidance.md,chart,"Cornerstone GHG Emission Factors workbook, 2026-rc.1 (2026PRO, sector 541610)",figures/scripts/user_guidance_figures.py,Yohanna Maldonado,draft
 user-guidance-worked-example,factors/user-guidance.md,diagram,"Worked example from the 2026-rc.1 workbook (factor 0.0449; GBP rate 0.74283)",figures/scripts/user_guidance_figures.py,Yohanna Maldonado,draft
-benchmark-2026-rc1,benchmarking/index.md,chart,"EF benchmark comparisons for 2026-rc.1 (share of country-sector pairs vs third-party references)",,Ben Young,draft
+benchmark-2026-rc1,benchmarking/index.md,chart,"EF benchmark comparisons for v1.0 (61 / 18 / 9 of 88 sectors; model D from cornerstone_2026_v0_7, ceda 03facf41)",figures/scripts/benchmark_figures.py,Ben Young,draft
