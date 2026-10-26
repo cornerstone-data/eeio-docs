@@ -90,6 +90,16 @@ The goal is not an exact match to one external number. It is whether our estimat
 Share of country–sector pairs with a verified external benchmark. About 70% fall within 25% of the benchmark; the rest have larger gaps.
 :::
 
+We benchmarked the direct emission factor (`D`) of 88 sectors, chosen because they drive a large share of emissions. Together they account for about 52% of global direct emissions in the model.
+
+| Measure | Sectors | Share of the 88 sectors | Share of global direct emissions |
+|---|---|---|---|
+| Within 25% of the benchmark | 61 | 69% | 46% |
+| Manually reviewed | 47 | 53% | 36% |
+| Manually reviewed, or within 25% of the benchmark | 78 | 89% | 50% |
+
+A sector counts as manually reviewed when someone investigated its gap and reached one of the three outcomes above: a sharper benchmark, a model improvement, or a documented difference. Sectors within 25% of the benchmark were not all reviewed in this depth, because the gap gave no reason to.
+
 See [](../releases/rc.md) for the release summary.
 
 :::{seealso} Related
