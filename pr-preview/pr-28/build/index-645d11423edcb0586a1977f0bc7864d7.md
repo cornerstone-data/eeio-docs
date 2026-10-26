@@ -41,7 +41,7 @@ Data are checked when they arrive, as they move through each step of the build, 
 
 ### Against references and other years
 
-- **Other years of the same data.** Each data update is compared with the previous year of the same source: sector counts, totals and the sectors that move most. Over the U.S. time series from 2017 to 2024, changes in emissions are checked against changes in output, sector by sector.
+- **Other years of the same data.** Each data update is compared with the previous year of the same source, checking sector counts, totals, and which sectors move most. Over the U.S. time series from 2017 to 2024, changes in emissions are checked against changes in output, sector by sector.
 - **Other sources.** The model's U.S. emissions by sector are compared with facility totals from GHGRP. Where two sources cover the same countries, as FIGARO and the OECD tables do for 45 countries, they are compared sector by sector before one is chosen (see [](../reference/methods-by-country.md)).
 - **Gaps.** Coverage is checked for every country and sector. Where a country has no output or no emissions for a sector, its emission factor is filled from its region, as described in [](../factors/calculation.md#filling-missing-country-factors).
 
