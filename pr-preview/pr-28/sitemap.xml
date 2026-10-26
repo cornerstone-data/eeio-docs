@@ -29,6 +29,9 @@
     <loc>http://localhost:3000/factors/margins</loc>
   </url>
   <url>
+    <loc>http://localhost:3000/code</loc>
+  </url>
+  <url>
     <loc>http://localhost:3000/validation</loc>
   </url>
   <url>
