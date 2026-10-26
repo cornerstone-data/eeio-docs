@@ -11,7 +11,7 @@ Both [](../validation/index.md) and benchmarking feed the same loop into the nex
 
 ## What we compare
 
-To benchmark our model, we compare direct emission factors to indepdnent sources. We usually do not benchmark full supply-chain (cradle-to-gate) factors here as matching scope across sources is much harder.
+To benchmark our model, we compare direct emission factors to independent sources. We usually do not benchmark full supply chain (cradle-to-gate) factors as matching scope across sources is much harder.
 
 :::{important} Direct factors, not full supply chains
 The comparisons on this page are about what each sector emits itself (`D`), not the full upstream intensity (`N`).
