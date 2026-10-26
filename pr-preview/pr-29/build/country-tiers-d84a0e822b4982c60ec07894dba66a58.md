@@ -23,7 +23,7 @@ The model covers 148 countries plus a rest-of-world region. A country's tier set
 | Tier 2 | 60 countries | 40.7% | The country's table from {term}`FIGARO` (40 countries) or the {term}`ICIO` (20 countries) |
 | Tier 3 | 83 countries | 5.2% | Proxy table recreated from other countries with available data |
 
-Share of world GDP is each tier's 2024 GDP in current US dollars divided by world GDP. Source: World Bank, World Development Indicators (NY.GDP.MKTP.CD), retrieved October 2026. The shares sum to less than 100% because countries in the rest-of-world region are not counted, and because the World Bank does not report Taiwan (Tier 2).
+Share of world GDP is each tier's 2024 GDP in current US dollars divided by world GDP. Source: World Bank, World Development Indicators (`NY.GDP.MKTP.CD`), retrieved October 2026. The shares sum to less than 100% because countries in the rest-of-world region are not counted, and because the World Bank does not report Taiwan (Tier 2).
 
 ## Tier 0: Detailed, annual IO tables
 
