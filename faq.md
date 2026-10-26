@@ -27,7 +27,7 @@ Both. Data updates reflect real-world change, such as new economic, trade and em
 :::
 
 :::{dropdown} Why is it called a "release candidate"?
-2026 is the first time CEDA and USEEIO are combined in one model, and the first time a time series is released. The two-phase release gives companies time to assess the impact on their most recent year of measurements while the time series is under development. The release candidate (2026-rc.1) is published on October 27, 2026. The full release (2026-v1), with the 2017–2026 time series and the model matrices, follows in early December 2026. See [](releases/rc.md).
+2026 is the first time CEDA and USEEIO are combined in one model, and the first time a time series is released. The two-phase release gives companies time to assess the impact on their most recent year of measurements while the time series is under development. The release candidate (2026-rc.1) is published on October 27, 2026. The full release (2026), with the 2017–2026 time series and the model matrices, follows in early December 2026. See [](releases/rc.md).
 :::
 
 :::{dropdown} Will the 2024–2026 factors change between the release candidate and the final version?
