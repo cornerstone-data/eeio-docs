@@ -57,9 +57,18 @@ How the results compare with independent evidence.
 The methods and data behind each country in the model.
 :::
 
-:::{card} Release details
-:link: releases/index.md
-Release notes, summaries of changes and change logs.
+::::
+
+## Releases
+
+What each release contains and how it differs from USEEIO and CEDA.
+
+::::{grid} 1 2 2 3
+:class: track-releases
+
+:::{card} 2026-rc.1 release note
+:link: releases/rc.md
+The first release candidate, with the spend-based emission factors.
 :::
 
 ::::
