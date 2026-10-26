@@ -161,7 +161,7 @@ def main() -> None:
         (TIER_COLORS["0"], "Tier 0", "United States"),
         (TIER_COLORS["1"], "Tier 1", f"National tables ({counts['1']})"),
         (TIER_COLORS["2"], "Tier 2", f"FIGARO or ICIO ({counts['2']})"),
-        (TIER_COLORS["3"], "Tier 3", f"Template ({counts['3']})"),
+        (TIER_COLORS["3"], "Tier 3", f"Proxy tables ({counts['3']})"),
         (NOT_MODELED, "Not modeled", "Part of rest of world"),
     ]
     ly = MAP_TOP + MAP_H + 30
