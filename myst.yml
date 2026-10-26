@@ -22,6 +22,8 @@ project:
   toc:
     - file: index.md
     - file: intro/what-is-eeio.md
+      children:
+        - file: intro/cornerstone-eeio-history.md
     - title: The IO model
       children:
         - file: io/index.md
