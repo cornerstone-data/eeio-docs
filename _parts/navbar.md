@@ -1,4 +1,4 @@
 :::{div}
 :class: rc-banner
-Release candidate · [Give feedback](https://github.com/cornerstone-data/eeio-docs/issues/new)
+[Share feedback on 2026-rc](https://github.com/cornerstone-data/eeio-docs/issues/new)
 :::
