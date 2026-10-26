@@ -164,7 +164,7 @@ For more detail, or custom support on how the changes affect your footprint, you
 :::
 
 :::{dropdown} How do I report a possible error or ask a question?
-Open an issue on [GitHub](https://github.com/cornerstone-data/eeio-docs/issues). Please include the sector code, the country, the year and the tab (`PRO` or `PUR`), so we can reproduce it. For additional support, enquire about the enterprise product [here](https://watershed.com/en-GB/solutions/ceda).
+Post a comment in the [2026-rc feedback discussion](https://github.com/orgs/cornerstone-data/discussions/7) on GitHub. Please include the sector code, the country, the year and the tab (`PRO` or `PUR`), so we can reproduce it. For additional support, enquire about the enterprise product [here](https://watershed.com/en-GB/solutions/ceda).
 :::
 
 +++
