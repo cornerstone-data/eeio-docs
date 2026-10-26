@@ -126,8 +126,8 @@ body {
   opacity: 0.7;
 }
 
-/* Home page tracks: technical documentation (brand blue) and user guide (amber).
-   The card tint and top rule tell the two tracks apart. */
+/* Home page tracks: technical documentation (brand blue), releases (green) and user guide (amber).
+   The card tint and top rule tell the tracks apart. */
 .track-technical .myst-card {
   background-color: #eaf6fb;
   border-color: #9fd3e8;
@@ -143,4 +143,12 @@ body {
 }
 .track-user .myst-card:hover {
   border-color: #e08a1e;
+}
+.track-releases .myst-card {
+  background-color: #edf7ee;
+  border-color: #a5d6a7;
+  border-top: 4px solid #2e9e4f;
+}
+.track-releases .myst-card:hover {
+  border-color: #2e9e4f;
 }
