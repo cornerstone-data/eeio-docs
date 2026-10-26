@@ -4,9 +4,9 @@ subtitle: "Release note · Release date: October 27, 2026"
 ---
 
 :::{tip} Summary
-The 2026-rc.1 (Release Candidate) is the first stage of a phased approach to releasing the Cornerstone EEIO 2026 model, the successor of USEEIO and CEDA. It is a global environmentally-extended input-output (EEIO) model that produces spend-based emission factors, in kg CO₂e per USD for 405 sectors across 148 countries, plus 21 regional averages and one global average. It uses 2024 as the base year and is available to use for 2024, 2025 and 2026 measurements.
+The 2026-rc.1 (Release Candidate) is the first stage of a phased approach to releasing Cornerstone EEIO 2026, the successor of USEEIO and CEDA. It publishes the model's primary data product: spend-based GHG emission factors, in kg CO₂e per USD, for 405 sectors across 148 countries, plus 21 regional averages and one global average. The factors are cradle-to-gate, use 2024 as the base year, and are available for 2024, 2025 and 2026 measurements.
 
-This release candidate will be superseded in December by the release of the 2026-v0.1 (final version), which will include a time series from 2017 to 2026.
+This release candidate will be superseded in December by the full 2026-v1 release, which will include a time series of emission factors from 2017 to 2026 and will be accompanied by the model matrices, in a format still to be decided.
 
 Download this release on [Zenodo](https://zenodo.org/doi/10.5281/zenodo.23396891) here.
 :::
@@ -27,7 +27,7 @@ The time series (2017-2026) will use the same methodology for all years and only
 
 This is the first time that either USEEIO or CEDA releases a time series built this way. In the past CEDA has released a time series built with inflation adjustments for years prior and after the base year. Moving forward the Cornerstone EEIO will only apply inflation adjustments to the years after the base year, for which there is no reported data (e.g. 2025 and 2026 are inflation adjusted from the 2024 base year).
 
-To learn more about the methodology behind Cornerstone EEIO refer to [the IO model](../io/index.md) and [the GHG extension](../ee/index.md).
+To learn more about the methodology behind Cornerstone EEIO refer to [the IO model](../io/index.md), [the GHG extension](../ee/index.md) and [](../factors/calculation.md).
 :::
 
 ## What changed

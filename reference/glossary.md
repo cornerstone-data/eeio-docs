@@ -41,6 +41,9 @@ GWP
 Make/Use framework
 : IO tables that record which industries make which commodities (Make, or supply) and which commodities each industry and final user buys (Use).
 
+Margin emission factor
+: The emissions of the wholesale, retail, and transportation services that deliver a good to its buyer, per dollar of purchaser price. Prepared for U.S. commodities only.
+
 Margins
 : The trade and transport costs added between the producer and the buyer: transport, wholesale, and retail.
 
@@ -54,7 +57,7 @@ Producer price
 : The basic price plus taxes on products, less subsidies on products, excluding margins.
 
 Purchaser price
-: The price the buyer pays: the producer price plus trade and transport margins. The published factors are per dollar of purchaser price.
+: The price the buyer pays: the producer price plus trade and transport margins. The emission factors are published per dollar of both producer price and purchaser price.
 
 RAS
 : An iterative method that scales the rows and columns of a table until it matches known row and column totals.
