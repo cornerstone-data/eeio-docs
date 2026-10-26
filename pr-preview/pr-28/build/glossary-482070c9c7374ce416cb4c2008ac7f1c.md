@@ -21,7 +21,7 @@ CEDS
 : Community Emissions Data System. A global inventory of emissions by country and detailed activity, used to refine the split of emissions between energy industries and for China's CH₄ and N₂O.
 
 Country tier
-: A group of countries modeled with the same level of detail and the same kinds of data sources: Tier 0, detailed annual IO tables (the United States); Tier 1, detailed periodic national IO tables; Tier 2, coarse multi-regional tables from FIGARO or ICIO; and Tier 3, no IO tables (a template built from other countries).
+: A group of countries modeled with the same level of detail and the same kinds of data sources: Tier 0, detailed annual IO tables (the United States); Tier 1, detailed periodic national IO tables; Tier 2, coarse multi-regional tables from FIGARO or ICIO; and Tier 3, no IO tables (a proxy table built from other countries).
 
 EDGAR
 : Emissions Database for Global Atmospheric Research, from the European Commission's Joint Research Centre. Global emissions by country and activity; the basis of FIGARO emissions for its non-European countries.
