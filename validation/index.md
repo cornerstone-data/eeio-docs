@@ -13,10 +13,9 @@ Validation asks "did we build the model correctly?" It checks the code that buil
 Where each kind of validation runs in the build. Code validation covers every step; data validation follows the data in; model validation checks what comes out.
 :::
 
-(code-validation)=
 ## 1. Code validation
 
-The model is built by two code pipelines, described in [](../code/index.md), and every change to that code is tested before it is merged.
+The model is built by open-source code, and every change to that code is tested before it is merged.
 
 - **Unit tests.** About 2,900 automated tests check individual steps against known answers. They include tests of the core formulas, such as `N = D × L`, and of the conservation rules the methods rely on: when emissions or output are split, mapped or reallocated, the totals before and after must match. Small worked examples, including a toy model of {term}`ABSR` and of {term}`RAS` balancing, are solved by hand and checked against the code.
 - **Schema checks.** The main tables are checked for their structure every time they are built: the full list of 405 sectors in the right order, every country present, no duplicates, and no missing values. Final demand and exports must not be negative.

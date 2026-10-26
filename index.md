@@ -42,11 +42,6 @@ From the model matrices to published factors, including price-year and purchaser
 How the emission factors of trade and transport margins are prepared.
 :::
 
-:::{card} The code
-:link: code/index.md
-The pipelines that build the model and publish the emission factors.
-:::
-
 :::{card} How we validate
 :link: validation/index.md
 The checks behind each release.
