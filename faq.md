@@ -35,7 +35,7 @@ We don't foresee significant changes, but some sector–country combinations cou
 :::
 
 :::{dropdown} When is the next update?
-Releases are published every October so companies can plan for them. The next, Cornerstone EEIO 2027, will be released in October 2027.
+Releases are published every October so companies can plan for them. The next, Cornerstone EEIO 2027, will be released in October 2027. Cornerstone EEIO 2026 will stay methodologically stable for at least five years, so you have a consistent basis to rebaseline and set targets. See [](releases/index.md) and [](factors/whats-in-a-release.md#update-cadence).
 :::
 
 :::{dropdown} Did the sectors change?
