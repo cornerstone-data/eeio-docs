@@ -82,18 +82,8 @@ Many apparent disagreements come from the denominator, not from missing emission
 
 The goal is not an exact match to one external number. It is whether our estimate aligns with the **preponderance of the evidence**, after fair scope and dollar treatment.
 
-## Results for this release
-
-:::{figure} ../figures/diagrams/benchmark-2026-rc.png
-:label: fig-benchmark-2026-rc
-:alt: Donut chart titled How Cornerstone compares to third-party references. About 70 percent of country-sector pairs with a verified external benchmark fall within 25 percent of the benchmark; 21 percent have a 25 to 50 percent gap; 10 percent have a gap of 50 percent or more.
-Share of country–sector pairs with a verified external benchmark. About 70% fall within 25% of the benchmark; the rest have larger gaps.
-:::
-
-See [](../releases/rc.md) for the release summary.
-
 :::{seealso} Related
-Internal accounting checks live on [](../validation/index.md). Version-specific headlines will also appear in the [](../releases/index.md).
+Internal accounting checks live on [](../validation/index.md). Version-specific headlines appear in the [](../releases/index.md).
 :::
 
 +++
