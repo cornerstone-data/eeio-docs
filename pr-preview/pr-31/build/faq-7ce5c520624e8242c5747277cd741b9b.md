@@ -3,13 +3,13 @@ title: Frequently asked questions
 ---
 
 :::{tip} Summary
-Short answers to the questions we hear most about Cornerstone EEIO 2026. Each answer links to the page with the full explanation. Cornerstone EEIO is the successor of USEEIO and CEDA, so many answers compare it with those models.
+Short answers to the questions we hear most about Cornerstone EEIO and spend-based emission factors. Each answer links to the page with the full explanation. Cornerstone EEIO is the successor of USEEIO and CEDA, so many answers compare it with those models.
 :::
 
-## About Cornerstone EEIO 2026
+## About Cornerstone EEIO
 
 :::{dropdown} What is the Cornerstone Sustainability Data Initiative, and how does it relate to USEEIO and CEDA?
-Cornerstone launched in August 2025 to bring USEEIO and CEDA together into one open, comprehensive dataset of Scope 3 spend-based emission factors. Cornerstone EEIO 2026 is the first release of that combined model. It is the continuation of both USEEIO v1.4 and CEDA 2025. Today Cornerstone is the home of 3 additional datasets: eGRID, the GHG EF Hub and Orbae. Learn more at [cornerstonedata.org](https://cornerstonedata.org/), and see the [release candidate note](releases/rc.md) for what is in this release.
+Cornerstone launched in August 2025 to bring USEEIO and CEDA together into one open, comprehensive dataset of Scope 3 spend-based emission factors. Cornerstone EEIO 2026 is the first release of that combined model, which builds on both USEEIO and CEDA. Today Cornerstone is the home of 3 additional datasets: eGRID, the GHG EF Hub and Orbae. Learn more at [cornerstonedata.org](https://cornerstonedata.org/), and see the [release candidate note](releases/rc.md) for what is in this release.
 :::
 
 :::{dropdown} What is changing compared with USEEIO and CEDA?
@@ -27,7 +27,7 @@ Both. Data updates reflect real-world change, such as new economic, trade and em
 :::
 
 :::{dropdown} Why is it called a "release candidate"?
-2026 is the first time CEDA and USEEIO are combined in one model, and the first time a time series is released. The two-phase release gives companies time to assess the impact on their most recent year of measurements while the time series is under development. The release candidate (2026-rc.1) is published on October 27, 2026. The full release (2026-v1), with the 2017–2026 time series and the model matrices, follows in early December 2026. See [](releases/rc.md).
+2026 is the first time CEDA and USEEIO are combined in one model, and the first time a time series of emission factors is released from either model. The two-phase release gives companies time to assess the impact on their most recent year of measurements while the time series is under development. The release candidate (2026-rc) is published on October 27, 2026. The full release (2026), with the 2017–2026 time series and the model matrices, follows in early December 2026. See [](releases/rc.md).
 :::
 
 :::{dropdown} Will the 2024–2026 factors change between the release candidate and the final version?
@@ -56,7 +56,7 @@ See the [model reconciliation](releases/change-log.md#change-log-model-reconcili
 :::
 
 :::{dropdown} Did the file format change?
-Yes. The new release is different from open CEDA and from the USEEIO v1.4. See [](factors/whats-in-a-release.md) for more details.
+Yes. The new release is different from Open CEDA and from the USEEIO Supply Chain GHG Emission Factors v1.4. See [](factors/whats-in-a-release.md) for more details.
 :::
 
 ## Moving from USEEIO or CEDA
@@ -65,7 +65,7 @@ Yes. The new release is different from open CEDA and from the USEEIO v1.4. See [
 It depends on which sectors and countries your spend falls in.
 
 - **Coming from CEDA 2025:** global production-weighted factors fall by 23.3%. In a sample of 400 corporate footprints, the median company sees a 14% decrease.
-- **Coming from USEEIO v1.4:** US factors change by −0.8% overall. In the same sample, the median company sees a 1.3% decrease.
+- **Coming from the USEEIO Supply Chain GHG Emission Factors v1.4:** US factors change by −0.8% overall. In the same sample, the median company sees a 1.3% decrease.
 
 A small median can hide large moves in individual sectors, in both directions. See [](releases/rc.md#how-do-the-emission-factors-change), [](releases/summary-ceda.md) and [](releases/summary-useeio.md).
 :::
@@ -148,7 +148,7 @@ Start with [](reference/methods-by-country.md), which lists the data and methods
 :::
 
 :::{dropdown} How do I cite a specific release?
-Cite the version and the release date. For example the Cornerstone EEIO 2026-rc.1 released on October 27th, 2026. See [](factors/whats-in-a-release.md#cover) and [](releases/index.md).
+Cite the version and the release date. For example the Cornerstone EEIO 2026-rc released on October 27th, 2026. See [](factors/whats-in-a-release.md#cover) and [](releases/index.md).
 :::
 
 :::{dropdown} What license are the factors under, and what attribution is required?
@@ -164,12 +164,12 @@ For more detail, or custom support on how the changes affect your footprint, you
 :::
 
 :::{dropdown} How do I report a possible error or ask a question?
-Open an issue on [GitHub](https://github.com/cornerstone-data/eeio-docs/issues). Please include the sector code, the country, the year and the tab (`PRO` or `PUR`), so we can reproduce it. For additional support, enquire about the enterprise product [here](https://watershed.com/en-GB/solutions/ceda).
+Post a comment in the [2026-rc feedback discussion](https://github.com/orgs/cornerstone-data/discussions/7) on GitHub. Please include the sector code, the country, the year and the tab (`PRO` or `PUR`), so we can reproduce it. For additional support, enquire about the enterprise product [here](https://watershed.com/en-GB/solutions/ceda).
 :::
 
 +++
 
 :::{div}
 :class: page-status
-Applies to: 2026-rc.1 · Last reviewed: 2026-rc.1
+Applies to: 2026-rc
 :::

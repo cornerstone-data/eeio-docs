@@ -8,7 +8,7 @@ The IO table and greenhouse gas data behind each of the 148 countries in the mod
 
 :::{note} Draft
 :class: dropdown
-Planned for v1.0: a filterable table with a clickable map, and per-country details on trade reconciliation, accounting basis, currency and price index, and benchmarked sectors.
+Planned for 2026: a filterable table with a clickable map, and per-country details on trade reconciliation, accounting basis, currency and price index, and benchmarked sectors.
 :::
 
 Each country's {term}`tier <Country tier>` sets which kind of IO table and emissions data it starts from. See [](../io/country-tiers.md) for the IO tables and [](../ee/country-tiers.md) for the emissions data.
@@ -182,5 +182,5 @@ The release candidate's 2024, 2025, and 2026 factors are all built from the same
 
 :::{div}
 :class: page-status
-Applies to: 2026-rc.1 · Last reviewed: 2026-rc.1
+Applies to: 2026-rc
 :::
