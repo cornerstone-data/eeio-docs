@@ -12,7 +12,7 @@ The **Cornerstone EEIO model** is the multi-regional input-output model describe
 
 | Release | Status | Data products |
 |---|---|---|
-| [2026-rc.1](rc.md) | Release candidate, October 27, 2026 | Spend-based GHG emission factors for 2024, 2025 and 2026, at producer and purchaser price (see [](../factors/whats-in-a-release.md)) |
+| [2026-rc](rc.md) | Release candidate, October 27, 2026 | Spend-based GHG emission factors for 2024, 2025 and 2026, at producer and purchaser price (see [](../factors/whats-in-a-release.md)) |
 | 2026 | Planned, December 2026 | Spend-based GHG emission factors for 2017 to 2026, accompanied by the model matrices (format to be decided) |
 
 ## Release notes
@@ -23,5 +23,5 @@ The **Cornerstone EEIO model** is the multi-regional input-output model describe
 
 :::{div}
 :class: page-status
-Applies to: 2026-rc.1 · Last reviewed: 2026-rc.1
+Applies to: 2026-rc
 :::

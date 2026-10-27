@@ -16,6 +16,6 @@ io-mrio-blocks,io/index.md,diagram (SVG),hand-made (after CEDA team slide 19),,,
 country-tiers-map,io/country-tiers.md,map (SVG),data/country_tiers.csv + Natural Earth 1:50m admin-0,figures/scripts/tier_map.py,,draft
 ghg-pipeline,ee/index.md,diagram (SVG),hand-made,,,draft
 eeio-overview,intro/what-is-eeio.md,diagram (SVG),hand-made,,,draft
-user-guidance-ef-by-country,factors/user-guidance.md,chart,"Cornerstone GHG Emission Factors workbook, 2026-rc.1 (2026PRO, sector 541610)",figures/scripts/user_guidance_figures.py,Yohanna Maldonado,draft
-user-guidance-worked-example,factors/user-guidance.md,diagram,"Worked example from the 2026-rc.1 workbook (factor 0.0449; GBP rate 0.74283)",figures/scripts/user_guidance_figures.py,Yohanna Maldonado,draft
-benchmark-2026-rc1,benchmarking/index.md,chart,"EF benchmark comparisons for 2026-rc.1 (share of country-sector pairs vs third-party references)",,Ben Young,draft
+user-guidance-ef-by-country,factors/user-guidance.md,chart,"Cornerstone GHG Emission Factors workbook, 2026-rc (2026PRO, sector 541610)",figures/scripts/user_guidance_figures.py,Yohanna Maldonado,draft
+user-guidance-worked-example,factors/user-guidance.md,diagram,"Worked example from the 2026-rc workbook (factor 0.0449; GBP rate 0.74283)",figures/scripts/user_guidance_figures.py,Yohanna Maldonado,draft
+benchmark-2026-rc,benchmarking/index.md,chart,"EF benchmark comparisons for 2026-rc (share of country-sector pairs vs third-party references)",,Ben Young,draft

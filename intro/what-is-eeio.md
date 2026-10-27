@@ -35,7 +35,7 @@ A single-country model assumes imported products are made the same way, and with
 
 ## Further reading
 
-For a book-length introduction to EEIO and its use in LCA, see {cite:t}`hendricksonEnvironmentalLifeCycle2006a`.
+For a book-length introduction to EEIO and its use in LCA, see [@suhHandbookInputOutputEconomics2009] or {cite:t}`hendricksonEnvironmentalLifeCycle2006a`. For a concise, free article with a non-mathematical treatment see [@kitzesIntroductionEnvironmentallyExtendedInputOutput2013a].
 
 +++
 

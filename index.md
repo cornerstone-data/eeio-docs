@@ -8,7 +8,7 @@ The Cornerstone EEIO model is a multi-regional environmentally-extended input-ou
 
 Cornerstone EEIO 2026 was developed to produce cradle-to-gate emission factors for the goods and services that organizations commonly buy. These **emission factors are the primary data product** of the 2026 release: spend-based factors, in kg CO₂e per USD, for 405 sectors across 148 countries, 21 regional averages and one global average. They are most commonly used for Scope 3 measurements in corporate inventories and for academic and policy research.
 
-The [2026-rc.1 release](releases/rc.md) publishes the spend-based GHG emission factors. The full 2026 release adds a 2017–2026 time series and will be accompanied by the model matrices, in a format still to be decided.
+The [2026-rc release](releases/rc.md) publishes the spend-based GHG emission factors. The full 2026 release adds a 2017–2026 time series and will be accompanied by the model matrices, in a format still to be decided.
 
 :::{card} Understand EEIO
 :link: intro/what-is-eeio.md
@@ -71,7 +71,7 @@ What each release contains and how it differs from USEEIO and CEDA.
 ::::{grid} 1 2 2 3
 :class: track-releases
 
-:::{card} 2026-rc.1 release note
+:::{card} 2026-rc release note
 :link: releases/rc.md
 The first release candidate, with the spend-based emission factors.
 :::

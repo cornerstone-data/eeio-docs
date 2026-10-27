@@ -1,7 +1,7 @@
 """Write the two graphics on the User guidance page to images/.
 
 - user-guidance-ef-by-country.png: 2026 producer-price factor for management consulting (sector 541610)
-  in six locations, kg CO2e per USD, from the 2026-rc.1 release workbook.
+  in six locations, kg CO2e per USD, from the 2026-rc release workbook.
 - user-guidance-worked-example.png: GBP 10,000 of UK management consulting taken to kg CO2e, using the
   0.0449 kg CO2e per USD factor and the 2026 rate of 0.74283 GBP per USD (0.0449 / 0.74283 = 0.0604).
 
