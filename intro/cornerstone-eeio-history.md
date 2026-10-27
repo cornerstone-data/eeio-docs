@@ -1,6 +1,6 @@
 ---
 title: "Origins of the Cornerstone EEIO"
-author: Dr. Wesley Ingwersen
+author: Dr. Wesley Ingwersen and Dr. Sangwon Suh
 ---
 
 :::{tip} Summary
@@ -9,10 +9,12 @@ Cornerstone EEIO is a continuation of the USEEIO and CEDA EEIO models, built fro
 
 ## CEDA
 
-CEDA dates back to the early 2000s, when Sangwon Suh developed it, first at Leiden University and later at the University of Minnesota [@suhDevelopingSectoralEnvironmental2005].
-It began as a U.S. single-region model with environmental extensions covering many environmental indicators.
-VitalMetrics maintained it and applied it in private, public and academic work.
-CEDA was expanded into a global MRIO model focused on GHG emissions before Watershed acquired it in 2023. Under Watershed, GHG emission factors for Scope 3 reporting became its primary purpose, and in 2025 Watershed released a free version of the emission factors as Open CEDA [@openceda2025].
+CEDA (Comprehensive Environmental Data Archive) originated in 2000, when Sangwon Suh then at Leiden University first released it as an Excel version on the web.
+Built on environmentally extended input–output analysis, CEDA was designed to support life cycle assessment (LCA) and quantify supply-chain environmental impacts across multiple indicators through an LCA software tool, SimaPRO [@suhMissingInventoryEstimation2002].
+CEDA continued to evolve and its compilation method and data were published in Economic Systems Research in 2005 [@suhDevelopingSectoralEnvironmental2005].
+In the same year, Suh founded VitalMetrics, which continued to develop, maintain, and commercialize CEDA for applications in industry, government, and academia.
+Over the following two decades, CEDA evolved into a global multi-regional input–output (MRIO) model covering approximately 400 sectors across 148 countries and regions. Following Watershed’s acquisition of VitalMetrics in 2023, CEDA became an important data foundation for corporate Scope 3 GHG accounting.
+In 2025, Watershed made a freely accessible version of CEDA available as Open CEDA, which was further developed into open CEDA 2025 through Cornerstone [@openceda2025].
 
 ## USEEIO
 
