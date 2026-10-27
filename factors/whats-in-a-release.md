@@ -51,7 +51,7 @@ The data dictionary and five other tabs support the data tabs. The data dictiona
 | Tab | What it contains |
 |---|---|
 | Data Dictionary | Definitions of each field in the data tabs. |
-| Exchange Rates | Local currency units per US dollar for 221 countries and territories, with the columns Country Code, Country Name, LCU (local currency unit), Unit, and one column per year. Rates come from Open Exchange Rates (openexchangerates.org) and are Cornerstone's recommended rates for converting spend in local currency before applying the factors. |
+| Exchange Rates | Local currency units per US dollar for 221 countries and territories, with the columns Country Code, Country Name, Local currency, Unit, and one column per year. Rates come from Open Exchange Rates (openexchangerates.org) and are Cornerstone's recommended rates for converting spend in local currency before applying the factors. |
 | GWP | The 100-year global warming potentials from the IPCC AR6 that express each gas in CO₂e: CO₂ 1, CH₄ 29.8 (fossil) or 27.0 (non-fossil), N₂O 273, SF₆ 24,300 and NF₃ 17,400. HFCs and PFCs are already in CO₂e in the published factors, so their factor is 1. |
 | NAICS to Cornerstone mapping | The correspondence between NAICS 2017 codes and Cornerstone codes, with the columns NAICS 2017 Code, NAICS Name, Cornerstone Code, Cornerstone Name and Weight. When a NAICS industry is split across several Cornerstone codes, the weights show each share and add up to 1. |
 | Sector Descriptions | The 405 sectors with their Code, Name and Description. Cornerstone recommends using this description to map spend categories to emission factors. |
