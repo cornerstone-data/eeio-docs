@@ -134,7 +134,16 @@ No. All seven GHGs are included. The release reports each gas separately, alongs
 :::
 
 :::{dropdown} Are biogenic emissions included in the factors?
-No, biogenic emissions are not included.
+Partly. Biogenic methane (CH₄) is included, but biogenic carbon dioxide (CO₂) is not.
+
+Biogenic CH₄, such as enteric fermentation, manure management, rice cultivation and landfill gas, is counted because it is a net addition to the atmosphere: the carbon was removed as CO₂ and is returned as a gas with a much higher warming potential, so the cycle does not net to zero.
+
+Biogenic CO₂, such as from burning wood, biofuels or other biomass, and from the decay or respiration of organic material, is excluded. This follows established inventory and accounting practice:
+
+- The IPCC 2006 Guidelines (Volume 2, Energy) do not count CO₂ from biomass combustion in the energy sector totals. They report it as a memo item, on the basis that any net carbon change is captured in the land-use sector, and the U.S. national greenhouse gas inventory follows the same approach.
+- The GHG Protocol Corporate Standard and Scope 3 Standard (section 6.5) require biogenic CO₂, defined as CO₂ from the combustion or biodegradation of biomass, to be left out of the scopes and reported separately in the public report. The separate-reporting requirement applies to that CO₂ only. It does not apply to CH₄, N₂O or other GHG emissions in the life cycle of biomass, which are counted in the scopes. Removals, such as biological sequestration, are likewise not counted in the scopes.
+
+Because the factors are a spend-based, cradle-to-gate footprint that does not count LULUCF or carbon removals, excluding biogenic CO₂ avoids counting the emission without its matching uptake. Users who need to report biogenic CO₂ separately, for example from purchased biomass, will need to estimate it with another source. See [](ee/index.md#what-is-and-isnt-counted).
 :::
 
 :::{dropdown} Which GWP version is used?
