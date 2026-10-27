@@ -86,5 +86,5 @@ Validation shows that the model was built as designed. Whether the results agree
 
 :::{div}
 :class: page-status
-Applies to: 2026-rc.1 · Last reviewed: 2026-rc.1
+Applies to: 2026-rc
 :::

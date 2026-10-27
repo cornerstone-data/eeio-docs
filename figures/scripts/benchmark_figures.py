@@ -1,4 +1,4 @@
-"""Write the benchmarking results donut to figures/diagrams/benchmark-2026-rc1.png.
+"""Write the benchmarking results donut to figures/diagrams/benchmark-2026-rc.png.
 
 Redraws the slide-deck donut with the release's numbers. Each of the 88 benchmarked sectors falls in
 one band by its gap, |model D - benchmark| / benchmark, with model D from the v1.0 release diagnostics
@@ -69,7 +69,7 @@ def donut():
                     fontweight="bold", va="center")
 
     ax.text(38, 531, f"Share of the {total} benchmarked sectors", color=MUTED, fontsize=10.5, va="center")
-    fig.savefig(OUT / "benchmark-2026-rc1.png", facecolor="white")
+    fig.savefig(OUT / "benchmark-2026-rc.png", facecolor="white")
     plt.close(fig)
 
 

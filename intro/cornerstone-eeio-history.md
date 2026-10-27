@@ -12,7 +12,7 @@ Cornerstone EEIO is a continuation of the USEEIO and CEDA EEIO models, built fro
 CEDA dates back to the early 2000s, when Sangwon Suh developed it, first at Leiden University and later at the University of Minnesota [@suhDevelopingSectoralEnvironmental2005].
 It began as a U.S. single-region model with environmental extensions covering many environmental indicators.
 VitalMetrics maintained it and applied it in private, public and academic work.
-CEDA was expanded into a global MRIO model focused on GHG emissions before Watershed acquired it in 2023. Under Watershed, GHG emission factors for Scope 3 reporting became its primary purpose, and in 2025 Watershed released a free version of the emission factors as Open CEDA.
+CEDA was expanded into a global MRIO model focused on GHG emissions before Watershed acquired it in 2023. Under Watershed, GHG emission factors for Scope 3 reporting became its primary purpose, and in 2025 Watershed released a free version of the emission factors as Open CEDA [@openceda2025].
 
 ## USEEIO
 
