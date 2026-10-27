@@ -27,7 +27,7 @@ Both. Data updates reflect real-world change, such as new economic, trade and em
 :::
 
 :::{dropdown} Why is it called a "release candidate"?
-2026 is the first time CEDA and USEEIO are combined in one model, and the first time a time series of emission factors is released from either model. The two-phase release gives companies time to assess the impact on their most recent year of measurements while the time series is under development. The release candidate (2026-rc) is published on October 27, 2026. The full release (2026), with the 2017–2026 time series and the model matrices, follows in early December 2026. See [](releases/rc.md).
+Version 2026 is the first time CEDA and USEEIO are combined in one model, and the first time a time series of emission factors is released from either model. The two-phase release gives companies time to assess the impact on their most recent year of measurements while the time series is under development. The release candidate (2026-rc) is published on October 27, 2026. The full release (2026), with the 2017–2026 time series and the model matrices, follows in early December 2026. See [](releases/rc.md).
 :::
 
 :::{dropdown} Will the 2024–2026 factors change between the release candidate and the final version?
@@ -35,7 +35,7 @@ We don't foresee significant changes, but some sector–country combinations cou
 :::
 
 :::{dropdown} When is the next update?
-Releases are published every October so companies can plan for them. The next, Cornerstone EEIO 2027, will be released in October 2027. Cornerstone EEIO 2026 will stay methodologically stable for at least five years, so you have a consistent basis to rebaseline and set targets. See [](releases/index.md) and [](factors/whats-in-a-release.md#update-cadence).
+Production releases are published every October so companies can plan for them. The next, Cornerstone EEIO 2027, will be released in October 2027. Cornerstone EEIO will stay methodologically stable for at least five years, so you have a consistent basis to rebaseline and set targets. See [](releases/index.md) and [](factors/whats-in-a-release.md#update-cadence).
 :::
 
 :::{dropdown} Did the sectors change?
@@ -74,7 +74,7 @@ A small median can hide large moves in individual sectors, in both directions. S
 We do expect the majority of companies to be above the SBTi rebaselining threshold, but every company will have a different experience and ultimately whether to restate is a decision under your own company's policy and your target framework. This year, the release of the time series is designed for exactly this purpose. Because every year from 2017 to 2026 is built with one methodology, you can recalculate prior years on a consistent basis and compare them. See [](releases/rc.md) for what to expect from the time series, and [](releases/summary-ceda.md) and [](releases/summary-useeio.md) for how much your factors may move.
 :::
 
-:::{dropdown} Can I keep using CEDA 2025 or USEEIO for 2026?
+:::{dropdown} Can I keep using CEDA or USEEIO for 2026?
 We recommend using Cornerstone EEIO 2026 for 2026 measurements, since it supersedes both. If you have a reason to stay on a previous version, apply a price index to it, and explain the choice to your verifier. See [](releases/summary-ceda.md) and [](releases/summary-useeio.md) for what changed.
 :::
 
@@ -147,8 +147,12 @@ IPCC AR6, 100-year time horizon. Sources that report in AR5 CO₂-equivalents ar
 Start with [](reference/methods-by-country.md), which lists the data and methods behind every country. The [IO model](io/index.md) and [GHG extension](ee/index.md) pages describe the method step by step, and the [](releases/change-log.md) lists what changed against USEEIO and CEDA. Methodology decisions are discussed openly on [GitHub](https://github.com/cornerstone-data/methods/discussions). Benchmark results are in [](benchmarking/index.md).
 :::
 
-:::{dropdown} How do I cite a specific release?
-Cite the version and the release date. For example the Cornerstone EEIO 2026-rc released on October 27th, 2026. See [](factors/whats-in-a-release.md#cover) and [](releases/index.md).
+:::{dropdown} How do I cite Cornerstone EEIO?
+For the latest version, cite:
+
+Li, M., Young, B., Tobin, B., Vendries Algarin, J., Birney, C., Maldonado, Y., Steffen, M., Cashman, S., Davis, S., Ingwersen, W., & Suh, S. (2026). Cornerstone EEIO Spend-based GHG Emission Factors (Version 2026-rc) [Dataset]. Cornerstone Sustainability Data Initiative. <https://doi.org/10.5281/zenodo.23396891>
+
+To cite a specific release, give its version and release date, for example Cornerstone EEIO 2026-rc, released on October 27, 2026. See [](factors/whats-in-a-release.md#cover) and [](releases/index.md).
 :::
 
 :::{dropdown} What license are the factors under, and what attribution is required?
