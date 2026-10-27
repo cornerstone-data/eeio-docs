@@ -14,7 +14,7 @@ Built on environmentally extended input–output analysis, CEDA was designed to 
 CEDA continued to evolve and its compilation method and data were published in Economic Systems Research in 2005 [@suhDevelopingSectoralEnvironmental2005].
 In the same year, Suh founded VitalMetrics, which continued to develop, maintain, and commercialize CEDA for applications in industry, government, and academia.
 Over the following two decades, CEDA evolved into a global multi-regional input–output (MRIO) model covering approximately 400 sectors across 148 countries and regions. Following Watershed’s acquisition of VitalMetrics in 2023, CEDA became an important data foundation for corporate Scope 3 GHG accounting.
-In 2025, Watershed made a freely accessible version of CEDA available as Open CEDA, which was further developed into open CEDA 2025 through Cornerstone [@openceda2025].
+In 2025, Watershed made a freely accessible version of CEDA available as Open CEDA 2024, which was further developed into open CEDA 2025 through Cornerstone [@openceda2025].
 
 ## USEEIO
 
