@@ -46,7 +46,7 @@ One example of these differences is using the BEA after redefinition input outpu
 
 ### Nowcasting and facility-reported data
 
-BEA publishes detailed (about 400-sector) US input-output tables only every 10 years, with a five-year lag. The latest is for 2017. Nowcasting rebuilds these tables for every year from 2017 to 2024, in BEA's own structure, using the same official statistics BEA uses. This methodology improvement enables building the time series and providing a more current picture of the US economy. More than 50% of the economic data behind the factors is now backed by reported annual data, beyond inflation adjustments.
+BEA publishes detailed (about 400-sector) US input-output tables only every 5 years, often with a six- or seven-year lag. The latest is for 2017. Nowcasting rebuilds these tables for every year from 2017 to 2024, in BEA's own structure, using the same official statistics BEA uses. This methodology improvement enables building the time series and providing a more current picture of the US economy. More than 50% of the economic data behind the factors is now backed by reported annual data, beyond inflation adjustments.
 
 Cornerstone EEIO also uses facility-level reported emissions data from the US EPA's Greenhouse Gas Reporting Program (GHGRP) where most of the facilities in a sector report them, in place of using estimates based on 4-yr frequency fuel use data. The 2024 data includes 6,127 facility reports across 84 industries. This improvement provides a more accurate picture of the US economy. For example, the US sector emissions now match the totals reported across 87 cement plants (61 MT) in 2024. USEEIO undercounted them by ~20%, driving an increase in emission factors in kg CO₂e/USD.
 
