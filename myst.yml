@@ -9,6 +9,12 @@ project:
   github: https://github.com/cornerstone-data/eeio-docs
   bibliography:
     - references.bib
+  # OECD blocks CI link checkers with 403; keep --strict for other URLs.
+  error_rules:
+    - rule: link-resolves
+      severity: ignore
+      keys:
+        - 'https://www.oecd.org/**'
   exclude:
     - README.md
     - CONTRIBUTING.md
