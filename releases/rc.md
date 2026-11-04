@@ -37,7 +37,7 @@ Cornerstone EEIO 2026 combines USEEIO’s detailed picture of the US economy wit
 Three groups of improvements sit behind the changes.
 
 1. **A more current picture of the US economy that accounts for imports**. US input-output tables are rebuilt for every year from 2017 to 2024, manufacturing uses facility-reported emissions, and imports are modeled where they are made.
-2. **Newer data for Europe, the UK and China, and better gap-filling for the rest.** Europe moves from the OECD’s ICIO tables to Eurostat’s FIGARO (through 2023). China moves to the latest National Bureau of Statistics tables (through 2023), with more sectors. Countries without data are filled with the auto-balanced structural reflection method.
+2. **Newer data for Europe, the UK and China, and better gap-filling for the rest.** Europe moves from the OECD’s ICIO tables to Eurostat’s FIGARO (through 2023). China moves to the latest National Bureau of Statistics tables (through 2023), with more sectors. The auto-balanced structural reflection (ABSR) method brings countries with coarser tables to the same 405 sectors and keeps each economy balanced.
 3. **A validation process that feeds back into the model.** Third-party benchmarks review the sectors behind about 50% of global emissions. Gaps are traced and fixed in the data or the method and documented when unresolved.
 
 Together these make the 2017–2026 time series possible.
