@@ -78,6 +78,27 @@ Here `ydom` is what households, government, and investment buy from domestic pro
 
 With `ynab`, the model reproduces the country's commodity output: running `ynab` through the domestic supply chain (the Leontief inverse of `Adom`) gives back `q`. This is a check that the tables, `Adom`, and `ynab` are consistent.
 
+(absr)=
+## From coarse tables to the common sectors (ABSR)
+
+:::{figure} ../images/absr-diagram.png
+:label: fig-absr-io
+:alt: Diagram of the ABSR method. Countries A, B and C start with different numbers of sectors, so the sector granularity varies by country. ABSR disaggregates and balances each economy, giving every country the same 405 sectors, with row and column totals that check out.
+{term}`ABSR` gives every country the same 405 sectors and keeps each economy balanced.
+:::
+
+Tier 2 tables have 50 to 64 sectors, and the model has 405. For example, FIGARO has one sector for computer, electronic, and optical products. The common sector list has separate sectors for computers, semiconductors, communications equipment, and more. {term}`ABSR` brings each Tier 2 table to the common sectors in two steps.
+
+1. **Structural reflection.** Each coarse sector is split into its common sectors, using the U.S. structure as weights ({term}`structural reflection <Structural reflection>`). The country's own table sets the total for each coarse sector; the U.S. tables set only how that total is shared. Emissions are split the same way, weighted by U.S. emission intensities (see [](../ee/index.md)).
+2. **Balance.** Once all countries are linked through trade, the table is balanced with {term}`RAS` (step 4 [below](#from-single-country-tables-to-the-multi-region-model)). Each country's sales then add up to its output. Each country's domestic recipe (`Adom`) is held fixed. The adjustments go to imported inputs and final demand, where the source data are least certain.
+
+As a result, every country has the same 405 sectors, so factors compare like for like. Emissions traced through supply chains also add up to each country's production emissions (see [](../validation/index.md)).
+
+**Is this standard practice?** Yes. Both steps are established IO techniques. Splitting a coarse table into finer sectors is known as disaggregation [@lindnerDisaggregatingInputOutput2012]. RAS is the standard way to balance a table to known totals [@millerInputoutputAnalysisFoundations2022]. Global multi-regional databases also combine the two to reach one detailed table. Eora combines national tables of very different detail into one balanced table [@lenzenBuildingEora2013]. EXIOBASE uses auxiliary data to estimate product detail that its sources do not publish [@stadlerEXIOBASEDevelopingTime2018].
+
+Cornerstone makes two choices of its own. The U.S. tables supply the detail, because they are the most detailed tables in the model. And the balance leaves each country's domestic recipe unchanged.
+
+(from-single-country-tables-to-the-multi-region-model)=
 ## From single-country tables to the multi-region model
 
 :::{figure} ../figures/diagrams/io-mrio-blocks.svg
@@ -91,7 +112,7 @@ Each country's tables say how much of its inputs are imported, but not where the
 1. **Put every country in one table.** The 65 countries in Tiers 0 to 2 each get their own block, so `A` is a 65 × 65 grid of country blocks, each 405 × 405 sectors. Each country's `Adom` sits on the diagonal. A country's column holds everything its industries buy; the rows say which country sold it.
 2. **Split imports by origin.** Each country's `Aimp` is spread down its column using bilateral trade data ({term}`BACI`): for each product, the share the country imports from each origin. Products the trade data don't cover, mostly services, use origin shares from {term}`FIGARO` or {term}`ICIO`. Imported final demand (`yimp`) is split the same way.
 3. **Add the rest of the world.** Imports from countries outside the table come from a rest-of-world region. Its domestic input structure is pooled from the tables of Colombia, Mexico, Türkiye, and Chile. It is added as one more block, making `A` a 66 × 66 grid of country blocks. This region is separate from the proxy table used for Tier 3 countries' own factors (see [](country-tiers.md)).
-4. **Balance.** The table is balanced with {term}`RAS`, so that each country's sales to all users, at home and abroad, add up to its output, without changing it's domestic recipe. This makes small adjustments to the import coefficients.
+4. **Balance.** {term}`RAS` balances the table, so each country's sales to all users, at home and abroad, add up to its output. RAS does not change any country's domestic recipe (`Adom`); it makes small adjustments to the import coefficients. Together with structural reflection, this step makes up the {ref}`ABSR <absr>` method.
 5. **Solve.** The total requirements (`L`) are calculated for the whole table at once, so supply chains that cross several borders are captured in full (see [below](#total-requirements)).
 
 The other 83 of the model's 148 countries (Tier 3) are linked to this table more simply; see [](country-tiers.md).
@@ -132,6 +153,13 @@ The tiers here are rounds of suppliers in a supply chain. They are not the same 
 - **Why we make it:** It is the standard assumption for building commodity-by-commodity tables from Supply and Use tables, and unlike the alternative (commodity technology) it never produces negative requirements.
 - **How it affects results:** A secondary product takes on its producer's recipe. Using U.S. tables after {term}`redefinitions <Redefinitions>` keeps secondary products, and so this effect, small.
 
+**U.S. structure for finer detail**
+
+- **Assumption:** In a Tier 2 country, each coarse sector shares its output, inputs, and emissions among its common sectors the same way the U.S. does.
+- **Why we make it:** The U.S. tables are the most detailed tables in the model. The country keeps its own total for each coarse sector, so the assumption affects only the split within that sector.
+- **How it affects results:** Where a country's mix within a coarse sector differs from the U.S. mix, the factors for its common sectors follow the U.S. mix. For example, a country that makes more consumer electronics and fewer semiconductors than the U.S. gets the U.S. split between the two.
+- **Alternatives or sensitivity tested:** Where better data exist, they replace the U.S. weights. Several of FIGARO's broad sectors, such as electricity, basic metals, mining, and agriculture, are split with dedicated data before ABSR (see [](country-tiers.md)). Third-party benchmarks review the sectors behind about 50% of global emissions (see [](../benchmarking/index.md)).
+
 **Import proportionality**
 
 - **Assumption:** Within a country, every buyer of a product gets the same mix of origins. If a country imports 30% of its steel from Korea, every industry that buys imported steel gets 30% of it from Korea.
@@ -158,3 +186,5 @@ The tiers here are rounds of suppliers in a supply chain. They are not the same 
 -  Supply, Use, and IO tables in national accounts - the United Nations Handbook [@unitednationsHandbookSupplyUse2018]
 - The standard textbook on IO analysis [@millerInputoutputAnalysisFoundations2022];
 -  How BEA builds the U.S. IO accounts [@beaConceptsMethodsUS2009]
+- Disaggregating IO tables with incomplete information [@lindnerDisaggregatingInputOutput2012]
+- How two global MRIO databases reach a common, detailed sector list: Eora [@lenzenBuildingEora2013] and EXIOBASE [@stadlerEXIOBASEDevelopingTime2018]

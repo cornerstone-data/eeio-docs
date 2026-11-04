@@ -67,6 +67,8 @@ The ABSR method is an improvement in this methodology. It achieves two goals tha
 - All countries share the same 405 sectors, so emission factors compare like for like.
 - Each economy balances production and consumption in terms of monetary transactions and emissions.
 
+ABSR combines two established input-output techniques: structural reflection, which splits coarse sectors [@lindnerDisaggregatingInputOutput2012], and RAS balancing [@millerInputoutputAnalysisFoundations2022]. See [](../io/index.md#absr) for how it works and how it compares with other global models.
+
 :::{figure} ../images/absr-diagram.png
 :label: absr-diagram
 :alt: Diagram of the ABSR method. Countries A, B and C start with different numbers of sectors, so the sector granularity varies by country. ABSR disaggregates and balances each economy, giving every country the same 405 sectors, with row and column totals that check out.

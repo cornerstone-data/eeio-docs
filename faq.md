@@ -26,6 +26,17 @@ Examples with numbers are in [What changed](releases/rc.md#what-changed) in the 
 Both. Data updates reflect real-world change, such as new economic, trade and emissions data. Methodology changes reflect modeling improvements, such as modeling US imports by origin and the auto-balanced structural reflection (ABSR) method. See the [](releases/change-log.md) and, for the size of each driver, [](releases/summary-ceda.md#what-drives-the-change-for-ceda-users) and [](releases/summary-useeio.md#what-drives-the-change-for-useeio-users).
 :::
 
+:::{dropdown} What is ABSR, and is it standard practice?
+ABSR (auto-balanced structural reflection) gives every country the same 405 sectors. The 60 Tier 2 countries start from tables with only 50 to 64 sectors. ABSR takes two steps:
+
+1. **Structural reflection.** Each coarse sector is split into finer sectors, using the detailed US structure as weights. The country keeps its own total production and emissions for that sector.
+2. **Balance.** The global table is balanced, so each country's sales add up to its output.
+
+As a result, factors compare like for like across countries, and emissions stay consistent along supply chains.
+
+Both steps are standard IO techniques. Splitting is known as disaggregation [@lindnerDisaggregatingInputOutput2012], and RAS is the standard balancing method [@millerInputoutputAnalysisFoundations2022]. Global databases such as Eora [@lenzenBuildingEora2013] and EXIOBASE [@stadlerEXIOBASEDevelopingTime2018] use similar steps to reach one detailed table. Cornerstone makes two choices of its own. The US tables supply the detail, because they are the most detailed tables in the model. Each country's domestic recipe stays fixed during the balance. See [](io/index.md#absr) and [](io/country-tiers.md).
+:::
+
 :::{dropdown} Why is it called a "release candidate"?
 Version 2026 is the first time CEDA and USEEIO are combined in one model, and the first time a time series of emission factors is released from either model. The two-phase release gives companies time to assess the impact on their most recent year of measurements while the time series is under development. The release candidate (2026-rc) is published on October 27, 2026. The full release (2026), with the 2017–2026 time series and the model matrices, follows in early December 2026. See [](releases/rc.md).
 :::
