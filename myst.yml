@@ -76,6 +76,7 @@ site:
     logo: images/Cornerstone-EEIO-Wordmark-dark.png
     logo_dark: images/Cornerstone-EEIO-Wordmark-white.png
     logo_alt: Cornerstone EEIO
+    favicon: images/Cornerstone-logo.png
     folders: true
     style: _parts/custom.css
   parts:
